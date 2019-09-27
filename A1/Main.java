@@ -26,8 +26,10 @@ public class Main {
 		});
 		*/
 		
-		Diary d = new Diary();
-		d.makeFile();
+		//Diary d = new Diary();
+		//d.makeFile();
 		//d.removeFile("yolo.txt");
+		SignUp s = new SignUp();
+		s.createUser();
 	}
 }
