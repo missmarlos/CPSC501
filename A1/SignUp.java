@@ -6,7 +6,7 @@ import java.time.LocalDateTime;
 import java.util.*;
 import java.io.*;
 
-public abstract class SignUp {
+public class SignUp {
 	Map <String, String> userDB = new HashMap<>(); 
 	String username; 
 	String password;
@@ -32,6 +32,7 @@ public abstract class SignUp {
 				
 			}
 		}
+		System.out.println(Arrays.asList(userDB));
 	}
 	
 	public void createUser() {
@@ -43,7 +44,8 @@ public abstract class SignUp {
 		System.out.println("Enter a password: ");
 		tempPassword = input.nextLine();
 		
-		if(validateUsername(tempUsername) && validatePassword(tempPassword)) {
+		//if username is not in the db and password passes rules
+		if(validateNoUsername(tempUsername) && validatePassword(tempPassword)) {
 			System.out.println("username and password are good");
 			username = tempUsername;
 			password = tempPassword;
@@ -56,21 +58,22 @@ public abstract class SignUp {
 				
 			}
 		}else {
+			//System.out.println(validateNoUsername(tempUsername));
+			//System.out.println(validatePassword(tempPassword));
 			System.out.println("username or password invalid try again");
 		}
 	}
 	
-	public boolean validateUsername(String u) {
+	public boolean validateNoUsername(String u) {
 		boolean isValidUsername = false;
-		//check that there is no whitespace
 		if(u.contains(" ")) {
 			isValidUsername = false;
-		}if(fileExists == true) {
-			if(userDB.containsKey(u)) {
-				System.out.println("Flop");
-				isValidUsername = false;
-			}
-		}else {
+			System.out.println("This contains white space");
+		}else if(userDB.containsKey(u)) {
+			System.out.println("This username is already in the file");
+			isValidUsername = false;
+		}else{
+			System.out.println("Username does not exist yet");
 			isValidUsername = true;
 		}
 		return isValidUsername;
@@ -127,11 +130,21 @@ public abstract class SignUp {
 	}
 	
 	//this class will check if the password matches the username given
-	public boolean passwordMatches() {
-		return false;
+	public boolean passwordMatches(String username, String password) {
+		String tempUsername = username;
+		String tempPassword = password;
+		boolean pwMatch = false;
+		
+		if(userDB.containsKey(username)) {
+			if(userDB.get(tempUsername).equals(tempPassword)) {
+				pwMatch = true;
+			}
+		}
+		
+		return pwMatch;
 	}
 	
 	//check if login is valid.
-	abstract boolean loginStatus(); 
+	//abstract boolean loginStatus(); 
 
 }

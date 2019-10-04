@@ -72,6 +72,9 @@ public class Gui {
 		JPanel opening = new JPanel();
 		JPanel login = new JPanel();
 		JPanel signup = new JPanel();
+		
+		//JLabel loginVerification;
+		
 
 
 		CardLayout cl = new CardLayout();
@@ -141,6 +144,23 @@ public class Gui {
 		textField_1.setColumns(10);
 		
 		JButton btnLogin = new JButton("login");
+		JLabel loginVerification = new JLabel("");
+		btnLogin.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mousePressed(MouseEvent e) {
+				//check that username and password are valid
+				String username = textField.getText();
+				String password = textField_1.getText();
+				Login login = new Login(username, password);
+				if(!(login.loginStatus())) {
+					loginVerification.setText("That login was invalid try again.");
+				}else {
+					loginVerification.setText("Success");
+				}
+				
+				
+			}
+		});
 		
 		JLabel lblDontHaveAn = new JLabel("Don't have an account? Sign up.");
 		
@@ -151,9 +171,10 @@ public class Gui {
 				cl.show(panelCont, "3");
 			}
 		});
+		
 		GroupLayout gl_login = new GroupLayout(login);
 		gl_login.setHorizontalGroup(
-			gl_login.createParallelGroup(Alignment.TRAILING)
+			gl_login.createParallelGroup(Alignment.LEADING)
 				.addGroup(gl_login.createSequentialGroup()
 					.addGroup(gl_login.createParallelGroup(Alignment.LEADING)
 						.addGroup(gl_login.createSequentialGroup()
@@ -167,17 +188,18 @@ public class Gui {
 									.addPreferredGap(ComponentPlacement.UNRELATED)
 									.addGroup(gl_login.createParallelGroup(Alignment.LEADING)
 										.addComponent(textField_1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-										.addComponent(btnLogin)))
+										.addComponent(btnLogin)
+										.addComponent(loginVerification)))
 								.addGroup(gl_login.createSequentialGroup()
 									.addComponent(lblNewLabel)
 									.addPreferredGap(ComponentPlacement.UNRELATED)
 									.addComponent(textField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))))
-					.addContainerGap(137, Short.MAX_VALUE))
+					.addContainerGap(136, Short.MAX_VALUE))
 				.addGroup(gl_login.createSequentialGroup()
 					.addContainerGap(190, Short.MAX_VALUE)
 					.addComponent(btnNewButton)
 					.addGap(175))
-				.addGroup(Alignment.LEADING, gl_login.createSequentialGroup()
+				.addGroup(gl_login.createSequentialGroup()
 					.addGap(109)
 					.addComponent(lblDontHaveAn)
 					.addContainerGap(119, Short.MAX_VALUE))
@@ -197,7 +219,9 @@ public class Gui {
 						.addComponent(textField_1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
 					.addPreferredGap(ComponentPlacement.UNRELATED)
 					.addComponent(btnLogin)
-					.addPreferredGap(ComponentPlacement.RELATED, 57, Short.MAX_VALUE)
+					.addGap(18)
+					.addComponent(loginVerification)
+					.addPreferredGap(ComponentPlacement.RELATED, 24, Short.MAX_VALUE)
 					.addComponent(lblDontHaveAn)
 					.addPreferredGap(ComponentPlacement.UNRELATED)
 					.addComponent(btnNewButton)

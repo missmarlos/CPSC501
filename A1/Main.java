@@ -33,16 +33,20 @@ public class Main {
 			}
 		});
 		*/
+	
+		
 		
 		//Diary d = new Diary();
 		//d.makeFile();
 		//d.removeFile("yolo.txt");
-		//SignUp s = new SignUp();
-		//s.createUser();
-
+		SignUp s = new SignUp();
+		s.createUser();
+		//Login l = new Login("marela", "12345678Ab!");
+		//System.out.println(l.loginStatus());
 	}
 	
 	public void RunProgram() {
 		//this is where sequence of code will be run.
+		
 	}
 }

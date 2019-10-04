@@ -15,7 +15,7 @@ public class Login extends SignUp{
 	public boolean loginStatus() {
 		boolean validLogin = false;
 		loadHashMap();
-		if((!validateUsername(username))&&(passwordMatches())) {
+		if(passwordMatches(username,password)) {
 			validLogin = true;
 		}
 		return validLogin;
