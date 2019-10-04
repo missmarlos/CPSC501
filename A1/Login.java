@@ -9,4 +9,14 @@ public class Login extends SignUp{
 		this.username = u;
 		this.password = pw;
 	}
+	
+	//use this method in Gui when login is pressed
+	public boolean loginStatus() {
+		boolean validLogin = false;
+		loadHashMap();
+		if((!validateUsername(username))&&(passwordMatches())) {
+			validLogin = true;
+		}
+		return validLogin;
+	}
 }
