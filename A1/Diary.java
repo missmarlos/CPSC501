@@ -10,9 +10,11 @@ public class Diary {
 
 	public void makeFile() {
 		//filename no spaces and needs to end in .txt.
+	
 		System.out.println("Enter file name");
 		Scanner input = new Scanner(System.in);
 		String preFileName = input.nextLine();
+	
 		String[] preFileName2 = preFileName.split("\\s+");
 		String filename = preFileName2[0];
 		if(preFileName2.length > 1) {
@@ -69,6 +71,8 @@ public class Diary {
 		
 		
 	}
+	
+	
 	
 	public String getFileContent(String filename) {
 		String fileContent = null;

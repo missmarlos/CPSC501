@@ -28,6 +28,7 @@ public class Gui {
 	private JTextField textField_1;
 	private JTextField textField_2;
 	private JTextField textField_3;
+	private JTextField textField_4;
 
 	/**
 	 * Launch the application.
@@ -72,6 +73,11 @@ public class Gui {
 		JPanel opening = new JPanel();
 		JPanel login = new JPanel();
 		JPanel signup = new JPanel();
+		JPanel menu = new JPanel();
+		JPanel diary = new JPanel();
+		JPanel agenda = new JPanel();
+		JPanel todo = new JPanel();
+		JPanel fileCreate = new JPanel();
 		
 		//JLabel loginVerification;
 		
@@ -84,7 +90,152 @@ public class Gui {
 		panelCont.add(opening, "1");
 		panelCont.add(login, "2");
 		panelCont.add(signup, "3");
+		panelCont.add(menu, "4");
+		panelCont.add(diary, "5");
+		panelCont.add(fileCreate, "8");
 		
+		JLabel lblEnterFilename = new JLabel("Enter filename:");
+		
+		textField_4 = new JTextField();
+		textField_4.setColumns(10);
+		
+		JButton btnCreateFile_1 = new JButton("Create File");
+		btnCreateFile_1.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mousePressed(MouseEvent e) {
+				Diary d = new Diary();
+				String filename = textField_4.getText(); 
+				//d.makeFile(filename);
+			}
+		});
+		
+		//JLabel lblError = new JLabel("");
+		JLabel lblError = new JLabel("error");
+		GroupLayout gl_fileCreate = new GroupLayout(fileCreate);
+		gl_fileCreate.setHorizontalGroup(
+			gl_fileCreate.createParallelGroup(Alignment.LEADING)
+				.addGroup(gl_fileCreate.createSequentialGroup()
+					.addGroup(gl_fileCreate.createParallelGroup(Alignment.LEADING)
+						.addGroup(gl_fileCreate.createSequentialGroup()
+							.addGap(177)
+							.addComponent(lblEnterFilename))
+						.addGroup(gl_fileCreate.createSequentialGroup()
+							.addGap(168)
+							.addGroup(gl_fileCreate.createParallelGroup(Alignment.LEADING)
+								.addComponent(btnCreateFile_1)
+								.addComponent(textField_4, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))))
+					.addContainerGap(158, Short.MAX_VALUE))
+				.addGroup(Alignment.TRAILING, gl_fileCreate.createSequentialGroup()
+					.addContainerGap(196, Short.MAX_VALUE)
+					.addComponent(lblError)
+					.addGap(188))
+		);
+		gl_fileCreate.setVerticalGroup(
+			gl_fileCreate.createParallelGroup(Alignment.LEADING)
+				.addGroup(gl_fileCreate.createSequentialGroup()
+					.addContainerGap()
+					.addComponent(lblEnterFilename)
+					.addPreferredGap(ComponentPlacement.RELATED)
+					.addComponent(textField_4, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+					.addPreferredGap(ComponentPlacement.RELATED)
+					.addComponent(btnCreateFile_1)
+					.addGap(55)
+					.addComponent(lblError)
+					.addContainerGap(117, Short.MAX_VALUE))
+		);
+		fileCreate.setLayout(gl_fileCreate);
+		
+		JLabel lblDiar = new JLabel("Diary");
+		
+		JButton btnCreateFile = new JButton("Create File");
+		btnCreateFile.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mousePressed(MouseEvent e) {
+				cl.show(fileCreate, "8");
+				
+			}
+		});
+		GroupLayout gl_diary = new GroupLayout(diary);
+		gl_diary.setHorizontalGroup(
+			gl_diary.createParallelGroup(Alignment.LEADING)
+				.addGroup(gl_diary.createSequentialGroup()
+					.addGroup(gl_diary.createParallelGroup(Alignment.LEADING)
+						.addGroup(gl_diary.createSequentialGroup()
+							.addGap(185)
+							.addComponent(lblDiar))
+						.addGroup(gl_diary.createSequentialGroup()
+							.addGap(150)
+							.addComponent(btnCreateFile)))
+					.addContainerGap(212, Short.MAX_VALUE))
+		);
+		gl_diary.setVerticalGroup(
+			gl_diary.createParallelGroup(Alignment.LEADING)
+				.addGroup(gl_diary.createSequentialGroup()
+					.addComponent(lblDiar)
+					.addPreferredGap(ComponentPlacement.RELATED)
+					.addComponent(btnCreateFile)
+					.addContainerGap(224, Short.MAX_VALUE))
+		);
+		diary.setLayout(gl_diary);
+		panelCont.add(agenda, "6");
+		panelCont.add(todo, "7");
+		
+		JLabel lblMenu_1 = new JLabel("Menu");
+		
+		JButton btnDiary = new JButton("Diary");
+		btnDiary.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mousePressed(MouseEvent e) {
+				cl.show(diary, "5");
+			}
+		});
+		
+		JButton btnAgenda = new JButton("Agenda");
+		btnAgenda.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mousePressed(MouseEvent e) {
+				cl.show(agenda, "6");
+			}
+		});
+		
+		JButton btnTodo = new JButton("To-Do");
+		btnTodo.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mousePressed(MouseEvent e) {
+				cl.show(todo, "7");
+			}
+		});
+		GroupLayout gl_menu = new GroupLayout(menu);
+		gl_menu.setHorizontalGroup(
+			gl_menu.createParallelGroup(Alignment.LEADING)
+				.addGroup(gl_menu.createSequentialGroup()
+					.addContainerGap(185, Short.MAX_VALUE)
+					.addGroup(gl_menu.createParallelGroup(Alignment.LEADING)
+						.addGroup(Alignment.TRAILING, gl_menu.createSequentialGroup()
+							.addGroup(gl_menu.createParallelGroup(Alignment.TRAILING)
+								.addComponent(btnDiary)
+								.addComponent(lblMenu_1))
+							.addGap(190))
+						.addGroup(Alignment.TRAILING, gl_menu.createSequentialGroup()
+							.addGroup(gl_menu.createParallelGroup(Alignment.LEADING)
+								.addComponent(btnTodo)
+								.addComponent(btnAgenda))
+							.addGap(179))))
+		);
+		gl_menu.setVerticalGroup(
+			gl_menu.createParallelGroup(Alignment.LEADING)
+				.addGroup(gl_menu.createSequentialGroup()
+					.addContainerGap()
+					.addComponent(lblMenu_1)
+					.addGap(18)
+					.addComponent(btnDiary)
+					.addGap(26)
+					.addComponent(btnAgenda)
+					.addGap(18)
+					.addComponent(btnTodo)
+					.addContainerGap(106, Short.MAX_VALUE))
+		);
+		menu.setLayout(gl_menu);
 		
 		cl.show(panelCont, "1");
 		
@@ -155,7 +306,7 @@ public class Gui {
 				if(!(login.loginStatus())) {
 					loginVerification.setText("That login was invalid try again.");
 				}else {
-					loginVerification.setText("Success");
+					cl.show(menu, "4");;
 				}
 				
 				
@@ -263,6 +414,8 @@ public class Gui {
 						checkUsername.setText("Username already taken");
 					}if(!(l.validatePassword(password))) {
 						checkPassword.setText("Password format wrong");
+					}else {
+						cl.show(menu, "4");
 					}
 			
 				}

@@ -10,8 +10,22 @@ import javax.swing.JFrame;
  * -rename
  * -long method
  * -speculative generality (calendar class)
+ * -switch statement
  * 
- * Hard Refactorings:
+ * Hard (possible) Refactorings:
+ * -make a base class for signup and login
+ * -make a base class for diary, agenda, todo
+ * 	-form template method
+ * -delegate method
+ * -remove middle man
+ * -fix diary thing then create a base class
+ * 
+ * Tests:
+ * -every method in signup can be tested
+ * -every method in login
+ * -diary
+ * -agenda
+ * -todo
  * 
  * 
  * @author mar
