@@ -245,6 +245,35 @@ public class Gui {
 		textField_3.setColumns(10);
 		
 		JButton btnSignUp = new JButton("Sign Up");
+		JLabel checkUsername = new JLabel("");
+		JLabel checkPassword = new JLabel("");
+		btnSignUp.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mousePressed(MouseEvent e) {
+				//check if username/password are valid
+				String username = textField_2.getText();
+				String password = textField_3.getText();
+				Login l = new Login(username, password);
+				//if user cannot be created
+				if(!(l.createUser(username, password))){
+					checkUsername.setText("invalid username or password");
+				
+					//if username is taken
+					if(!(l.validateNoUsername(username))) {
+						checkUsername.setText("Username already taken");
+					}if(!(l.validatePassword(password))) {
+						checkPassword.setText("Password format wrong");
+					}
+			
+				}
+				
+			}
+		});
+		JLabel lblNewLabel_2 = new JLabel();
+		
+		JLabel lblPasswordFormat = new JLabel("Password format (>=1 of each): uppercase,");
+		
+		JLabel lblLowercaseNumberSymbol = new JLabel("lowercase, number, symbol (!,@,#,$,%)");
 		GroupLayout gl_signup = new GroupLayout(signup);
 		gl_signup.setHorizontalGroup(
 			gl_signup.createParallelGroup(Alignment.LEADING)
@@ -255,35 +284,62 @@ public class Gui {
 							.addComponent(lblSignUp))
 						.addGroup(gl_signup.createSequentialGroup()
 							.addGap(98)
+							.addComponent(lblEnterAPassword)
+							.addPreferredGap(ComponentPlacement.RELATED)
 							.addGroup(gl_signup.createParallelGroup(Alignment.LEADING)
+								.addComponent(textField_3, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
 								.addGroup(gl_signup.createSequentialGroup()
-									.addComponent(lblEnterAPassword)
-									.addPreferredGap(ComponentPlacement.UNRELATED)
-									.addComponent(textField_3, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
-								.addGroup(gl_signup.createSequentialGroup()
-									.addComponent(lblUsername)
-									.addGap(20)
-									.addComponent(textField_2, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))))
+									.addGap(25)
+									.addComponent(lblNewLabel_2)))))
 					.addContainerGap(87, Short.MAX_VALUE))
-				.addGroup(Alignment.TRAILING, gl_signup.createSequentialGroup()
+				.addGroup(gl_signup.createSequentialGroup()
 					.addContainerGap(202, Short.MAX_VALUE)
 					.addComponent(btnSignUp)
 					.addGap(160))
+				.addGroup(gl_signup.createSequentialGroup()
+					.addGap(134)
+					.addGroup(gl_signup.createParallelGroup(Alignment.LEADING)
+						.addGroup(gl_signup.createSequentialGroup()
+							.addComponent(checkUsername)
+							.addContainerGap())
+						.addGroup(gl_signup.createSequentialGroup()
+							.addComponent(checkPassword, GroupLayout.DEFAULT_SIZE, 209, Short.MAX_VALUE)
+							.addGap(107))))
+				.addGroup(gl_signup.createSequentialGroup()
+					.addGap(100)
+					.addGroup(gl_signup.createParallelGroup(Alignment.LEADING)
+						.addComponent(lblLowercaseNumberSymbol)
+						.addComponent(lblPasswordFormat)
+						.addGroup(gl_signup.createSequentialGroup()
+							.addComponent(lblUsername)
+							.addPreferredGap(ComponentPlacement.UNRELATED)
+							.addComponent(textField_2, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))
+					.addContainerGap(55, Short.MAX_VALUE))
 		);
 		gl_signup.setVerticalGroup(
 			gl_signup.createParallelGroup(Alignment.LEADING)
 				.addGroup(gl_signup.createSequentialGroup()
 					.addContainerGap()
 					.addComponent(lblSignUp)
-					.addGap(36)
-					.addGroup(gl_signup.createParallelGroup(Alignment.LEADING)
+					.addPreferredGap(ComponentPlacement.UNRELATED)
+					.addGroup(gl_signup.createParallelGroup(Alignment.BASELINE)
 						.addComponent(lblUsername)
 						.addComponent(textField_2, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
-					.addGap(41)
+					.addPreferredGap(ComponentPlacement.RELATED)
+					.addComponent(checkUsername)
+					.addGap(13)
+					.addComponent(lblNewLabel_2)
+					.addGap(18)
+					.addComponent(lblPasswordFormat)
+					.addPreferredGap(ComponentPlacement.RELATED)
+					.addComponent(lblLowercaseNumberSymbol)
+					.addGap(29)
+					.addComponent(checkPassword, GroupLayout.PREFERRED_SIZE, 30, GroupLayout.PREFERRED_SIZE)
+					.addGap(18)
 					.addGroup(gl_signup.createParallelGroup(Alignment.BASELINE)
 						.addComponent(lblEnterAPassword)
 						.addComponent(textField_3, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
-					.addPreferredGap(ComponentPlacement.RELATED, 77, Short.MAX_VALUE)
+					.addPreferredGap(ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 					.addComponent(btnSignUp)
 					.addGap(30))
 		);

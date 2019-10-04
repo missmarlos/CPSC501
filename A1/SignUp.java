@@ -6,7 +6,7 @@ import java.time.LocalDateTime;
 import java.util.*;
 import java.io.*;
 
-public class SignUp {
+public abstract class SignUp {
 	Map <String, String> userDB = new HashMap<>(); 
 	String username; 
 	String password;
@@ -35,14 +35,20 @@ public class SignUp {
 		System.out.println(Arrays.asList(userDB));
 	}
 	
-	public void createUser() {
+	public boolean createUser(String u, String p) {
+		boolean userCreated = false;
 		loadHashMap();
-		String tempUsername;
-		String tempPassword;
+		String tempUsername = u;
+		String tempPassword = p;
+		/*
 		System.out.println("Enter a username: ");
 		tempUsername = input.nextLine();
 		System.out.println("Enter a password: ");
 		tempPassword = input.nextLine();
+		*/
+		
+		
+		
 		
 		//if username is not in the db and password passes rules
 		if(validateNoUsername(tempUsername) && validatePassword(tempPassword)) {
@@ -50,6 +56,7 @@ public class SignUp {
 			username = tempUsername;
 			password = tempPassword;
 			String login = username+","+password;
+			userCreated = true;
 			try {
 				PrintWriter pw = new PrintWriter(new FileOutputStream("userDB.txt", true));;
 				pw.append(login+"\n");
@@ -61,7 +68,9 @@ public class SignUp {
 			//System.out.println(validateNoUsername(tempUsername));
 			//System.out.println(validatePassword(tempPassword));
 			System.out.println("username or password invalid try again");
+			userCreated = false;
 		}
+		return userCreated;
 	}
 	
 	public boolean validateNoUsername(String u) {
@@ -145,6 +154,6 @@ public class SignUp {
 	}
 	
 	//check if login is valid.
-	//abstract boolean loginStatus(); 
+	abstract boolean loginStatus(); 
 
 }
