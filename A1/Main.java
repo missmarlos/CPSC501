@@ -20,7 +20,7 @@ import javax.swing.JFrame;
 public class Main {
 	public static void main(String arg[]) {
 		//display GUI
-		/*
+		
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
@@ -32,16 +32,16 @@ public class Main {
 				}
 			}
 		});
-		*/
+		
 	
 		
 		
 		//Diary d = new Diary();
 		//d.makeFile();
 		//d.removeFile("yolo.txt");
-		SignUp s = new SignUp();
-		s.createUser();
-		//Login l = new Login("marela", "12345678Ab!");
+		//SignUp s = new SignUp();
+		//s.createUser();
+		//Login l = new Login("marela", "1234567Ab!");
 		//System.out.println(l.loginStatus());
 	}
 	
