@@ -6,6 +6,14 @@ import javax.swing.JFrame;
 /**
  * This is where the program gets run from
  * 
+ * Easy Refactorings:
+ * -rename
+ * -long method
+ * -speculative generality (calendar class)
+ * 
+ * Hard Refactorings:
+ * 
+ * 
  * @author mar
  *
  */
@@ -29,7 +37,13 @@ public class Main {
 		//Diary d = new Diary();
 		//d.makeFile();
 		//d.removeFile("yolo.txt");
-		SignUp s = new SignUp();
-		s.createUser();
+		//SignUp s = new SignUp();
+		//s.createUser();
+		Agenda a = new Agenda();
+		a.makeFile();
+	}
+	
+	public void RunProgram() {
+		//this is where sequence of code will be run.
 	}
 }

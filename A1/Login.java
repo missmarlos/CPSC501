@@ -1,5 +1,6 @@
 package cpsc501a1;
 
-public class Login {
-
+public class Login extends SignUp{
+	//make this extend signup
+	
 }

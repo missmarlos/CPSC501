@@ -5,6 +5,7 @@ import java.util.Scanner;
 import java.time.LocalDateTime;
 import java.io.*;
 
+//show all entries in a screen
 public class Diary {
 	
 	public void makeFile() {
@@ -68,22 +69,6 @@ public class Diary {
 		
 		
 	}
-	
-	/*
-	public void editFile(String filename) {
-		try {
-			//copy current file to temp file
-			//make edits
-			//overwrite old file
-			//delete tempfile
-			PrintWriter writer = new PrintWriter(filename, "UTF-8");
-			writer.println();
-			writer.close();
-		}catch(Exception e) {
-			System.out.println("File has not been found.");
-		}
-	}
-	*/
 	
 	public void removeFile(String filename) {
 		File file = new File(filename);

@@ -7,7 +7,6 @@ import java.util.*;
 import java.io.*;
 
 public class SignUp {
-	//ArrayList<String> userDB = new ArrayList<String>();
 	Map <String, String> userDB = new HashMap<>(); 
 	String username; 
 	String password;
@@ -27,6 +26,7 @@ public class SignUp {
 			        String[] parts = line.split(",", 2);
 			        userDB.put(parts[0], parts[1]);
 			    }
+				reader.close();
 			}catch(Exception e) {
 				
 			}
@@ -123,5 +123,10 @@ public class SignUp {
 			isValidPassword = true;
 		}
 		return isValidPassword;
+	}
+	
+	//this class will check if the password matches the username given
+	public boolean passwordMatches() {
+		return false;
 	}
 }
