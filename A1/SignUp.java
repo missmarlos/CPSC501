@@ -6,12 +6,13 @@ import java.time.LocalDateTime;
 import java.util.*;
 import java.io.*;
 
-public class SignUp {
+public abstract class SignUp {
 	Map <String, String> userDB = new HashMap<>(); 
 	String username; 
 	String password;
 	Scanner input = new Scanner(System.in);
 	boolean fileExists = false;
+	
 	
 	public void loadHashMap() {
 		File file = new File("userDB.txt");
@@ -129,4 +130,8 @@ public class SignUp {
 	public boolean passwordMatches() {
 		return false;
 	}
+	
+	//check if login is valid.
+	abstract boolean loginStatus(); 
+
 }

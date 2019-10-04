@@ -11,6 +11,7 @@ public class Login extends SignUp{
 	}
 	
 	//use this method in Gui when login is pressed
+	
 	public boolean loginStatus() {
 		boolean validLogin = false;
 		loadHashMap();
@@ -19,4 +20,5 @@ public class Login extends SignUp{
 		}
 		return validLogin;
 	}
+	
 }

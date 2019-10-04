@@ -7,7 +7,7 @@ import java.io.*;
 
 //show all entries in a screen
 public class Diary {
-	
+
 	public void makeFile() {
 		//filename no spaces and needs to end in .txt.
 		System.out.println("Enter file name");
@@ -69,6 +69,28 @@ public class Diary {
 		
 		
 	}
+	
+	public String getFileContent(String filename) {
+		String fileContent = null;
+		File file = new File(filename);
+		StringBuilder stringBuild = new StringBuilder();
+		if(file.exists()) {
+			try (Scanner s = new Scanner(file)){
+				while(s.hasNext()) {
+					stringBuild.append(s.nextLine()+"\n");
+				}
+				fileContent = stringBuild.toString();
+			}catch(Exception e) {
+				
+			}
+		}else {
+			System.out.println("Error this file does not exist");
+			fileContent = "Error";
+		}
+		return fileContent;
+	}
+	
+	
 	
 	public void removeFile(String filename) {
 		File file = new File(filename);
