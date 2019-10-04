@@ -8,5 +8,6 @@ public class ToDo extends Diary{
 	public void completed() {
 		//add completed tasks into hashmap that stores completed tasks
 		//if task is in the completed hashmap, add it to the completed 
+		//completed and uncompleted will be ongoing text files
 	}
 }

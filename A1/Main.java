@@ -39,8 +39,7 @@ public class Main {
 		//d.removeFile("yolo.txt");
 		//SignUp s = new SignUp();
 		//s.createUser();
-		Agenda a = new Agenda();
-		a.makeFile();
+		
 	}
 	
 	public void RunProgram() {
