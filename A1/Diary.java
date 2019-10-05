@@ -8,9 +8,10 @@ import java.io.*;
 //show all entries in a screen
 public class Diary {
 
-	public void makeFile() {
+	public void makeFile(String filename, Scanner input) {
 		//filename no spaces and needs to end in .txt.
 	
+		/*
 		System.out.println("Enter file name");
 		Scanner input = new Scanner(System.in);
 		String preFileName = input.nextLine();
@@ -23,6 +24,7 @@ public class Diary {
 			}
 		}
 		filename = filename + ".txt";
+		*/
 		File file = new File(filename);
 		if(!file.exists()) {
 			System.out.println("Filename is "+filename);
@@ -56,18 +58,16 @@ public class Diary {
 						pw.append(input.nextLine()+"\n");
 						pw.close();
 						flag = true;
-					}catch(Exception e) {
-						
-					}
+					}catch(Exception e) {}
 				}else {
 					System.out.println("Invalid command please try again");
 					decision = input.nextLine();
 				}
 			}
-			System.out.println("outside of loop");
+			System.out.println("Changes made");
 			
 		}
-		input.close();
+		//input.close();
 		
 		
 	}
@@ -100,8 +100,11 @@ public class Diary {
 		File file = new File(filename);
 		if(file.exists()) {
 			file.delete();
+			System.out.println("File deleted");
 		}else {
 			System.out.println("Error: file does not exist");
 		}
 	}
+	
+	
 }

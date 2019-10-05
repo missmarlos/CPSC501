@@ -4,14 +4,22 @@ import java.io.*;
 
 //shows the week's entries on the screen
 public class Agenda extends Diary{
-	public String month;
 	public int week;
-	
-	public void findEntries(int m, int w) {
+	//same functionality but there is a textfile for each day
+	public void makeFileName(Scanner input) {
+		System.out.println("Enter a month: ");
+		int monthNum = input.nextInt();
+		String month = convertMonth(monthNum);
+		System.out.println("Enter a date");
+		int date = input.nextInt();
+		System.out.println("Enter the year");
+		int year = input.nextInt();
 		
+		String file = month+"-"+date+"-"+year;
 	}
 	
-	public void convertMonth(int m) {
+	public String convertMonth(int m) {
+		String month = null;
 		switch(m) {
 			case 1: 
 				month = "January";
@@ -51,7 +59,8 @@ public class Agenda extends Diary{
 				break;
 			default: 
 				System.out.println("Error that is not a month");
-				
+			return month;
 		}
+		return month;
 	}
 }

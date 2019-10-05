@@ -1,5 +1,7 @@
 package cpsc501a1;
 
+import java.util.Scanner;
+
 public class Login extends SignUp{
 	//make this extend signup
 	String username;
@@ -20,5 +22,6 @@ public class Login extends SignUp{
 		}
 		return validLogin;
 	}
+	
 	
 }
