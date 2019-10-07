@@ -1,4 +1,3 @@
-package cpsc501a1;
 
 import java.io.PrintWriter;
 import java.util.Scanner;

@@ -1,4 +1,3 @@
-package cpsc501a1;
 
 /**
  * This is the calendar feature that will pull out the user's

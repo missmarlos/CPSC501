@@ -1,4 +1,3 @@
-package cpsc501a1;
 import java.util.Scanner;
 import java.io.*;
 
