@@ -1,6 +1,8 @@
-How to Run:
+How to Run outside of IDE:
+Remove package line for each java file
 Compile all files in the src folder using javac filename.java
 Run Main.java using java Main
+
 
 Commands: 
 Login: login
