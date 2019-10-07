@@ -118,15 +118,17 @@ public class Main {
 			}
 		}
 	
-		System.out.println("MAIN MENU\n Where do you want to go?\n DIARY\n AGENDA\n TODO\n");
+		System.out.println("MAIN MENU\n Where do you want to go?\n DIARY\n TODO\n");
 		input = in.nextLine();
+		Diary d = new Diary();
+		ToDo td = new ToDo();
 		while(!(input.equals("exit"))) {
 			if(input.equals("diary")) {
 				System.out.println("MAKE FILE\n DISPLAY FILE\n REMOVE FILE\n");
 				input = in.nextLine();
 				System.out.println("Enter file name");
 				String filename = in.nextLine();
-				Diary d = new Diary();
+				//Diary d = new Diary();
 				if(input.equals("make file")) {
 					d.makeFile(filename, in);
 				}else if(input.equals("display file")){
@@ -136,6 +138,15 @@ public class Main {
 					d.removeFile(filename);
 				}
 			}else if(input.equals("todo")) {
+				System.out.println("ADD A TASK\n COMPLETE A TASK\n");
+				input = in.nextLine();
+				if(input.equals("add task")) {
+					td.makeFile("todo.txt", in);
+				}else if(input.equals("complete task")) {
+					td.completeTask("todo.txt", "completed.txt", in);
+				}else {
+					System.out.println("Invalid");
+				}
 				
 			}else{
 				System.out.println("MAIN MENU\n Where do you want to go?\n DIARY\n AGENDA\n TODO\n");
