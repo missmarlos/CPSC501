@@ -9,6 +9,7 @@ public class Login extends SignUp{
 	Login(String u, String pw){
 		this.username = u;
 		this.password = pw;
+		
 	}
 	
 	//use this method in Gui when login is pressed

@@ -7,23 +7,8 @@ import java.io.*;
 //show all entries in a screen
 public class Diary {
 
-	public void makeFile(String filename, Scanner input) {
+	public void newEntry(String filename, Scanner input) {
 		//filename no spaces and needs to end in .txt.
-	
-		/*
-		System.out.println("Enter file name");
-		Scanner input = new Scanner(System.in);
-		String preFileName = input.nextLine();
-	
-		String[] preFileName2 = preFileName.split("\\s+");
-		String filename = preFileName2[0];
-		if(preFileName2.length > 1) {
-			for(int i = 1; i < preFileName2.length; i++) {
-				filename=filename+"-"+preFileName2[i];
-			}
-		}
-		filename = filename + ".txt";
-		*/
 		File file = new File(filename);
 		if(!file.exists()) {
 			System.out.println("Filename is "+filename);
@@ -83,7 +68,7 @@ public class Diary {
 					stringBuild.append(s.nextLine()+"\n");
 				}
 				fileContent = stringBuild.toString();
-			}catch(Exception e) {
+			}catch(FileNotFoundException e) {
 				
 			}
 		}else {
