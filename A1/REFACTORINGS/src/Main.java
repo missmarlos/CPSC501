@@ -1,6 +1,4 @@
 import java.awt.EventQueue;
-
-import javax.swing.JFrame;
 import java.util.Scanner;
 
 /**
@@ -10,7 +8,6 @@ import java.util.Scanner;
  *
  */
 public class Main {
-	
 	public static void main(String arg[]) {
 		Main r = new Main();
 		r.RunProgram();
@@ -64,10 +61,11 @@ public class Main {
 			}
 		}
 	
-		System.out.println("MAIN MENU\n Where do you want to go?\n DIARY\n TODO\n");
+		System.out.println("MAIN MENU\n Where do you want to go?\n DIARY\n TODO\n AGENDA");
 		input = in.nextLine();
 		Diary d = new Diary();
 		ToDo td = new ToDo();
+		Agenda a = new Agenda();
 		while(!(input.equals("exit"))) {
 			if(input.equals("diary")) {
 				System.out.println("MAKE FILE\n DISPLAY FILE\n REMOVE FILE\n");
@@ -93,9 +91,16 @@ public class Main {
 				}else {
 					System.out.println("Invalid");
 				}
-				
+			}else if(input.equals("agenda")){
+				System.out.println("ADD ENTRY");
+				input = in.nextLine();
+				if(input.equals("add")) {
+					a.newEntry("agenda.txt", in);
+				}else {
+					System.out.println("invalid");
+				}
 			}else{
-				System.out.println("MAIN MENU\n Where do you want to go?\n DIARY\n AGENDA\n TODO\n");
+				System.out.println("MAIN MENU\n Where do you want to go?\n DIARY\n TODO\n AGENDA");
 				input = in.nextLine();
 			}
 		}
