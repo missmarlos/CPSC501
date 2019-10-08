@@ -1,2 +1,3 @@
 marela,1234567!Ab
 nathan,1234567!Ab
+nate,1234567!Ab

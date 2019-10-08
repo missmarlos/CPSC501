@@ -56,6 +56,13 @@ public class ProgramTest {
 		Assert.assertEquals(true, l.loginStatus());
 		Assert.assertEquals(false, l3.loginStatus());
 	}
+	@Test
+	public void testPasswordMatches(){
+		l.loadHashMap();
+		Assert.assertEquals(true, l.passwordMatches("marela","1234567!Ab"));
+		Assert.assertEquals(false, l.passwordMatches("marela","1234567Ab!"));
+
+	}
 
 }
 

@@ -12,9 +12,6 @@ import java.util.Scanner;
 public class Main {
 	
 	public static void main(String arg[]) {
-		Diary d = new Diary();
-		d.getFileContent("testTextFile.txt");
-		System.out.println(d.getFileContent("testTextFile.txt"));
 		Main r = new Main();
 		r.RunProgram();
 	}
