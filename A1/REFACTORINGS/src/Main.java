@@ -68,13 +68,17 @@ public class Main {
 		Agenda a = new Agenda();
 		while(!(input.equals("exit"))) {
 			if(input.equals("diary")) {
-				System.out.println("MAKE FILE\n DISPLAY FILE\n REMOVE FILE\n");
+				System.out.println("MAKE FILE\n DISPLAY FILE\n REMOVE FILE\n EDIT FILE\n");
 				input = in.nextLine();
 				System.out.println("Enter file name");
 				String filename = in.nextLine();
 				//Diary d = new Diary();
-				if(input.equals("make file")) {
-					d.newEntry(filename, in);
+				if(input.equals("make file")) {	
+					d.newEntry(filename, in, "Append or overwrite file?");
+				}else if(input.equals("edit file")) {
+					if(d.newEntry(filename, in, "Append or overwrite file?")){
+						d.appendOrOverwrite(filename, in);
+					}
 				}else if(input.equals("display file")){
 					System.out.println(d.getFileContent(filename));
 					
@@ -82,8 +86,11 @@ public class Main {
 					d.removeFile(filename);
 				}
 			}else if(input.equals("todo")) {
+				//load todo list
+				td.loadTodoList("todo.txt");
 				System.out.println("ADD A TASK\n COMPLETE A TASK\n");
 				input = in.nextLine();
+				//after adding, update the arraylist
 				if(input.equals("add task")) {
 					td.addTask("todo.txt", in);
 				}else if(input.equals("complete task")) {
@@ -95,7 +102,8 @@ public class Main {
 				System.out.println("ADD ENTRY");
 				input = in.nextLine();
 				if(input.equals("add")) {
-					a.newEntry("agenda.txt", in);
+					a.newEntry("agenda.txt", in, "Entry");
+					a.appendDate("agenda.txt", in);
 				}else {
 					System.out.println("invalid");
 				}

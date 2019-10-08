@@ -39,10 +39,18 @@ public abstract class SignUp {
 		loadHashMap();
 		String tempUsername = u;
 		String tempPassword = p;
-
+		/*
+		System.out.println("Enter a username: ");
+		tempUsername = input.nextLine();
+		System.out.println("Enter a password: ");
+		tempPassword = input.nextLine();
+		*/
+		
+		
+		
+		
 		//if username is not in the db and password passes rules
 		if(validateNoUsername(tempUsername) && validatePassword(tempPassword)) {
-			
 			System.out.println("username and password are good");
 			username = tempUsername;
 			password = tempPassword;

@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
 import java.util.*;
 
 //show all in a screen
-public class ToDo extends Diary{
+public class ToDo extends Template{
 	ArrayList<String> todoList = new ArrayList<String>();
 	ArrayList<String> completed = new ArrayList<String>();
 	ArrayList<String> difference = new ArrayList<String>();
@@ -35,21 +35,18 @@ public class ToDo extends Diary{
 		System.out.println(Arrays.asList(todoList));
 	}
 	
-	//refactoring 1: rename
 	public void addTask(String filename, Scanner input) {
 		loadTodoList(filename);
 		System.out.println("Enter a task");
-		String in = input.nextLine();
+		String in = userInput(input);
 		todoList.add(in);
 		System.out.println("todo"+Arrays.toString(todoList.toArray()));
-		//write todolist to a file
-		try {
-			PrintWriter pw = new PrintWriter(new FileOutputStream(filename, true));
-			pw.append(in+"\n");
-			pw.close();
-		}catch(Exception e){}
+		appendToFile(filename, in, false);
 	}
 	
+	
+	
+	//pull up
 	public void completeTask(String filename, String completeFilename, Scanner input){
 		
 		System.out.println("Enter completed task");

@@ -8,6 +8,7 @@ public class ProgramTest {
 	private Login l4;
 	private Diary d;
 	private Scanner s;
+	private Template t;
 	
 	@Before
 	public void init() {
@@ -23,6 +24,8 @@ public class ProgramTest {
 		d = new Diary();
 		
 		s = new Scanner(System.in);
+
+		t = new Template();
 	}
 	
 	@Test
@@ -62,6 +65,10 @@ public class ProgramTest {
 		Assert.assertEquals(true, l.passwordMatches("marela","1234567!Ab"));
 		Assert.assertEquals(false, l.passwordMatches("marela","1234567Ab!"));
 
+	}
+	@Test
+	public void testFileExist(){
+		Assert.assertEquals(true, t.newEntry("testTextFile.txt", s, "message"));
 	}
 
 }
