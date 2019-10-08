@@ -35,6 +35,7 @@ public class ToDo extends Diary{
 		System.out.println(Arrays.asList(todoList));
 	}
 	
+	//refactoring 1: rename
 	public void addTask(String filename, Scanner input) {
 		loadTodoList(filename);
 		System.out.println("Enter a task");
