@@ -1,26 +1,21 @@
+package cpsc501a1;
+
 import java.util.Scanner;
 
-public class Login extends SignUp{
+public class Login extends UserRecord{
 	//make this extend signup
 	String username;
 	String password;
 	
 	Login(String u, String pw){
-		this.username = u;
-		this.password = pw;
+		setUsername(u);
+		setPassword(pw);
 		
 	}
 	
 	//use this method in Gui when login is pressed
 	
-	public boolean loginStatus() {
-		boolean validLogin = false;
-		loadHashMap();
-		if(passwordMatches(username,password)) {
-			validLogin = true;
-		}
-		return validLogin;
-	}
+	
 	
 	
 }

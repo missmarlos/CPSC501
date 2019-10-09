@@ -1,3 +1,5 @@
+package cpsc501a1;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.PrintWriter;
@@ -30,6 +32,20 @@ public class Template {
 		//input.close();
 	}
 	
+	/*
+	public boolean appendToFile(String filename, Scanner input) {
+		boolean flag = false;
+		try {
+			PrintWriter pw = new PrintWriter(new FileOutputStream(filename, true));
+			pw.println(LocalDateTime.now());
+			pw.append(input.nextLine()+"\n");
+			pw.append("\n");
+			pw.close();
+			flag = true;
+		}catch(Exception e) {}	
+		return flag;
+	}
+	*/
 	public boolean appendToFile(String filename, String input, boolean displayDate) {
 		boolean flag = false;
 		try {
