@@ -1,5 +1,3 @@
-package cpsc501a1;
-
 import java.util.Scanner;
 
 public class Login extends UserRecord{
