@@ -3,4 +3,9 @@ Filename: script8.txt
 Running Test: Test String
 Recursive: true
 The class name is java.lang.String
+Immediate superclass is java.lang.Object
+Interfaces:
+interface java.io.Serializable
+interface java.lang.Comparable
+interface java.lang.CharSequence
 ======================================================

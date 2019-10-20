@@ -3,4 +3,8 @@ Filename: script1.txt
 Running Test: ClassA
 Recursive: true
 The class name is ClassA
+Immediate superclass is java.lang.Object
+Interfaces:
+interface java.io.Serializable
+interface java.lang.Runnable
 ======================================================

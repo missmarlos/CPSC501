@@ -3,4 +3,6 @@ Filename: script5.txt
 Running Test: ClassD
 Recursive: true
 The class name is ClassD
+Immediate superclass is java.lang.Object
+No interfaces
 ======================================================

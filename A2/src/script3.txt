@@ -3,4 +3,7 @@ Filename: script3.txt
 Running Test: ClassB
 Recursive: true
 The class name is ClassB
+Immediate superclass is ClassC
+Interfaces:
+interface java.lang.Runnable
 ======================================================

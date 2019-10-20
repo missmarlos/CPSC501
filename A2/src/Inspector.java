@@ -11,7 +11,19 @@ public class Inspector {
     	System.out.println("The class name is "+className);
 
     	//Name of immediate superclass
-    	
+    	String superClass = c.getSuperclass().getName();
+    	System.out.println("Immediate superclass is "+superClass);
+
+    	//Name of each interface implemented by class
+    	Class[] interfaces = c.getInterfaces();
+    	if(interfaces.length > 0){
+    		System.out.println("Interfaces:");
+    		for(int i = 0; i < interfaces.length; i++){
+    			System.out.println(interfaces[i]);
+    		}
+    	}else{
+    		System.out.println("No interfaces");
+    	}
 
     }
 

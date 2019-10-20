@@ -3,4 +3,8 @@ Filename: script6.txt
 Running Test: [LClassB;@5674cd4d
 Recursive: true
 The class name is [LClassB;
+Immediate superclass is java.lang.Object
+Interfaces:
+interface java.lang.Cloneable
+interface java.io.Serializable
 ======================================================
