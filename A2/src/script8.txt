@@ -92,24 +92,28 @@ Exceptions:
 No exceptions
 Parameter Types: 
 class java.lang.Object
+Return Type: boolean
  
 public int java.lang.String.length()
 Exceptions: 
 No exceptions
 Parameter Types: 
 No parameters
+Return Type: int
  
 public java.lang.String java.lang.String.toString()
 Exceptions: 
 No exceptions
 Parameter Types: 
 No parameters
+Return Type: java.lang.String
  
 public int java.lang.String.hashCode()
 Exceptions: 
 No exceptions
 Parameter Types: 
 No parameters
+Return Type: int
  
 public void java.lang.String.getChars(int,int,char[],int)
 Exceptions: 
@@ -119,18 +123,21 @@ int
 int
 class [C
 int
+Return Type: void
  
 public int java.lang.String.compareTo(java.lang.String)
 Exceptions: 
 No exceptions
 Parameter Types: 
 class java.lang.String
+Return Type: int
  
 public int java.lang.String.compareTo(java.lang.Object)
 Exceptions: 
 No exceptions
 Parameter Types: 
 class java.lang.Object
+Return Type: int
  
 public int java.lang.String.indexOf(java.lang.String,int)
 Exceptions: 
@@ -138,12 +145,14 @@ No exceptions
 Parameter Types: 
 class java.lang.String
 int
+Return Type: int
  
 public int java.lang.String.indexOf(int)
 Exceptions: 
 No exceptions
 Parameter Types: 
 int
+Return Type: int
  
 public int java.lang.String.indexOf(int,int)
 Exceptions: 
@@ -151,60 +160,70 @@ No exceptions
 Parameter Types: 
 int
 int
+Return Type: int
  
 public int java.lang.String.indexOf(java.lang.String)
 Exceptions: 
 No exceptions
 Parameter Types: 
 class java.lang.String
+Return Type: int
  
 public static java.lang.String java.lang.String.valueOf(int)
 Exceptions: 
 No exceptions
 Parameter Types: 
 int
+Return Type: java.lang.String
  
 public static java.lang.String java.lang.String.valueOf(float)
 Exceptions: 
 No exceptions
 Parameter Types: 
 float
+Return Type: java.lang.String
  
 public static java.lang.String java.lang.String.valueOf(boolean)
 Exceptions: 
 No exceptions
 Parameter Types: 
 boolean
+Return Type: java.lang.String
  
 public static java.lang.String java.lang.String.valueOf(long)
 Exceptions: 
 No exceptions
 Parameter Types: 
 long
+Return Type: java.lang.String
  
 public static java.lang.String java.lang.String.valueOf(double)
 Exceptions: 
 No exceptions
 Parameter Types: 
 double
+Return Type: java.lang.String
  
 public static java.lang.String java.lang.String.valueOf(java.lang.Object)
 Exceptions: 
 No exceptions
 Parameter Types: 
 class java.lang.Object
+Return Type: java.lang.String
  
 public static java.lang.String java.lang.String.valueOf(char)
 Exceptions: 
 No exceptions
 Parameter Types: 
 char
+Return Type: java.lang.String
  
 public static java.lang.String java.lang.String.valueOf(char[])
 Exceptions: 
 No exceptions
 Parameter Types: 
 class [C
+Return Type: java.lang.String
  
 public static java.lang.String java.lang.String.valueOf(char[],int,int)
 Exceptions: 
@@ -213,36 +232,42 @@ Parameter Types:
 class [C
 int
 int
+Return Type: java.lang.String
  
 public java.util.stream.IntStream java.lang.String.codePoints()
 Exceptions: 
 No exceptions
 Parameter Types: 
 No parameters
+Return Type: java.util.stream.IntStream
  
 public boolean java.lang.String.isEmpty()
 Exceptions: 
 No exceptions
 Parameter Types: 
 No parameters
+Return Type: boolean
  
 public char java.lang.String.charAt(int)
 Exceptions: 
 No exceptions
 Parameter Types: 
 int
+Return Type: char
  
 public int java.lang.String.codePointAt(int)
 Exceptions: 
 No exceptions
 Parameter Types: 
 int
+Return Type: int
  
 public int java.lang.String.codePointBefore(int)
 Exceptions: 
 No exceptions
 Parameter Types: 
 int
+Return Type: int
  
 public int java.lang.String.codePointCount(int,int)
 Exceptions: 
@@ -250,6 +275,7 @@ No exceptions
 Parameter Types: 
 int
 int
+Return Type: int
  
 public int java.lang.String.offsetByCodePoints(int,int)
 Exceptions: 
@@ -257,12 +283,14 @@ No exceptions
 Parameter Types: 
 int
 int
+Return Type: int
  
 public byte[] java.lang.String.getBytes(java.nio.charset.Charset)
 Exceptions: 
 No exceptions
 Parameter Types: 
 class java.nio.charset.Charset
+Return Type: [B
  
 public void java.lang.String.getBytes(int,int,byte[],int)
 Exceptions: 
@@ -272,42 +300,49 @@ int
 int
 class [B
 int
+Return Type: void
  
 public byte[] java.lang.String.getBytes(java.lang.String) throws java.io.UnsupportedEncodingException
 Exceptions: 
 class java.io.UnsupportedEncodingException
 Parameter Types: 
 class java.lang.String
+Return Type: [B
  
 public byte[] java.lang.String.getBytes()
 Exceptions: 
 No exceptions
 Parameter Types: 
 No parameters
+Return Type: [B
  
 public boolean java.lang.String.contentEquals(java.lang.StringBuffer)
 Exceptions: 
 No exceptions
 Parameter Types: 
 class java.lang.StringBuffer
+Return Type: boolean
  
 public boolean java.lang.String.contentEquals(java.lang.CharSequence)
 Exceptions: 
 No exceptions
 Parameter Types: 
 interface java.lang.CharSequence
+Return Type: boolean
  
 public boolean java.lang.String.equalsIgnoreCase(java.lang.String)
 Exceptions: 
 No exceptions
 Parameter Types: 
 class java.lang.String
+Return Type: boolean
  
 public int java.lang.String.compareToIgnoreCase(java.lang.String)
 Exceptions: 
 No exceptions
 Parameter Types: 
 class java.lang.String
+Return Type: int
  
 public boolean java.lang.String.regionMatches(boolean,int,java.lang.String,int,int)
 Exceptions: 
@@ -318,6 +353,7 @@ int
 class java.lang.String
 int
 int
+Return Type: boolean
  
 public boolean java.lang.String.regionMatches(int,java.lang.String,int,int)
 Exceptions: 
@@ -327,12 +363,14 @@ int
 class java.lang.String
 int
 int
+Return Type: boolean
  
 public boolean java.lang.String.startsWith(java.lang.String)
 Exceptions: 
 No exceptions
 Parameter Types: 
 class java.lang.String
+Return Type: boolean
  
 public boolean java.lang.String.startsWith(java.lang.String,int)
 Exceptions: 
@@ -340,18 +378,21 @@ No exceptions
 Parameter Types: 
 class java.lang.String
 int
+Return Type: boolean
  
 public boolean java.lang.String.endsWith(java.lang.String)
 Exceptions: 
 No exceptions
 Parameter Types: 
 class java.lang.String
+Return Type: boolean
  
 public int java.lang.String.lastIndexOf(int)
 Exceptions: 
 No exceptions
 Parameter Types: 
 int
+Return Type: int
  
 public int java.lang.String.lastIndexOf(java.lang.String,int)
 Exceptions: 
@@ -359,12 +400,14 @@ No exceptions
 Parameter Types: 
 class java.lang.String
 int
+Return Type: int
  
 public int java.lang.String.lastIndexOf(java.lang.String)
 Exceptions: 
 No exceptions
 Parameter Types: 
 class java.lang.String
+Return Type: int
  
 public int java.lang.String.lastIndexOf(int,int)
 Exceptions: 
@@ -372,6 +415,7 @@ No exceptions
 Parameter Types: 
 int
 int
+Return Type: int
  
 public java.lang.String java.lang.String.substring(int,int)
 Exceptions: 
@@ -379,12 +423,14 @@ No exceptions
 Parameter Types: 
 int
 int
+Return Type: java.lang.String
  
 public java.lang.String java.lang.String.substring(int)
 Exceptions: 
 No exceptions
 Parameter Types: 
 int
+Return Type: java.lang.String
  
 public java.lang.CharSequence java.lang.String.subSequence(int,int)
 Exceptions: 
@@ -392,12 +438,14 @@ No exceptions
 Parameter Types: 
 int
 int
+Return Type: java.lang.CharSequence
  
 public java.lang.String java.lang.String.concat(java.lang.String)
 Exceptions: 
 No exceptions
 Parameter Types: 
 class java.lang.String
+Return Type: java.lang.String
  
 public java.lang.String java.lang.String.replace(java.lang.CharSequence,java.lang.CharSequence)
 Exceptions: 
@@ -405,6 +453,7 @@ No exceptions
 Parameter Types: 
 interface java.lang.CharSequence
 interface java.lang.CharSequence
+Return Type: java.lang.String
  
 public java.lang.String java.lang.String.replace(char,char)
 Exceptions: 
@@ -412,18 +461,21 @@ No exceptions
 Parameter Types: 
 char
 char
+Return Type: java.lang.String
  
 public boolean java.lang.String.matches(java.lang.String)
 Exceptions: 
 No exceptions
 Parameter Types: 
 class java.lang.String
+Return Type: boolean
  
 public boolean java.lang.String.contains(java.lang.CharSequence)
 Exceptions: 
 No exceptions
 Parameter Types: 
 interface java.lang.CharSequence
+Return Type: boolean
  
 public java.lang.String java.lang.String.replaceFirst(java.lang.String,java.lang.String)
 Exceptions: 
@@ -431,6 +483,7 @@ No exceptions
 Parameter Types: 
 class java.lang.String
 class java.lang.String
+Return Type: java.lang.String
  
 public java.lang.String java.lang.String.replaceAll(java.lang.String,java.lang.String)
 Exceptions: 
@@ -438,12 +491,14 @@ No exceptions
 Parameter Types: 
 class java.lang.String
 class java.lang.String
+Return Type: java.lang.String
  
 public java.lang.String[] java.lang.String.split(java.lang.String)
 Exceptions: 
 No exceptions
 Parameter Types: 
 class java.lang.String
+Return Type: [Ljava.lang.String;
  
 public java.lang.String[] java.lang.String.split(java.lang.String,int)
 Exceptions: 
@@ -451,6 +506,7 @@ No exceptions
 Parameter Types: 
 class java.lang.String
 int
+Return Type: [Ljava.lang.String;
  
 public static java.lang.String java.lang.String.join(java.lang.CharSequence,java.lang.CharSequence[])
 Exceptions: 
@@ -458,6 +514,7 @@ No exceptions
 Parameter Types: 
 interface java.lang.CharSequence
 class [Ljava.lang.CharSequence;
+Return Type: java.lang.String
  
 public static java.lang.String java.lang.String.join(java.lang.CharSequence,java.lang.Iterable)
 Exceptions: 
@@ -465,78 +522,91 @@ No exceptions
 Parameter Types: 
 interface java.lang.CharSequence
 interface java.lang.Iterable
+Return Type: java.lang.String
  
 public java.lang.String java.lang.String.toLowerCase()
 Exceptions: 
 No exceptions
 Parameter Types: 
 No parameters
+Return Type: java.lang.String
  
 public java.lang.String java.lang.String.toLowerCase(java.util.Locale)
 Exceptions: 
 No exceptions
 Parameter Types: 
 class java.util.Locale
+Return Type: java.lang.String
  
 public java.lang.String java.lang.String.toUpperCase(java.util.Locale)
 Exceptions: 
 No exceptions
 Parameter Types: 
 class java.util.Locale
+Return Type: java.lang.String
  
 public java.lang.String java.lang.String.toUpperCase()
 Exceptions: 
 No exceptions
 Parameter Types: 
 No parameters
+Return Type: java.lang.String
  
 public java.lang.String java.lang.String.trim()
 Exceptions: 
 No exceptions
 Parameter Types: 
 No parameters
+Return Type: java.lang.String
  
 public java.lang.String java.lang.String.strip()
 Exceptions: 
 No exceptions
 Parameter Types: 
 No parameters
+Return Type: java.lang.String
  
 public java.lang.String java.lang.String.stripLeading()
 Exceptions: 
 No exceptions
 Parameter Types: 
 No parameters
+Return Type: java.lang.String
  
 public java.lang.String java.lang.String.stripTrailing()
 Exceptions: 
 No exceptions
 Parameter Types: 
 No parameters
+Return Type: java.lang.String
  
 public boolean java.lang.String.isBlank()
 Exceptions: 
 No exceptions
 Parameter Types: 
 No parameters
+Return Type: boolean
  
 public java.util.stream.Stream java.lang.String.lines()
 Exceptions: 
 No exceptions
 Parameter Types: 
 No parameters
+Return Type: java.util.stream.Stream
  
 public java.util.stream.IntStream java.lang.String.chars()
 Exceptions: 
 No exceptions
 Parameter Types: 
 No parameters
+Return Type: java.util.stream.IntStream
  
 public char[] java.lang.String.toCharArray()
 Exceptions: 
 No exceptions
 Parameter Types: 
 No parameters
+Return Type: [C
  
 public static java.lang.String java.lang.String.format(java.lang.String,java.lang.Object[])
 Exceptions: 
@@ -544,6 +614,7 @@ No exceptions
 Parameter Types: 
 class java.lang.String
 class [Ljava.lang.Object;
+Return Type: java.lang.String
  
 public static java.lang.String java.lang.String.format(java.util.Locale,java.lang.String,java.lang.Object[])
 Exceptions: 
@@ -552,6 +623,7 @@ Parameter Types:
 class java.util.Locale
 class java.lang.String
 class [Ljava.lang.Object;
+Return Type: java.lang.String
  
 public static java.lang.String java.lang.String.copyValueOf(char[],int,int)
 Exceptions: 
@@ -560,30 +632,35 @@ Parameter Types:
 class [C
 int
 int
+Return Type: java.lang.String
  
 public static java.lang.String java.lang.String.copyValueOf(char[])
 Exceptions: 
 No exceptions
 Parameter Types: 
 class [C
+Return Type: java.lang.String
  
 public native java.lang.String java.lang.String.intern()
 Exceptions: 
 No exceptions
 Parameter Types: 
 No parameters
+Return Type: java.lang.String
  
 public java.lang.String java.lang.String.repeat(int)
 Exceptions: 
 No exceptions
 Parameter Types: 
 int
+Return Type: java.lang.String
  
 public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
 Exceptions: 
 class java.lang.InterruptedException
 Parameter Types: 
 long
+Return Type: void
  
 public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
 Exceptions: 
@@ -591,29 +668,34 @@ class java.lang.InterruptedException
 Parameter Types: 
 long
 int
+Return Type: void
  
 public final void java.lang.Object.wait() throws java.lang.InterruptedException
 Exceptions: 
 class java.lang.InterruptedException
 Parameter Types: 
 No parameters
+Return Type: void
  
 public final native java.lang.Class java.lang.Object.getClass()
 Exceptions: 
 No exceptions
 Parameter Types: 
 No parameters
+Return Type: java.lang.Class
  
 public final native void java.lang.Object.notify()
 Exceptions: 
 No exceptions
 Parameter Types: 
 No parameters
+Return Type: void
  
 public final native void java.lang.Object.notifyAll()
 Exceptions: 
 No exceptions
 Parameter Types: 
 No parameters
+Return Type: void
  
 ======================================================

@@ -19,18 +19,21 @@ Exceptions:
 No exceptions
 Parameter Types: 
 No parameters
+Return Type: java.lang.String
  
 public int ClassD.getVal3()
 Exceptions: 
 No exceptions
 Parameter Types: 
 No parameters
+Return Type: int
  
 public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
 Exceptions: 
 class java.lang.InterruptedException
 Parameter Types: 
 long
+Return Type: void
  
 public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
 Exceptions: 
@@ -38,41 +41,48 @@ class java.lang.InterruptedException
 Parameter Types: 
 long
 int
+Return Type: void
  
 public final void java.lang.Object.wait() throws java.lang.InterruptedException
 Exceptions: 
 class java.lang.InterruptedException
 Parameter Types: 
 No parameters
+Return Type: void
  
 public boolean java.lang.Object.equals(java.lang.Object)
 Exceptions: 
 No exceptions
 Parameter Types: 
 class java.lang.Object
+Return Type: boolean
  
 public native int java.lang.Object.hashCode()
 Exceptions: 
 No exceptions
 Parameter Types: 
 No parameters
+Return Type: int
  
 public final native java.lang.Class java.lang.Object.getClass()
 Exceptions: 
 No exceptions
 Parameter Types: 
 No parameters
+Return Type: java.lang.Class
  
 public final native void java.lang.Object.notify()
 Exceptions: 
 No exceptions
 Parameter Types: 
 No parameters
+Return Type: void
  
 public final native void java.lang.Object.notifyAll()
 Exceptions: 
 No exceptions
 Parameter Types: 
 No parameters
+Return Type: void
  
 ======================================================

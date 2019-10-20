@@ -75,6 +75,8 @@ public class Inspector {
 	    		}
 
 	    		//Return type
+	    		String returnType = m[i].getReturnType().getName();
+	    		System.out.println("Return Type: "+returnType);
 
 
 	    		//Modifiers

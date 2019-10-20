@@ -16,18 +16,21 @@ Exceptions:
 No exceptions
 Parameter Types: 
 No parameters
+Return Type: void
  
 public java.lang.String ClassB.toString()
 Exceptions: 
 No exceptions
 Parameter Types: 
 No parameters
+Return Type: java.lang.String
  
 public void ClassB.func3(int)
 Exceptions: 
 No exceptions
 Parameter Types: 
 int
+Return Type: void
  
 public void ClassC.func0(int,boolean) throws java.lang.Exception
 Exceptions: 
@@ -35,6 +38,7 @@ class java.lang.Exception
 Parameter Types: 
 int
 boolean
+Return Type: void
  
 public void ClassC.func1(int,double,boolean,java.lang.String) throws java.lang.Exception
 Exceptions: 
@@ -44,6 +48,7 @@ int
 double
 boolean
 class java.lang.String
+Return Type: void
  
 public int ClassC.func2(java.lang.String) throws java.lang.Exception,java.lang.ArithmeticException,java.lang.IllegalMonitorStateException
 Exceptions: 
@@ -52,18 +57,21 @@ class java.lang.ArithmeticException
 class java.lang.IllegalMonitorStateException
 Parameter Types: 
 class java.lang.String
+Return Type: int
  
 public int ClassD.getVal3()
 Exceptions: 
 No exceptions
 Parameter Types: 
 No parameters
+Return Type: int
  
 public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
 Exceptions: 
 class java.lang.InterruptedException
 Parameter Types: 
 long
+Return Type: void
  
 public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
 Exceptions: 
@@ -71,41 +79,48 @@ class java.lang.InterruptedException
 Parameter Types: 
 long
 int
+Return Type: void
  
 public final void java.lang.Object.wait() throws java.lang.InterruptedException
 Exceptions: 
 class java.lang.InterruptedException
 Parameter Types: 
 No parameters
+Return Type: void
  
 public boolean java.lang.Object.equals(java.lang.Object)
 Exceptions: 
 No exceptions
 Parameter Types: 
 class java.lang.Object
+Return Type: boolean
  
 public native int java.lang.Object.hashCode()
 Exceptions: 
 No exceptions
 Parameter Types: 
 No parameters
+Return Type: int
  
 public final native java.lang.Class java.lang.Object.getClass()
 Exceptions: 
 No exceptions
 Parameter Types: 
 No parameters
+Return Type: java.lang.Class
  
 public final native void java.lang.Object.notify()
 Exceptions: 
 No exceptions
 Parameter Types: 
 No parameters
+Return Type: void
  
 public final native void java.lang.Object.notifyAll()
 Exceptions: 
 No exceptions
 Parameter Types: 
 No parameters
+Return Type: void
  
 ======================================================
