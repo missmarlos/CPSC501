@@ -10,18 +10,65 @@ interface java.lang.Comparable
 interface java.lang.CharSequence
 Constructors: 
 public java.lang.String(byte[])
+Parameter Types: 
+class [B
 public java.lang.String(byte[],int,int)
+Parameter Types: 
+class [B
+int
+int
 public java.lang.String(byte[],java.nio.charset.Charset)
+Parameter Types: 
+class [B
+class java.nio.charset.Charset
 public java.lang.String(byte[],java.lang.String) throws java.io.UnsupportedEncodingException
+Parameter Types: 
+class [B
+class java.lang.String
 public java.lang.String(byte[],int,int,java.nio.charset.Charset)
+Parameter Types: 
+class [B
+int
+int
+class java.nio.charset.Charset
 public java.lang.String(java.lang.StringBuilder)
+Parameter Types: 
+class java.lang.StringBuilder
 public java.lang.String(java.lang.StringBuffer)
+Parameter Types: 
+class java.lang.StringBuffer
 public java.lang.String(char[],int,int)
+Parameter Types: 
+class [C
+int
+int
 public java.lang.String(char[])
+Parameter Types: 
+class [C
 public java.lang.String(java.lang.String)
+Parameter Types: 
+class java.lang.String
 public java.lang.String()
+Parameter Types: 
 public java.lang.String(byte[],int,int,java.lang.String) throws java.io.UnsupportedEncodingException
+Parameter Types: 
+class [B
+int
+int
+class java.lang.String
 public java.lang.String(byte[],int)
+Parameter Types: 
+class [B
+int
 public java.lang.String(byte[],int,int,int)
+Parameter Types: 
+class [B
+int
+int
+int
 public java.lang.String(int[],int,int)
+Parameter Types: 
+class [I
+int
+int
 ======================================================

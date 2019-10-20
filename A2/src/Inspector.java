@@ -31,6 +31,14 @@ public class Inspector {
 	    	System.out.println("Constructors: ");
 	    	for(int i = 0; i < constructors.length; i++){
 	    		System.out.println(constructors[i]);
+
+	    		//Parameter types
+	    		Class[] params = constructors[i].getParameterTypes();
+	    		System.out.println("Parameter Types: ");
+	    		for(int j = 0; j < params.length; j++){
+	    			System.out.println(params[j]);
+	    		}
+		    		
 	    	}
 	    }else{
 	    	System.out.println("No constructors");

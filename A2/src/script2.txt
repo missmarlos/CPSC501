@@ -9,5 +9,8 @@ interface java.io.Serializable
 interface java.lang.Runnable
 Constructors: 
 public ClassA()
+Parameter Types: 
 public ClassA(int)
+Parameter Types: 
+int
 ======================================================
