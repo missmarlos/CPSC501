@@ -13,6 +13,7 @@ public class Inspector {
     	//Name of immediate superclass
     	String superClass = c.getSuperclass().getName();
     	System.out.println("Immediate superclass is "+superClass);
+    	System.out.println(" ");
 
     	//Name of each interface implemented by class
     	Class[] interfaces = c.getInterfaces();
@@ -24,6 +25,7 @@ public class Inspector {
     	}else{
     		System.out.println("No interfaces");
     	}
+    	System.out.println(" ");
 
     	//Constructors
     	Constructor[] constructors = c.getConstructors();
@@ -42,6 +44,8 @@ public class Inspector {
 	    		//Modifiers
 	    		int mod = constructors[i].getModifiers();
 	    		System.out.println("Modifiers: "+Modifier.toString(mod));	
+
+	    		System.out.println(" ");
 	    	}
 	    }else{
 	    	System.out.println("No constructors");
@@ -78,11 +82,11 @@ public class Inspector {
 	    		String returnType = m[i].getReturnType().getName();
 	    		System.out.println("Return Type: "+returnType);
 
-
 	    		//Modifiers
+	    		int mod = m[i].getModifiers();
+	    		System.out.println("Modifiers: "+Modifier.toString(mod));	
 
 	    		System.out.println(" ");
-
 	    	}
 	    }else{
 	    	System.out.println("No methods");

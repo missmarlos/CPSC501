@@ -4,17 +4,21 @@ Running Test: ClassA
 Recursive: true
 The class name is ClassA
 Immediate superclass is java.lang.Object
+ 
 Interfaces:
 interface java.io.Serializable
 interface java.lang.Runnable
+ 
 Constructors: 
 public ClassA()
 Parameter Types: 
 Modifiers: public
+ 
 public ClassA(int)
 Parameter Types: 
 int
 Modifiers: public
+ 
 Methods: 
 public void ClassA.setVal(int) throws java.lang.Exception
 Exceptions: 
@@ -22,6 +26,7 @@ class java.lang.Exception
 Parameter Types: 
 int
 Return Type: void
+Modifiers: public
  
 public void ClassA.run()
 Exceptions: 
@@ -29,6 +34,7 @@ No exceptions
 Parameter Types: 
 No parameters
 Return Type: void
+Modifiers: public
  
 public java.lang.String ClassA.toString()
 Exceptions: 
@@ -36,6 +42,7 @@ No exceptions
 Parameter Types: 
 No parameters
 Return Type: java.lang.String
+Modifiers: public
  
 public int ClassA.getVal()
 Exceptions: 
@@ -43,6 +50,7 @@ No exceptions
 Parameter Types: 
 No parameters
 Return Type: int
+Modifiers: public
  
 public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
 Exceptions: 
@@ -50,6 +58,7 @@ class java.lang.InterruptedException
 Parameter Types: 
 long
 Return Type: void
+Modifiers: public final native
  
 public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
 Exceptions: 
@@ -58,6 +67,7 @@ Parameter Types:
 long
 int
 Return Type: void
+Modifiers: public final
  
 public final void java.lang.Object.wait() throws java.lang.InterruptedException
 Exceptions: 
@@ -65,6 +75,7 @@ class java.lang.InterruptedException
 Parameter Types: 
 No parameters
 Return Type: void
+Modifiers: public final
  
 public boolean java.lang.Object.equals(java.lang.Object)
 Exceptions: 
@@ -72,6 +83,7 @@ No exceptions
 Parameter Types: 
 class java.lang.Object
 Return Type: boolean
+Modifiers: public
  
 public native int java.lang.Object.hashCode()
 Exceptions: 
@@ -79,6 +91,7 @@ No exceptions
 Parameter Types: 
 No parameters
 Return Type: int
+Modifiers: public native
  
 public final native java.lang.Class java.lang.Object.getClass()
 Exceptions: 
@@ -86,6 +99,7 @@ No exceptions
 Parameter Types: 
 No parameters
 Return Type: java.lang.Class
+Modifiers: public final native
  
 public final native void java.lang.Object.notify()
 Exceptions: 
@@ -93,6 +107,7 @@ No exceptions
 Parameter Types: 
 No parameters
 Return Type: void
+Modifiers: public final native
  
 public final native void java.lang.Object.notifyAll()
 Exceptions: 
@@ -100,5 +115,6 @@ No exceptions
 Parameter Types: 
 No parameters
 Return Type: void
+Modifiers: public final native
  
 ======================================================
