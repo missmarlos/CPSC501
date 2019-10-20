@@ -99,4 +99,9 @@ No parameters
 Return Type: void
 Modifiers: public final native
  
+Fields: 
+val
+val2
+val3
+vallarray
 ======================================================

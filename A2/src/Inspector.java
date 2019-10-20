@@ -90,12 +90,25 @@ public class Inspector {
 	    	}
 	    }else{
 	    	System.out.println("No methods");
+	    	System.out.println(" ");
 	    }
 
+	    //Fields
+	    Field[] f = c.getDeclaredFields();
+	   	if(f.length > 0){
+	   		System.out.println("Fields: ");
+	   		for(int i = 0; i < f.length; i ++){
+	   			System.out.println(f[i].getName());
+		    }
+	   	}else{
+	   		System.out.println("No fields");
+	   	}
+		    
 
     }
 
     private void inspectClass(Class c, Object obj, boolean recursive, int depth) {
     }
+	   	
 
 }

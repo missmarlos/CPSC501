@@ -797,4 +797,14 @@ No parameters
 Return Type: void
 Modifiers: public final native
  
+Fields: 
+value
+coder
+hash
+serialVersionUID
+COMPACT_STRINGS
+serialPersistentFields
+CASE_INSENSITIVE_ORDER
+LATIN1
+UTF16
 ======================================================
