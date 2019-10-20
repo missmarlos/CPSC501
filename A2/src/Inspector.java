@@ -38,7 +38,10 @@ public class Inspector {
 	    		for(int j = 0; j < params.length; j++){
 	    			System.out.println(params[j]);
 	    		}
-		    		
+
+	    		//Modifiers
+	    		int mod = constructors[i].getModifiers();
+	    		System.out.println("Modifiers: "+Modifier.toString(mod));	
 	    	}
 	    }else{
 	    	System.out.println("No constructors");

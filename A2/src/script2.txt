@@ -10,7 +10,9 @@ interface java.lang.Runnable
 Constructors: 
 public ClassA()
 Parameter Types: 
+Modifiers: public
 public ClassA(int)
 Parameter Types: 
 int
+Modifiers: public
 ======================================================
