@@ -143,6 +143,24 @@ Modifiers: public final native
  
 Fields: 
 val
+Type: 
+ClassA
+Modifiers: private
+Value: 
+ClassA
+ 
 val2
+Type: 
+ClassA
+Modifiers: private
+Value: 
+ClassA
+ 
 val3
+Type: 
+ClassA
+Modifiers: private
+Value: 
+null
+ 
 ======================================================

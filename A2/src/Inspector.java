@@ -96,15 +96,38 @@ public class Inspector {
 	    //Fields
 	    Field[] f = c.getDeclaredFields();
 	   	if(f.length > 0){
+	   		//Names
 	   		System.out.println("Fields: ");
 	   		for(int i = 0; i < f.length; i ++){
 	   			System.out.println(f[i].getName());
+
+			    //Type
+			    System.out.println("Type: ");
+			    System.out.println(f[i].getType().getName());
+
+			    //Modifiers
+			    int mod = f[i].getModifiers();
+	    		System.out.println("Modifiers: "+Modifier.toString(mod));	
+
+			    //Current values of each field
+			   	f[i].setAccessible(true);
+			   	try{
+			   		Object value = f[i].get(obj);
+			   		System.out.println("Value: ");
+			   		System.out.println(value);
+			   	}catch(Exception e){
+			   		e.printStackTrace();
+			   	}
+			   	
+			    //6i
+
+
+			    System.out.println(" ");
 		    }
 	   	}else{
 	   		System.out.println("No fields");
 	   	}
 		    
-
     }
 
     private void inspectClass(Class c, Object obj, boolean recursive, int depth) {

@@ -101,7 +101,31 @@ Modifiers: public final native
  
 Fields: 
 val
+Type: 
+ClassA
+Modifiers: private
+Value: 
+ClassA
+ 
 val2
+Type: 
+ClassA
+Modifiers: private static
+Value: 
+null
+ 
 val3
+Type: 
+int
+Modifiers: private
+Value: 
+34
+ 
 vallarray
+Type: 
+[LClassA;
+Modifiers: private
+Value: 
+[LClassA;@4c873330
+ 
 ======================================================

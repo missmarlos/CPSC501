@@ -119,6 +119,24 @@ Modifiers: public final native
  
 Fields: 
 val
+Type: 
+int
+Modifiers: private
+Value: 
+12
+ 
 val2
+Type: 
+double
+Modifiers: private
+Value: 
+0.2
+ 
 val3
+Type: 
+boolean
+Modifiers: private
+Value: 
+true
+ 
 ======================================================

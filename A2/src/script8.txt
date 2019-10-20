@@ -799,12 +799,66 @@ Modifiers: public final native
  
 Fields: 
 value
+Type: 
+[B
+Modifiers: private final
+Value: 
+[B@133314b
+ 
 coder
+Type: 
+byte
+Modifiers: private final
+Value: 
+0
+ 
 hash
+Type: 
+int
+Modifiers: private
+Value: 
+0
+ 
 serialVersionUID
+Type: 
+long
+Modifiers: private static final
+Value: 
+-6849794470754667710
+ 
 COMPACT_STRINGS
+Type: 
+boolean
+Modifiers: static final
+Value: 
+true
+ 
 serialPersistentFields
+Type: 
+[Ljava.io.ObjectStreamField;
+Modifiers: private static final
+Value: 
+[Ljava.io.ObjectStreamField;@70177ecd
+ 
 CASE_INSENSITIVE_ORDER
+Type: 
+java.util.Comparator
+Modifiers: public static final
+Value: 
+java.lang.String$CaseInsensitiveComparator@1e80bfe8
+ 
 LATIN1
+Type: 
+byte
+Modifiers: static final
+Value: 
+0
+ 
 UTF16
+Type: 
+byte
+Modifiers: static final
+Value: 
+1
+ 
 ======================================================

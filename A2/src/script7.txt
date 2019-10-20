@@ -1,6 +1,6 @@
 ======================================================
 Filename: script7.txt
-Running Test: [[LClassB;@1fb3ebeb
+Running Test: [[LClassB;@4eec7777
 Recursive: true
 The class name is [[LClassB;
 Immediate superclass is java.lang.Object
