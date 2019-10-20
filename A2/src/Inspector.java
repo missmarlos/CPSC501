@@ -25,6 +25,17 @@ public class Inspector {
     		System.out.println("No interfaces");
     	}
 
+    	//Constructors
+    	Constructor[] constructors = c.getConstructors();
+	    if(constructors.length > 0){
+	    	System.out.println("Constructors: ");
+	    	for(int i = 0; i < constructors.length; i++){
+	    		System.out.println(constructors[i]);
+	    	}
+	    }else{
+	    	System.out.println("No constructors");
+	    }
+
     }
 
     private void inspectClass(Class c, Object obj, boolean recursive, int depth) {

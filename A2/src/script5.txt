@@ -5,4 +5,7 @@ Recursive: true
 The class name is ClassD
 Immediate superclass is java.lang.Object
 No interfaces
+Constructors: 
+public ClassD()
+public ClassD(int)
 ======================================================

@@ -7,4 +7,5 @@ Immediate superclass is java.lang.Object
 Interfaces:
 interface java.lang.Cloneable
 interface java.io.Serializable
+No constructors
 ======================================================

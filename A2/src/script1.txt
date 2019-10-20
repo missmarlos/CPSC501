@@ -7,4 +7,7 @@ Immediate superclass is java.lang.Object
 Interfaces:
 interface java.io.Serializable
 interface java.lang.Runnable
+Constructors: 
+public ClassA()
+public ClassA(int)
 ======================================================
