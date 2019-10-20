@@ -47,6 +47,18 @@ public class Inspector {
 	    	System.out.println("No constructors");
 	    }
 
+	    //Methods
+	    Method[] m = c.getMethods();
+	    if(m.length > 0){
+	    	System.out.println("Methods: ");
+	    	for(int i = 0; i < m.length; i ++){
+	    		System.out.println(m[i]);
+	    	}
+	    }else{
+	    	System.out.println("No methods");
+	    }
+
+
     }
 
     private void inspectClass(Class c, Object obj, boolean recursive, int depth) {

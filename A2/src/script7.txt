@@ -1,6 +1,6 @@
 ======================================================
 Filename: script7.txt
-Running Test: [[LClassB;@63961c42
+Running Test: [[LClassB;@1fb3ebeb
 Recursive: true
 The class name is [[LClassB;
 Immediate superclass is java.lang.Object
@@ -8,4 +8,14 @@ Interfaces:
 interface java.lang.Cloneable
 interface java.io.Serializable
 No constructors
+Methods: 
+public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
+public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
+public final void java.lang.Object.wait() throws java.lang.InterruptedException
+public boolean java.lang.Object.equals(java.lang.Object)
+public java.lang.String java.lang.Object.toString()
+public native int java.lang.Object.hashCode()
+public final native java.lang.Class java.lang.Object.getClass()
+public final native void java.lang.Object.notify()
+public final native void java.lang.Object.notifyAll()
 ======================================================

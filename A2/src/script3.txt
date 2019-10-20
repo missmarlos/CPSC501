@@ -10,4 +10,20 @@ Constructors:
 public ClassB() throws java.lang.Exception
 Parameter Types: 
 Modifiers: public
+Methods: 
+public void ClassB.run()
+public java.lang.String ClassB.toString()
+public void ClassB.func3(int)
+public void ClassC.func0(int,boolean) throws java.lang.Exception
+public void ClassC.func1(int,double,boolean,java.lang.String) throws java.lang.Exception
+public int ClassC.func2(java.lang.String) throws java.lang.Exception,java.lang.ArithmeticException,java.lang.IllegalMonitorStateException
+public int ClassD.getVal3()
+public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
+public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
+public final void java.lang.Object.wait() throws java.lang.InterruptedException
+public boolean java.lang.Object.equals(java.lang.Object)
+public native int java.lang.Object.hashCode()
+public final native java.lang.Class java.lang.Object.getClass()
+public final native void java.lang.Object.notify()
+public final native void java.lang.Object.notifyAll()
 ======================================================

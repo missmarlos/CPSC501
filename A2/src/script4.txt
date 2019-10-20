@@ -13,4 +13,15 @@ public ClassD(int)
 Parameter Types: 
 int
 Modifiers: public
+Methods: 
+public java.lang.String ClassD.toString()
+public int ClassD.getVal3()
+public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
+public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
+public final void java.lang.Object.wait() throws java.lang.InterruptedException
+public boolean java.lang.Object.equals(java.lang.Object)
+public native int java.lang.Object.hashCode()
+public final native java.lang.Class java.lang.Object.getClass()
+public final native void java.lang.Object.notify()
+public final native void java.lang.Object.notifyAll()
 ======================================================
