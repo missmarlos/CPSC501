@@ -63,11 +63,24 @@ public class Inspector {
 	    		for(int j = 0; j < e.length; j++){
 	    			System.out.println(e[j]);
 	    		}
+	    		
 	    		//Parameter types
+	    		Class[] params = m[i].getParameterTypes();
+	    		System.out.println("Parameter Types: ");
+	    		if(params.length == 0){
+	    			System.out.println("No parameters");
+	    		}
+	    		for(int j = 0; j < params.length; j++){
+	    			System.out.println(params[j]);
+	    		}
 
 	    		//Return type
 
+
 	    		//Modifiers
+
+	    		System.out.println(" ");
+
 	    	}
 	    }else{
 	    	System.out.println("No methods");
