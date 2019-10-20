@@ -15,13 +15,33 @@ int
 Modifiers: public
 Methods: 
 public java.lang.String ClassD.toString()
+Exceptions: 
+No exceptions
 public int ClassD.getVal3()
+Exceptions: 
+No exceptions
 public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
+Exceptions: 
+class java.lang.InterruptedException
 public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
+Exceptions: 
+class java.lang.InterruptedException
 public final void java.lang.Object.wait() throws java.lang.InterruptedException
+Exceptions: 
+class java.lang.InterruptedException
 public boolean java.lang.Object.equals(java.lang.Object)
+Exceptions: 
+No exceptions
 public native int java.lang.Object.hashCode()
+Exceptions: 
+No exceptions
 public final native java.lang.Class java.lang.Object.getClass()
+Exceptions: 
+No exceptions
 public final native void java.lang.Object.notify()
+Exceptions: 
+No exceptions
 public final native void java.lang.Object.notifyAll()
+Exceptions: 
+No exceptions
 ======================================================

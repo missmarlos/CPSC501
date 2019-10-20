@@ -88,85 +88,249 @@ int
 Modifiers: public
 Methods: 
 public boolean java.lang.String.equals(java.lang.Object)
+Exceptions: 
+No exceptions
 public int java.lang.String.length()
+Exceptions: 
+No exceptions
 public java.lang.String java.lang.String.toString()
+Exceptions: 
+No exceptions
 public int java.lang.String.hashCode()
+Exceptions: 
+No exceptions
 public void java.lang.String.getChars(int,int,char[],int)
+Exceptions: 
+No exceptions
 public int java.lang.String.compareTo(java.lang.String)
+Exceptions: 
+No exceptions
 public int java.lang.String.compareTo(java.lang.Object)
+Exceptions: 
+No exceptions
 public int java.lang.String.indexOf(java.lang.String,int)
+Exceptions: 
+No exceptions
 public int java.lang.String.indexOf(int)
+Exceptions: 
+No exceptions
 public int java.lang.String.indexOf(int,int)
+Exceptions: 
+No exceptions
 public int java.lang.String.indexOf(java.lang.String)
+Exceptions: 
+No exceptions
 public static java.lang.String java.lang.String.valueOf(int)
+Exceptions: 
+No exceptions
 public static java.lang.String java.lang.String.valueOf(float)
+Exceptions: 
+No exceptions
 public static java.lang.String java.lang.String.valueOf(boolean)
+Exceptions: 
+No exceptions
 public static java.lang.String java.lang.String.valueOf(long)
+Exceptions: 
+No exceptions
 public static java.lang.String java.lang.String.valueOf(double)
+Exceptions: 
+No exceptions
 public static java.lang.String java.lang.String.valueOf(java.lang.Object)
+Exceptions: 
+No exceptions
 public static java.lang.String java.lang.String.valueOf(char)
+Exceptions: 
+No exceptions
 public static java.lang.String java.lang.String.valueOf(char[])
+Exceptions: 
+No exceptions
 public static java.lang.String java.lang.String.valueOf(char[],int,int)
+Exceptions: 
+No exceptions
 public java.util.stream.IntStream java.lang.String.codePoints()
+Exceptions: 
+No exceptions
 public boolean java.lang.String.isEmpty()
+Exceptions: 
+No exceptions
 public char java.lang.String.charAt(int)
+Exceptions: 
+No exceptions
 public int java.lang.String.codePointAt(int)
+Exceptions: 
+No exceptions
 public int java.lang.String.codePointBefore(int)
+Exceptions: 
+No exceptions
 public int java.lang.String.codePointCount(int,int)
+Exceptions: 
+No exceptions
 public int java.lang.String.offsetByCodePoints(int,int)
+Exceptions: 
+No exceptions
 public byte[] java.lang.String.getBytes(java.nio.charset.Charset)
+Exceptions: 
+No exceptions
 public void java.lang.String.getBytes(int,int,byte[],int)
+Exceptions: 
+No exceptions
 public byte[] java.lang.String.getBytes(java.lang.String) throws java.io.UnsupportedEncodingException
+Exceptions: 
+class java.io.UnsupportedEncodingException
 public byte[] java.lang.String.getBytes()
+Exceptions: 
+No exceptions
 public boolean java.lang.String.contentEquals(java.lang.StringBuffer)
+Exceptions: 
+No exceptions
 public boolean java.lang.String.contentEquals(java.lang.CharSequence)
+Exceptions: 
+No exceptions
 public boolean java.lang.String.equalsIgnoreCase(java.lang.String)
+Exceptions: 
+No exceptions
 public int java.lang.String.compareToIgnoreCase(java.lang.String)
+Exceptions: 
+No exceptions
 public boolean java.lang.String.regionMatches(boolean,int,java.lang.String,int,int)
+Exceptions: 
+No exceptions
 public boolean java.lang.String.regionMatches(int,java.lang.String,int,int)
+Exceptions: 
+No exceptions
 public boolean java.lang.String.startsWith(java.lang.String)
+Exceptions: 
+No exceptions
 public boolean java.lang.String.startsWith(java.lang.String,int)
+Exceptions: 
+No exceptions
 public boolean java.lang.String.endsWith(java.lang.String)
+Exceptions: 
+No exceptions
 public int java.lang.String.lastIndexOf(int)
+Exceptions: 
+No exceptions
 public int java.lang.String.lastIndexOf(java.lang.String,int)
+Exceptions: 
+No exceptions
 public int java.lang.String.lastIndexOf(java.lang.String)
+Exceptions: 
+No exceptions
 public int java.lang.String.lastIndexOf(int,int)
+Exceptions: 
+No exceptions
 public java.lang.String java.lang.String.substring(int,int)
+Exceptions: 
+No exceptions
 public java.lang.String java.lang.String.substring(int)
+Exceptions: 
+No exceptions
 public java.lang.CharSequence java.lang.String.subSequence(int,int)
+Exceptions: 
+No exceptions
 public java.lang.String java.lang.String.concat(java.lang.String)
+Exceptions: 
+No exceptions
 public java.lang.String java.lang.String.replace(java.lang.CharSequence,java.lang.CharSequence)
+Exceptions: 
+No exceptions
 public java.lang.String java.lang.String.replace(char,char)
+Exceptions: 
+No exceptions
 public boolean java.lang.String.matches(java.lang.String)
+Exceptions: 
+No exceptions
 public boolean java.lang.String.contains(java.lang.CharSequence)
+Exceptions: 
+No exceptions
 public java.lang.String java.lang.String.replaceFirst(java.lang.String,java.lang.String)
+Exceptions: 
+No exceptions
 public java.lang.String java.lang.String.replaceAll(java.lang.String,java.lang.String)
+Exceptions: 
+No exceptions
 public java.lang.String[] java.lang.String.split(java.lang.String)
+Exceptions: 
+No exceptions
 public java.lang.String[] java.lang.String.split(java.lang.String,int)
+Exceptions: 
+No exceptions
 public static java.lang.String java.lang.String.join(java.lang.CharSequence,java.lang.CharSequence[])
+Exceptions: 
+No exceptions
 public static java.lang.String java.lang.String.join(java.lang.CharSequence,java.lang.Iterable)
+Exceptions: 
+No exceptions
 public java.lang.String java.lang.String.toLowerCase()
+Exceptions: 
+No exceptions
 public java.lang.String java.lang.String.toLowerCase(java.util.Locale)
+Exceptions: 
+No exceptions
 public java.lang.String java.lang.String.toUpperCase(java.util.Locale)
+Exceptions: 
+No exceptions
 public java.lang.String java.lang.String.toUpperCase()
+Exceptions: 
+No exceptions
 public java.lang.String java.lang.String.trim()
+Exceptions: 
+No exceptions
 public java.lang.String java.lang.String.strip()
+Exceptions: 
+No exceptions
 public java.lang.String java.lang.String.stripLeading()
+Exceptions: 
+No exceptions
 public java.lang.String java.lang.String.stripTrailing()
+Exceptions: 
+No exceptions
 public boolean java.lang.String.isBlank()
+Exceptions: 
+No exceptions
 public java.util.stream.Stream java.lang.String.lines()
+Exceptions: 
+No exceptions
 public java.util.stream.IntStream java.lang.String.chars()
+Exceptions: 
+No exceptions
 public char[] java.lang.String.toCharArray()
+Exceptions: 
+No exceptions
 public static java.lang.String java.lang.String.format(java.lang.String,java.lang.Object[])
+Exceptions: 
+No exceptions
 public static java.lang.String java.lang.String.format(java.util.Locale,java.lang.String,java.lang.Object[])
+Exceptions: 
+No exceptions
 public static java.lang.String java.lang.String.copyValueOf(char[],int,int)
+Exceptions: 
+No exceptions
 public static java.lang.String java.lang.String.copyValueOf(char[])
+Exceptions: 
+No exceptions
 public native java.lang.String java.lang.String.intern()
+Exceptions: 
+No exceptions
 public java.lang.String java.lang.String.repeat(int)
+Exceptions: 
+No exceptions
 public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
+Exceptions: 
+class java.lang.InterruptedException
 public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
+Exceptions: 
+class java.lang.InterruptedException
 public final void java.lang.Object.wait() throws java.lang.InterruptedException
+Exceptions: 
+class java.lang.InterruptedException
 public final native java.lang.Class java.lang.Object.getClass()
+Exceptions: 
+No exceptions
 public final native void java.lang.Object.notify()
+Exceptions: 
+No exceptions
 public final native void java.lang.Object.notifyAll()
+Exceptions: 
+No exceptions
 ======================================================

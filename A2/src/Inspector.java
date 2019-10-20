@@ -53,6 +53,21 @@ public class Inspector {
 	    	System.out.println("Methods: ");
 	    	for(int i = 0; i < m.length; i ++){
 	    		System.out.println(m[i]);
+
+	    		//Exceptions thrown
+	    		Class[] e = m[i].getExceptionTypes();
+	    		System.out.println("Exceptions: ");
+	    		if(e.length == 0){
+	    			System.out.println("No exceptions");
+	    		}
+	    		for(int j = 0; j < e.length; j++){
+	    			System.out.println(e[j]);
+	    		}
+	    		//Parameter types
+
+	    		//Return type
+
+	    		//Modifiers
 	    	}
 	    }else{
 	    	System.out.println("No methods");
