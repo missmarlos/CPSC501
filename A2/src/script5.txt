@@ -7,8 +7,7 @@ Immediate superclass is java.lang.Object
  
 No interfaces at depth0
  
-No immediate superclass ie top of the hierarchy
-Constructors: 
+Constructors at depth 0: 
 public ClassD()
 Parameter Types: 
 Modifiers: public
@@ -18,7 +17,7 @@ Parameter Types:
 int
 Modifiers: public
  
-Methods: 
+Methods at depth 0: 
 public java.lang.String ClassD.toString()
 Exceptions: 
 No exceptions
@@ -100,6 +99,7 @@ No parameters
 Return Type: void
 Modifiers: public final native
  
+No immediate superclass ie top of the hierarchy
 Fields: 
 val
 Type: 
@@ -127,6 +127,6 @@ Type:
 [LClassA;
 Modifiers: private
 Value: 
-[LClassA;@9807454
+[LClassA;@1e80bfe8
  
 ======================================================

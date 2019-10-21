@@ -8,22 +8,12 @@ Immediate superclass is ClassC
 Interfaces forClassB at depth 0: 
 interface java.lang.Runnable
  
-Superclass at depth 1 is: ClassD
- 
-Interfaces forClassC at depth 1: 
-interface InterfaceA
- 
-Superclass at depth 2 is: java.lang.Object
- 
-No interfaces at depth2
- 
-No immediate superclass ie top of the hierarchy
-Constructors: 
+Constructors at depth 0: 
 public ClassB() throws java.lang.Exception
 Parameter Types: 
 Modifiers: public
  
-Methods: 
+Methods at depth 0: 
 public void ClassB.run()
 Exceptions: 
 No exceptions
@@ -151,6 +141,247 @@ No parameters
 Return Type: void
 Modifiers: public final native
  
+Superclass at depth 1 is: ClassD
+ 
+Interfaces forClassC at depth 1: 
+interface InterfaceA
+ 
+Constructors at depth 1: 
+public ClassC()
+Parameter Types: 
+Modifiers: public
+ 
+public ClassC(int,int)
+Parameter Types: 
+int
+int
+Modifiers: public
+ 
+Methods at depth 1: 
+public void ClassC.run()
+Exceptions: 
+No exceptions
+Parameter Types: 
+No parameters
+Return Type: void
+Modifiers: public
+ 
+public java.lang.String ClassC.toString()
+Exceptions: 
+No exceptions
+Parameter Types: 
+No parameters
+Return Type: java.lang.String
+Modifiers: public
+ 
+public abstract void ClassC.func3(int)
+Exceptions: 
+No exceptions
+Parameter Types: 
+int
+Return Type: void
+Modifiers: public abstract
+ 
+public void ClassC.func0(int,boolean) throws java.lang.Exception
+Exceptions: 
+class java.lang.Exception
+Parameter Types: 
+int
+boolean
+Return Type: void
+Modifiers: public
+ 
+public void ClassC.func1(int,double,boolean,java.lang.String) throws java.lang.Exception
+Exceptions: 
+class java.lang.Exception
+Parameter Types: 
+int
+double
+boolean
+class java.lang.String
+Return Type: void
+Modifiers: public
+ 
+public int ClassC.func2(java.lang.String) throws java.lang.Exception,java.lang.ArithmeticException,java.lang.IllegalMonitorStateException
+Exceptions: 
+class java.lang.Exception
+class java.lang.ArithmeticException
+class java.lang.IllegalMonitorStateException
+Parameter Types: 
+class java.lang.String
+Return Type: int
+Modifiers: public
+ 
+public int ClassD.getVal3()
+Exceptions: 
+No exceptions
+Parameter Types: 
+No parameters
+Return Type: int
+Modifiers: public
+ 
+public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
+Exceptions: 
+class java.lang.InterruptedException
+Parameter Types: 
+long
+Return Type: void
+Modifiers: public final native
+ 
+public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
+Exceptions: 
+class java.lang.InterruptedException
+Parameter Types: 
+long
+int
+Return Type: void
+Modifiers: public final
+ 
+public final void java.lang.Object.wait() throws java.lang.InterruptedException
+Exceptions: 
+class java.lang.InterruptedException
+Parameter Types: 
+No parameters
+Return Type: void
+Modifiers: public final
+ 
+public boolean java.lang.Object.equals(java.lang.Object)
+Exceptions: 
+No exceptions
+Parameter Types: 
+class java.lang.Object
+Return Type: boolean
+Modifiers: public
+ 
+public native int java.lang.Object.hashCode()
+Exceptions: 
+No exceptions
+Parameter Types: 
+No parameters
+Return Type: int
+Modifiers: public native
+ 
+public final native java.lang.Class java.lang.Object.getClass()
+Exceptions: 
+No exceptions
+Parameter Types: 
+No parameters
+Return Type: java.lang.Class
+Modifiers: public final native
+ 
+public final native void java.lang.Object.notify()
+Exceptions: 
+No exceptions
+Parameter Types: 
+No parameters
+Return Type: void
+Modifiers: public final native
+ 
+public final native void java.lang.Object.notifyAll()
+Exceptions: 
+No exceptions
+Parameter Types: 
+No parameters
+Return Type: void
+Modifiers: public final native
+ 
+Superclass at depth 2 is: java.lang.Object
+ 
+No interfaces at depth2
+ 
+Constructors at depth 2: 
+public ClassD()
+Parameter Types: 
+Modifiers: public
+ 
+public ClassD(int)
+Parameter Types: 
+int
+Modifiers: public
+ 
+Methods at depth 2: 
+public java.lang.String ClassD.toString()
+Exceptions: 
+No exceptions
+Parameter Types: 
+No parameters
+Return Type: java.lang.String
+Modifiers: public
+ 
+public int ClassD.getVal3()
+Exceptions: 
+No exceptions
+Parameter Types: 
+No parameters
+Return Type: int
+Modifiers: public
+ 
+public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
+Exceptions: 
+class java.lang.InterruptedException
+Parameter Types: 
+long
+Return Type: void
+Modifiers: public final native
+ 
+public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
+Exceptions: 
+class java.lang.InterruptedException
+Parameter Types: 
+long
+int
+Return Type: void
+Modifiers: public final
+ 
+public final void java.lang.Object.wait() throws java.lang.InterruptedException
+Exceptions: 
+class java.lang.InterruptedException
+Parameter Types: 
+No parameters
+Return Type: void
+Modifiers: public final
+ 
+public boolean java.lang.Object.equals(java.lang.Object)
+Exceptions: 
+No exceptions
+Parameter Types: 
+class java.lang.Object
+Return Type: boolean
+Modifiers: public
+ 
+public native int java.lang.Object.hashCode()
+Exceptions: 
+No exceptions
+Parameter Types: 
+No parameters
+Return Type: int
+Modifiers: public native
+ 
+public final native java.lang.Class java.lang.Object.getClass()
+Exceptions: 
+No exceptions
+Parameter Types: 
+No parameters
+Return Type: java.lang.Class
+Modifiers: public final native
+ 
+public final native void java.lang.Object.notify()
+Exceptions: 
+No exceptions
+Parameter Types: 
+No parameters
+Return Type: void
+Modifiers: public final native
+ 
+public final native void java.lang.Object.notifyAll()
+Exceptions: 
+No exceptions
+Parameter Types: 
+No parameters
+Return Type: void
+Modifiers: public final native
+ 
+No immediate superclass ie top of the hierarchy
 Fields: 
 val
 Type: 

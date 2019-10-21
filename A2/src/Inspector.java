@@ -9,15 +9,9 @@ public class Inspector {
         System.out.println("The declaring class name is: "+className);
         //findInterfaces(c, 0);
         inspectClass(c, obj, recursive, 0);
-
-        //Declaring class
-        /*
         
-        
-
-        */
-    	
     	//Constructors
+    	/*
     	Constructor[] constructors = c.getConstructors();
 	    if(constructors.length > 0){
 	    	System.out.println("Constructors: ");
@@ -40,7 +34,9 @@ public class Inspector {
 	    }else{
 	    	System.out.println("No constructors");
 	    }
+	    */
 
+	    /*
 	    //Methods
 	    Method[] m = c.getMethods();
 	    if(m.length > 0){
@@ -82,6 +78,7 @@ public class Inspector {
 	    	System.out.println("No methods");
 	    	System.out.println(" ");
 	    }
+	    */
 
 	    //Fields
 	    Field[] f = c.getDeclaredFields();
@@ -120,6 +117,78 @@ public class Inspector {
 		    
     }
 
+    private void findMethods(Class c, int depth){
+		Method[] m = c.getMethods();
+	    if(m.length > 0){
+	    	System.out.println("Methods at depth "+depth+": ");
+	    	for(int i = 0; i < m.length; i ++){
+	    		System.out.println(m[i]);
+
+	    		//Exceptions thrown
+	    		Class[] e = m[i].getExceptionTypes();
+	    		System.out.println("Exceptions: ");
+	    		if(e.length == 0){
+	    			System.out.println("No exceptions");
+	    		}
+	    		for(int j = 0; j < e.length; j++){
+	    			System.out.println(e[j]);
+	    		}
+	    		
+	    		//Parameter types
+	    		Class[] params = m[i].getParameterTypes();
+	    		System.out.println("Parameter Types: ");
+	    		if(params.length == 0){
+	    			System.out.println("No parameters");
+	    		}
+	    		for(int j = 0; j < params.length; j++){
+	    			System.out.println(params[j]);
+	    		}
+
+	    		//Return type
+	    		String returnType = m[i].getReturnType().getName();
+	    		System.out.println("Return Type: "+returnType);
+
+	    		//Modifiers
+	    		int mod = m[i].getModifiers();
+	    		System.out.println("Modifiers: "+Modifier.toString(mod));	
+
+	    		System.out.println(" ");
+	    	}
+	    }else{
+	    	System.out.println("No methods");
+	    	System.out.println(" ");
+	    }
+    }
+
+    //refactored into another method
+    private void findConstructors(Class c, int depth){
+    	Constructor[] constructors = c.getConstructors();
+	    if(constructors.length > 0){
+	    	System.out.println("Constructors at depth "+depth+": ");
+	    	for(int i = 0; i < constructors.length; i++){
+	    		System.out.println(constructors[i]);
+
+	    		//Parameter types
+	    		Class[] params = constructors[i].getParameterTypes();
+	    		System.out.println("Parameter Types: ");
+	    		for(int j = 0; j < params.length; j++){
+	    			System.out.println(params[j]);
+	    		}
+
+	    		//Modifiers
+	    		int mod = constructors[i].getModifiers();
+	    		System.out.println("Modifiers: "+Modifier.toString(mod));	
+
+	    		System.out.println(" ");
+	    	}
+	    }else{
+	    	System.out.println("No constructors");
+	    	System.out.println(" ");
+	    }
+    }
+
+    //refactored by moving finding interfaces functionality
+    //within a method
     private void findInterfaces(Class c, int depth){
     	Class[] interfaces = c.getInterfaces();
     	if(interfaces.length > 0){
@@ -139,26 +208,15 @@ public class Inspector {
     	if(c.getName().equals("java.lang.Object")){
     		if(depth == 0){
     			System.out.println("Declaring class is "+superC.getName());
+    			///////////////////////////
     			findInterfaces(c, depth);
+    			findConstructors(c, depth);
+    			findMethods(c, depth);
 
     		}else{
     			System.out.println("No immediate superclass ie top of the hierarchy");
     		}
-    	}
-    	/*
-    	if(superC.getName().equals("java.lang.Object")){
-    		String superClass = c.getSuperclass().getName();
-    		superC = c.getSuperclass();
-    		if(depth == 0){
-    			System.out.println("Immediate superclass is "+superClass);
-    		}else{
-    			System.out.println("Superclass at depth "+depth+" is: "+superClass);
-    		}
-    		findInterfaces(c, depth);
-	    	System.out.println(" ");
-    	}
-    	*/
-    	else{
+    	}else{
     		if(depth == 0){
 				String superClass = c.getSuperclass().getName();
 		    	System.out.println("Immediate superclass is "+superClass);
@@ -170,7 +228,11 @@ public class Inspector {
 		    	superC = c.getSuperclass();
 		    	System.out.println(" ");
 		    }
+    		///////////////////////////
 		    findInterfaces(c, depth);
+		    findConstructors(c, depth);
+		    findMethods(c, depth);
+		    
 		    depth++;
 
 

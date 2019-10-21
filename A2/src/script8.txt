@@ -10,8 +10,7 @@ interface java.io.Serializable
 interface java.lang.Comparable
 interface java.lang.CharSequence
  
-No immediate superclass ie top of the hierarchy
-Constructors: 
+Constructors at depth 0: 
 public java.lang.String(byte[])
 Parameter Types: 
 class [B
@@ -104,7 +103,7 @@ int
 int
 Modifiers: public
  
-Methods: 
+Methods at depth 0: 
 public boolean java.lang.String.equals(java.lang.Object)
 Exceptions: 
 No exceptions
@@ -798,13 +797,14 @@ No parameters
 Return Type: void
 Modifiers: public final native
  
+No immediate superclass ie top of the hierarchy
 Fields: 
 value
 Type: 
 [B
 Modifiers: private final
 Value: 
-[B@238e0d81
+[B@7a07c5b4
  
 coder
 Type: 
@@ -839,14 +839,14 @@ Type:
 [Ljava.io.ObjectStreamField;
 Modifiers: private static final
 Value: 
-[Ljava.io.ObjectStreamField;@5910e440
+[Ljava.io.ObjectStreamField;@306a30c7
  
 CASE_INSENSITIVE_ORDER
 Type: 
 java.util.Comparator
 Modifiers: public static final
 Value: 
-java.lang.String$CaseInsensitiveComparator@6267c3bb
+java.lang.String$CaseInsensitiveComparator@b81eda8
  
 LATIN1
 Type: 

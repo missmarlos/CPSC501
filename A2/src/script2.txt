@@ -9,8 +9,7 @@ Interfaces forClassA at depth 0:
 interface java.io.Serializable
 interface java.lang.Runnable
  
-No immediate superclass ie top of the hierarchy
-Constructors: 
+Constructors at depth 0: 
 public ClassA()
 Parameter Types: 
 Modifiers: public
@@ -20,7 +19,7 @@ Parameter Types:
 int
 Modifiers: public
  
-Methods: 
+Methods at depth 0: 
 public void ClassA.setVal(int) throws java.lang.Exception
 Exceptions: 
 class java.lang.Exception
@@ -118,6 +117,7 @@ No parameters
 Return Type: void
 Modifiers: public final native
  
+No immediate superclass ie top of the hierarchy
 Fields: 
 val
 Type: 
