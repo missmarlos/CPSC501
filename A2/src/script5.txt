@@ -2,11 +2,12 @@
 Filename: script5.txt
 Running Test: ClassD
 Recursive: true
-The class name is ClassD
+The declaring class name is: ClassD
 Immediate superclass is java.lang.Object
  
-No interfaces
+No interfaces at depth0
  
+No immediate superclass ie top of the hierarchy
 Constructors: 
 public ClassD()
 Parameter Types: 
@@ -126,6 +127,6 @@ Type:
 [LClassA;
 Modifiers: private
 Value: 
-[LClassA;@4c873330
+[LClassA;@9807454
  
 ======================================================

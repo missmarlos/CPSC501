@@ -2,14 +2,15 @@
 Filename: script8.txt
 Running Test: Test String
 Recursive: true
-The class name is java.lang.String
+The declaring class name is: java.lang.String
 Immediate superclass is java.lang.Object
  
-Interfaces:
+Interfaces forjava.lang.String at depth 0: 
 interface java.io.Serializable
 interface java.lang.Comparable
 interface java.lang.CharSequence
  
+No immediate superclass ie top of the hierarchy
 Constructors: 
 public java.lang.String(byte[])
 Parameter Types: 
@@ -803,7 +804,7 @@ Type:
 [B
 Modifiers: private final
 Value: 
-[B@133314b
+[B@238e0d81
  
 coder
 Type: 
@@ -838,14 +839,14 @@ Type:
 [Ljava.io.ObjectStreamField;
 Modifiers: private static final
 Value: 
-[Ljava.io.ObjectStreamField;@70177ecd
+[Ljava.io.ObjectStreamField;@5910e440
  
 CASE_INSENSITIVE_ORDER
 Type: 
 java.util.Comparator
 Modifiers: public static final
 Value: 
-java.lang.String$CaseInsensitiveComparator@1e80bfe8
+java.lang.String$CaseInsensitiveComparator@6267c3bb
  
 LATIN1
 Type: 

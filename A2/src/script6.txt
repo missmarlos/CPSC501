@@ -1,14 +1,15 @@
 ======================================================
 Filename: script6.txt
-Running Test: [LClassB;@119d7047
+Running Test: [LClassB;@3d494fbf
 Recursive: true
-The class name is [LClassB;
+The declaring class name is: [LClassB;
 Immediate superclass is java.lang.Object
  
-Interfaces:
+Interfaces for[LClassB; at depth 0: 
 interface java.lang.Cloneable
 interface java.io.Serializable
  
+No immediate superclass ie top of the hierarchy
 No constructors
 Methods: 
 public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException

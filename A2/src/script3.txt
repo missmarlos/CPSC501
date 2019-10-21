@@ -2,12 +2,22 @@
 Filename: script3.txt
 Running Test: ClassB
 Recursive: true
-The class name is ClassB
+The declaring class name is: ClassB
 Immediate superclass is ClassC
  
-Interfaces:
+Interfaces forClassB at depth 0: 
 interface java.lang.Runnable
  
+Superclass at depth 1 is: ClassD
+ 
+Interfaces forClassC at depth 1: 
+interface InterfaceA
+ 
+Superclass at depth 2 is: java.lang.Object
+ 
+No interfaces at depth2
+ 
+No immediate superclass ie top of the hierarchy
 Constructors: 
 public ClassB() throws java.lang.Exception
 Parameter Types: 

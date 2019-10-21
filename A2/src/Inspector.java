@@ -4,29 +4,19 @@ public class Inspector {
 
     public void inspect(Object obj, boolean recursive) {
         Class c = obj.getClass();
+
+        String className = c.getName();
+        System.out.println("The declaring class name is: "+className);
+        //findInterfaces(c, 0);
         inspectClass(c, obj, recursive, 0);
+
+        //Declaring class
+        /*
+        
+        
+
+        */
     	
-    	//Declaring class
-    	String className = c.getName();
-    	System.out.println("The class name is "+className);
-
-    	//Name of immediate superclass
-    	String superClass = c.getSuperclass().getName();
-    	System.out.println("Immediate superclass is "+superClass);
-    	System.out.println(" ");
-
-    	//Name of each interface implemented by class
-    	Class[] interfaces = c.getInterfaces();
-    	if(interfaces.length > 0){
-    		System.out.println("Interfaces:");
-    		for(int i = 0; i < interfaces.length; i++){
-    			System.out.println(interfaces[i]);
-    		}
-    	}else{
-    		System.out.println("No interfaces");
-    	}
-    	System.out.println(" ");
-
     	//Constructors
     	Constructor[] constructors = c.getConstructors();
 	    if(constructors.length > 0){
@@ -130,7 +120,64 @@ public class Inspector {
 		    
     }
 
+    private void findInterfaces(Class c, int depth){
+    	Class[] interfaces = c.getInterfaces();
+    	if(interfaces.length > 0){
+    		System.out.println("Interfaces for"+c.getName()+" at depth "+depth+": ");
+    		for(int i = 0; i < interfaces.length; i++){
+
+    			System.out.println(interfaces[i]);
+    		}
+    	}else{
+    		System.out.println("No interfaces at depth"+depth);
+    	}
+    	System.out.println(" ");
+    }
+
     private void inspectClass(Class c, Object obj, boolean recursive, int depth) {
+    	Class superC = c.getSuperclass();
+    	if(c.getName().equals("java.lang.Object")){
+    		if(depth == 0){
+    			System.out.println("Declaring class is "+superC.getName());
+    			findInterfaces(c, depth);
+
+    		}else{
+    			System.out.println("No immediate superclass ie top of the hierarchy");
+    		}
+    	}
+    	/*
+    	if(superC.getName().equals("java.lang.Object")){
+    		String superClass = c.getSuperclass().getName();
+    		superC = c.getSuperclass();
+    		if(depth == 0){
+    			System.out.println("Immediate superclass is "+superClass);
+    		}else{
+    			System.out.println("Superclass at depth "+depth+" is: "+superClass);
+    		}
+    		findInterfaces(c, depth);
+	    	System.out.println(" ");
+    	}
+    	*/
+    	else{
+    		if(depth == 0){
+				String superClass = c.getSuperclass().getName();
+		    	System.out.println("Immediate superclass is "+superClass);
+		    	superC = c.getSuperclass();
+		    	System.out.println(" ");    		
+		    }else{
+		    	String superClass = c.getSuperclass().getName();
+		    	System.out.println("Superclass at depth "+depth+" is: "+superClass);
+		    	superC = c.getSuperclass();
+		    	System.out.println(" ");
+		    }
+		    findInterfaces(c, depth);
+		    depth++;
+
+
+
+		    inspectClass(superC, obj, recursive, depth);
+    	}
+    	
     }
 	   	
 

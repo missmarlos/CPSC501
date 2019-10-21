@@ -2,13 +2,14 @@
 Filename: script1.txt
 Running Test: ClassA
 Recursive: true
-The class name is ClassA
+The declaring class name is: ClassA
 Immediate superclass is java.lang.Object
  
-Interfaces:
+Interfaces forClassA at depth 0: 
 interface java.io.Serializable
 interface java.lang.Runnable
  
+No immediate superclass ie top of the hierarchy
 Constructors: 
 public ClassA()
 Parameter Types: 
