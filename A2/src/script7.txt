@@ -1,6 +1,6 @@
 ======================================================
 Filename: script7.txt
-Running Test: [[LClassB;@cc34f4d
+Running Test: [[LClassB;@3f91beef
 Recursive: true
 The declaring class name is: [[LClassB;
 Immediate superclass is java.lang.Object
@@ -11,80 +11,8 @@ interface java.io.Serializable
  
 No constructors
  
-Methods at depth 0: 
-public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
-Exceptions: 
-class java.lang.InterruptedException
-Parameter Types: 
-long
-Return Type: void
-Modifiers: public final native
+No methods
  
-public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
-Exceptions: 
-class java.lang.InterruptedException
-Parameter Types: 
-long
-int
-Return Type: void
-Modifiers: public final
- 
-public final void java.lang.Object.wait() throws java.lang.InterruptedException
-Exceptions: 
-class java.lang.InterruptedException
-Parameter Types: 
-No parameters
-Return Type: void
-Modifiers: public final
- 
-public boolean java.lang.Object.equals(java.lang.Object)
-Exceptions: 
-No exceptions
-Parameter Types: 
-class java.lang.Object
-Return Type: boolean
-Modifiers: public
- 
-public java.lang.String java.lang.Object.toString()
-Exceptions: 
-No exceptions
-Parameter Types: 
-No parameters
-Return Type: java.lang.String
-Modifiers: public
- 
-public native int java.lang.Object.hashCode()
-Exceptions: 
-No exceptions
-Parameter Types: 
-No parameters
-Return Type: int
-Modifiers: public native
- 
-public final native java.lang.Class java.lang.Object.getClass()
-Exceptions: 
-No exceptions
-Parameter Types: 
-No parameters
-Return Type: java.lang.Class
-Modifiers: public final native
- 
-public final native void java.lang.Object.notify()
-Exceptions: 
-No exceptions
-Parameter Types: 
-No parameters
-Return Type: void
-Modifiers: public final native
- 
-public final native void java.lang.Object.notifyAll()
-Exceptions: 
-No exceptions
-Parameter Types: 
-No parameters
-Return Type: void
-Modifiers: public final native
- 
-No immediate superclass ie top of the hierarchy
 No fields
+No immediate superclass ie top of the hierarchy
 ======================================================

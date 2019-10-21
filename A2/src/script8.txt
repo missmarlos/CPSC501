@@ -43,6 +43,20 @@ int
 class java.nio.charset.Charset
 Modifiers: public
  
+java.lang.String(char[],int,int,java.lang.Void)
+Parameter Types: 
+class [C
+int
+int
+class java.lang.Void
+Modifiers: 
+ 
+java.lang.String(java.lang.AbstractStringBuilder,java.lang.Void)
+Parameter Types: 
+class java.lang.AbstractStringBuilder
+class java.lang.Void
+Modifiers: 
+ 
 public java.lang.String(java.lang.StringBuilder)
 Parameter Types: 
 class java.lang.StringBuilder
@@ -52,6 +66,12 @@ public java.lang.String(java.lang.StringBuffer)
 Parameter Types: 
 class java.lang.StringBuffer
 Modifiers: public
+ 
+java.lang.String(byte[],byte)
+Parameter Types: 
+class [B
+byte
+Modifiers: 
  
 public java.lang.String(char[],int,int)
 Parameter Types: 
@@ -104,6 +124,14 @@ int
 Modifiers: public
  
 Methods at depth 0: 
+byte[] java.lang.String.value()
+Exceptions: 
+No exceptions
+Parameter Types: 
+No parameters
+Return Type: [B
+Modifiers: 
+ 
 public boolean java.lang.String.equals(java.lang.Object)
 Exceptions: 
 No exceptions
@@ -180,6 +208,18 @@ int
 Return Type: int
 Modifiers: public
  
+static int java.lang.String.indexOf(byte[],byte,int,java.lang.String,int)
+Exceptions: 
+No exceptions
+Parameter Types: 
+class [B
+byte
+int
+class java.lang.String
+int
+Return Type: int
+Modifiers: static
+ 
 public int java.lang.String.indexOf(int,int)
 Exceptions: 
 No exceptions
@@ -196,6 +236,15 @@ Parameter Types:
 class java.lang.String
 Return Type: int
 Modifiers: public
+ 
+static void java.lang.String.checkIndex(int,int)
+Exceptions: 
+No exceptions
+Parameter Types: 
+int
+int
+Return Type: void
+Modifiers: static
  
 public static java.lang.String java.lang.String.valueOf(int)
 Exceptions: 
@@ -270,6 +319,24 @@ int
 int
 Return Type: java.lang.String
 Modifiers: public static
+ 
+byte java.lang.String.coder()
+Exceptions: 
+No exceptions
+Parameter Types: 
+No parameters
+Return Type: byte
+Modifiers: 
+ 
+private static java.lang.Void java.lang.String.rangeCheck(char[],int,int)
+Exceptions: 
+No exceptions
+Parameter Types: 
+class [C
+int
+int
+Return Type: java.lang.Void
+Modifiers: private static
  
 public java.util.stream.IntStream java.lang.String.codePoints()
 Exceptions: 
@@ -364,6 +431,16 @@ No parameters
 Return Type: [B
 Modifiers: public
  
+void java.lang.String.getBytes(byte[],int,byte)
+Exceptions: 
+No exceptions
+Parameter Types: 
+class [B
+int
+byte
+Return Type: void
+Modifiers: 
+ 
 public boolean java.lang.String.contentEquals(java.lang.StringBuffer)
 Exceptions: 
 No exceptions
@@ -379,6 +456,14 @@ Parameter Types:
 interface java.lang.CharSequence
 Return Type: boolean
 Modifiers: public
+ 
+private boolean java.lang.String.nonSyncContentEquals(java.lang.AbstractStringBuilder)
+Exceptions: 
+No exceptions
+Parameter Types: 
+class java.lang.AbstractStringBuilder
+Return Type: boolean
+Modifiers: private
  
 public boolean java.lang.String.equalsIgnoreCase(java.lang.String)
 Exceptions: 
@@ -451,6 +536,18 @@ Parameter Types:
 int
 Return Type: int
 Modifiers: public
+ 
+static int java.lang.String.lastIndexOf(byte[],byte,int,java.lang.String,int)
+Exceptions: 
+No exceptions
+Parameter Types: 
+class [B
+byte
+int
+class java.lang.String
+int
+Return Type: int
+Modifiers: static
  
 public int java.lang.String.lastIndexOf(java.lang.String,int)
 Exceptions: 
@@ -671,6 +768,14 @@ No parameters
 Return Type: boolean
 Modifiers: public
  
+private int java.lang.String.indexOfNonWhitespace()
+Exceptions: 
+No exceptions
+Parameter Types: 
+No parameters
+Return Type: int
+Modifiers: private
+ 
 public java.util.stream.Stream java.lang.String.lines()
 Exceptions: 
 No exceptions
@@ -748,118 +853,121 @@ int
 Return Type: java.lang.String
 Modifiers: public
  
-public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
+private boolean java.lang.String.isLatin1()
 Exceptions: 
-class java.lang.InterruptedException
+No exceptions
 Parameter Types: 
-long
-Return Type: void
-Modifiers: public final native
+No parameters
+Return Type: boolean
+Modifiers: private
  
-public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
+static void java.lang.String.checkOffset(int,int)
 Exceptions: 
-class java.lang.InterruptedException
+No exceptions
 Parameter Types: 
-long
+int
 int
 Return Type: void
-Modifiers: public final
+Modifiers: static
  
-public final void java.lang.Object.wait() throws java.lang.InterruptedException
-Exceptions: 
-class java.lang.InterruptedException
-Parameter Types: 
-No parameters
-Return Type: void
-Modifiers: public final
- 
-public final native java.lang.Class java.lang.Object.getClass()
+static void java.lang.String.checkBoundsOffCount(int,int,int)
 Exceptions: 
 No exceptions
 Parameter Types: 
-No parameters
-Return Type: java.lang.Class
-Modifiers: public final native
+int
+int
+int
+Return Type: void
+Modifiers: static
  
-public final native void java.lang.Object.notify()
+static void java.lang.String.checkBoundsBeginEnd(int,int,int)
 Exceptions: 
 No exceptions
 Parameter Types: 
-No parameters
+int
+int
+int
 Return Type: void
-Modifiers: public final native
+Modifiers: static
  
-public final native void java.lang.Object.notifyAll()
+static java.lang.String java.lang.String.valueOfCodePoint(int)
 Exceptions: 
 No exceptions
 Parameter Types: 
-No parameters
-Return Type: void
-Modifiers: public final native
+int
+Return Type: java.lang.String
+Modifiers: static
  
-No immediate superclass ie top of the hierarchy
+start field depth 0 :
 Fields: 
 value
 Type: 
 [B
+No fields
+hello
 Modifiers: private final
-Value: 
-[B@7a07c5b4
+Value at depth 1: 
+[B@5197848c
  
 coder
 Type: 
 byte
 Modifiers: private final
-Value: 
+Value at depth 1: 
 0
  
 hash
 Type: 
 int
 Modifiers: private
-Value: 
+Value at depth 1: 
 0
  
 serialVersionUID
 Type: 
 long
 Modifiers: private static final
-Value: 
+Value at depth 1: 
 -6849794470754667710
  
 COMPACT_STRINGS
 Type: 
 boolean
 Modifiers: static final
-Value: 
+Value at depth 1: 
 true
  
 serialPersistentFields
 Type: 
 [Ljava.io.ObjectStreamField;
+No fields
+hello
 Modifiers: private static final
-Value: 
-[Ljava.io.ObjectStreamField;@306a30c7
+Value at depth 2: 
+[Ljava.io.ObjectStreamField;@2e5d6d97
  
 CASE_INSENSITIVE_ORDER
 Type: 
 java.util.Comparator
+No fields
+hello
 Modifiers: public static final
-Value: 
-java.lang.String$CaseInsensitiveComparator@b81eda8
+Value at depth 3: 
+java.lang.String$CaseInsensitiveComparator@238e0d81
  
 LATIN1
 Type: 
 byte
 Modifiers: static final
-Value: 
+Value at depth 3: 
 0
  
 UTF16
 Type: 
 byte
 Modifiers: static final
-Value: 
+Value at depth 3: 
 1
  
+No immediate superclass ie top of the hierarchy
 ======================================================

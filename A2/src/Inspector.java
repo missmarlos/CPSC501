@@ -80,7 +80,10 @@ public class Inspector {
 	    }
 	    */
 
+
+	    
 	    //Fields
+	    /*
 	    Field[] f = c.getDeclaredFields();
 	   	if(f.length > 0){
 	   		//Names
@@ -113,12 +116,67 @@ public class Inspector {
 		    }
 	   	}else{
 	   		System.out.println("No fields");
-	   	}
+	   	*/
+	   	
 		    
     }
+    
+    private void findFields(Class c, Object obj, boolean recursive, int depth){
+    	//if recursive is false and the field is an object then no need to recurse
+    	
+    	//if field type is an object of another class and recursive == true, inspect field of that class
+    	//if field type is an object of another class and recursive == false, then no recursion 
+
+    	Field[] f = c.getDeclaredFields();
+	   	if(f.length > 0){
+	   		//Names
+
+	   		System.out.println("start field depth "+depth+" :");
+	   		System.out.println("Fields: ");
+	   		for(int i = 0; i < f.length; i ++){
+	   			System.out.println(f[i].getName());
+
+			    //Type
+			    System.out.println("Type: ");
+			    System.out.println(f[i].getType().getName());
+
+			    //if field is an object of another class and recursive is true, recurse***
+			    if(!f[i].getType().isPrimitive()){
+			    	if(recursive == true){
+			    		depth++;
+			    		findFields(f[i].getType(), obj, recursive, depth);
+				    	System.out.println("hello");
+
+			    	}
+			    }
+
+			    //Modifiers
+			    int mod = f[i].getModifiers();
+	    		System.out.println("Modifiers: "+Modifier.toString(mod));	
+
+			    //Current values of each field
+			   	f[i].setAccessible(true);
+			   	try{
+			   		Object value = f[i].get(obj);
+			   		System.out.println("Value at depth "+depth+": ");
+			   		System.out.println(value);
+			   	}catch(Exception e){
+			   		e.printStackTrace();
+			   	}
+			   	
+			    //6i
+
+
+			    System.out.println(" ");
+		    }
+	   	}else{
+	   		System.out.println("No fields");
+	   	}
+    }
+    
 
     private void findMethods(Class c, int depth){
-		Method[] m = c.getMethods();
+		Method[] m = c.getDeclaredMethods();
 	    if(m.length > 0){
 	    	System.out.println("Methods at depth "+depth+": ");
 	    	for(int i = 0; i < m.length; i ++){
@@ -162,7 +220,7 @@ public class Inspector {
 
     //refactored into another method
     private void findConstructors(Class c, int depth){
-    	Constructor[] constructors = c.getConstructors();
+    	Constructor[] constructors = c.getDeclaredConstructors();
 	    if(constructors.length > 0){
 	    	System.out.println("Constructors at depth "+depth+": ");
 	    	for(int i = 0; i < constructors.length; i++){
@@ -212,6 +270,7 @@ public class Inspector {
     			findInterfaces(c, depth);
     			findConstructors(c, depth);
     			findMethods(c, depth);
+    			findFields(c, obj, recursive, depth);
 
     		}else{
     			System.out.println("No immediate superclass ie top of the hierarchy");
@@ -232,6 +291,8 @@ public class Inspector {
 		    findInterfaces(c, depth);
 		    findConstructors(c, depth);
 		    findMethods(c, depth);
+   			findFields(c, obj, recursive, depth);
+
 		    
 		    depth++;
 
