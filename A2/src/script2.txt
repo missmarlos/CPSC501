@@ -2,25 +2,32 @@
 Filename: script2.txt
 Running Test: ClassA
 Recursive: true
-The declaring class name is: ClassA
+Declaring class is: ClassA
 Immediate superclass is java.lang.Object
- 
-Interfaces forClassA at depth 0: 
+Interfaces forClassA: 
 interface java.io.Serializable
+No methods
+ 
+	No constructors
+ 
+	No fields
+	No interfaces for java.io.Serializable
 interface java.lang.Runnable
+		*Methods for java.lang.Runnable: 
+		Method: public abstract void java.lang.Runnable.run()
+		Exceptions: 
+		No exceptions
+		Parameter Types: 
+		No parameters
+		Return Type: void
+		Modifiers: public abstract
  
-Constructors at depth 0: 
-public ClassA()
-Parameter Types: 
-Modifiers: public
+		No constructors
  
-public ClassA(int)
-Parameter Types: 
-int
-Modifiers: public
- 
-Methods at depth 0: 
-public void ClassA.setVal(int) throws java.lang.Exception
+		No fields
+		No interfaces for java.lang.Runnable
+*Methods for ClassA: 
+Method: public void ClassA.setVal(int) throws java.lang.Exception
 Exceptions: 
 class java.lang.Exception
 Parameter Types: 
@@ -28,7 +35,7 @@ int
 Return Type: void
 Modifiers: public
  
-public void ClassA.run()
+Method: public void ClassA.run()
 Exceptions: 
 No exceptions
 Parameter Types: 
@@ -36,7 +43,7 @@ No parameters
 Return Type: void
 Modifiers: public
  
-public java.lang.String ClassA.toString()
+Method: public java.lang.String ClassA.toString()
 Exceptions: 
 No exceptions
 Parameter Types: 
@@ -44,7 +51,7 @@ No parameters
 Return Type: java.lang.String
 Modifiers: public
  
-public int ClassA.getVal()
+Method: public int ClassA.getVal()
 Exceptions: 
 No exceptions
 Parameter Types: 
@@ -52,7 +59,7 @@ No parameters
 Return Type: int
 Modifiers: public
  
-private void ClassA.printSomething()
+Method: private void ClassA.printSomething()
 Exceptions: 
 No exceptions
 Parameter Types: 
@@ -60,28 +67,38 @@ No parameters
 Return Type: void
 Modifiers: private
  
-start field depth 0 :
+Constructors for ClassA: 
+public ClassA()
+Parameter Types: 
+No parameters
+Modifiers: public
+ 
+public ClassA(int)
+Parameter Types: 
+int
+Modifiers: public
+ 
 Fields: 
 val
 Type: 
 int
 Modifiers: private
-Value at depth 0: 
+Value at val: 
 12
  
 val2
 Type: 
 double
 Modifiers: private
-Value at depth 0: 
+Value at val2: 
 0.2
  
 val3
 Type: 
 boolean
 Modifiers: private
-Value at depth 0: 
+Value at val3: 
 true
  
-No immediate superclass ie top of the hierarchy
+	Superclass of java.lang.Object: null
 ======================================================

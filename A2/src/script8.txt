@@ -2,15 +2,886 @@
 Filename: script8.txt
 Running Test: Test String
 Recursive: true
-The declaring class name is: java.lang.String
+Declaring class is: java.lang.String
 Immediate superclass is java.lang.Object
- 
-Interfaces forjava.lang.String at depth 0: 
+Interfaces forjava.lang.String: 
 interface java.io.Serializable
-interface java.lang.Comparable
-interface java.lang.CharSequence
+No methods
  
-Constructors at depth 0: 
+	No constructors
+ 
+	No fields
+	No interfaces for java.io.Serializable
+interface java.lang.Comparable
+		*Methods for java.lang.Comparable: 
+		Method: public abstract int java.lang.Comparable.compareTo(java.lang.Object)
+		Exceptions: 
+		No exceptions
+		Parameter Types: 
+		class java.lang.Object
+		Return Type: int
+		Modifiers: public abstract
+ 
+		No constructors
+ 
+		No fields
+		No interfaces for java.lang.Comparable
+interface java.lang.CharSequence
+			*Methods for java.lang.CharSequence: 
+			Method: public abstract int java.lang.CharSequence.length()
+			Exceptions: 
+			No exceptions
+			Parameter Types: 
+			No parameters
+			Return Type: int
+			Modifiers: public abstract
+ 
+			Method: public abstract java.lang.String java.lang.CharSequence.toString()
+			Exceptions: 
+			No exceptions
+			Parameter Types: 
+			No parameters
+			Return Type: java.lang.String
+			Modifiers: public abstract
+ 
+			Method: public default java.util.stream.IntStream java.lang.CharSequence.codePoints()
+			Exceptions: 
+			No exceptions
+			Parameter Types: 
+			No parameters
+			Return Type: java.util.stream.IntStream
+			Modifiers: public
+ 
+			Method: public abstract char java.lang.CharSequence.charAt(int)
+			Exceptions: 
+			No exceptions
+			Parameter Types: 
+			int
+			Return Type: char
+			Modifiers: public abstract
+ 
+			Method: public abstract java.lang.CharSequence java.lang.CharSequence.subSequence(int,int)
+			Exceptions: 
+			No exceptions
+			Parameter Types: 
+			int
+			int
+			Return Type: java.lang.CharSequence
+			Modifiers: public abstract
+ 
+			Method: public default java.util.stream.IntStream java.lang.CharSequence.chars()
+			Exceptions: 
+			No exceptions
+			Parameter Types: 
+			No parameters
+			Return Type: java.util.stream.IntStream
+			Modifiers: public
+ 
+			Method: public static int java.lang.CharSequence.compare(java.lang.CharSequence,java.lang.CharSequence)
+			Exceptions: 
+			No exceptions
+			Parameter Types: 
+			interface java.lang.CharSequence
+			interface java.lang.CharSequence
+			Return Type: int
+			Modifiers: public static
+ 
+			Method: private java.util.Spliterator$OfInt java.lang.CharSequence.lambda$codePoints$1()
+			Exceptions: 
+			No exceptions
+			Parameter Types: 
+			No parameters
+			Return Type: java.util.Spliterator$OfInt
+			Modifiers: private
+ 
+			Method: private java.util.Spliterator$OfInt java.lang.CharSequence.lambda$chars$0()
+			Exceptions: 
+			No exceptions
+			Parameter Types: 
+			No parameters
+			Return Type: java.util.Spliterator$OfInt
+			Modifiers: private
+ 
+			No constructors
+ 
+			No fields
+			No interfaces for java.lang.CharSequence
+*Methods for java.lang.String: 
+Method: byte[] java.lang.String.value()
+Exceptions: 
+No exceptions
+Parameter Types: 
+No parameters
+Return Type: [B
+Modifiers: 
+ 
+Method: public boolean java.lang.String.equals(java.lang.Object)
+Exceptions: 
+No exceptions
+Parameter Types: 
+class java.lang.Object
+Return Type: boolean
+Modifiers: public
+ 
+Method: public int java.lang.String.length()
+Exceptions: 
+No exceptions
+Parameter Types: 
+No parameters
+Return Type: int
+Modifiers: public
+ 
+Method: public java.lang.String java.lang.String.toString()
+Exceptions: 
+No exceptions
+Parameter Types: 
+No parameters
+Return Type: java.lang.String
+Modifiers: public
+ 
+Method: public int java.lang.String.hashCode()
+Exceptions: 
+No exceptions
+Parameter Types: 
+No parameters
+Return Type: int
+Modifiers: public
+ 
+Method: public void java.lang.String.getChars(int,int,char[],int)
+Exceptions: 
+No exceptions
+Parameter Types: 
+int
+int
+class [C
+int
+Return Type: void
+Modifiers: public
+ 
+Method: public int java.lang.String.compareTo(java.lang.String)
+Exceptions: 
+No exceptions
+Parameter Types: 
+class java.lang.String
+Return Type: int
+Modifiers: public
+ 
+Method: public int java.lang.String.compareTo(java.lang.Object)
+Exceptions: 
+No exceptions
+Parameter Types: 
+class java.lang.Object
+Return Type: int
+Modifiers: public volatile
+ 
+Method: public int java.lang.String.indexOf(java.lang.String,int)
+Exceptions: 
+No exceptions
+Parameter Types: 
+class java.lang.String
+int
+Return Type: int
+Modifiers: public
+ 
+Method: public int java.lang.String.indexOf(int)
+Exceptions: 
+No exceptions
+Parameter Types: 
+int
+Return Type: int
+Modifiers: public
+ 
+Method: static int java.lang.String.indexOf(byte[],byte,int,java.lang.String,int)
+Exceptions: 
+No exceptions
+Parameter Types: 
+class [B
+byte
+int
+class java.lang.String
+int
+Return Type: int
+Modifiers: static
+ 
+Method: public int java.lang.String.indexOf(int,int)
+Exceptions: 
+No exceptions
+Parameter Types: 
+int
+int
+Return Type: int
+Modifiers: public
+ 
+Method: public int java.lang.String.indexOf(java.lang.String)
+Exceptions: 
+No exceptions
+Parameter Types: 
+class java.lang.String
+Return Type: int
+Modifiers: public
+ 
+Method: static void java.lang.String.checkIndex(int,int)
+Exceptions: 
+No exceptions
+Parameter Types: 
+int
+int
+Return Type: void
+Modifiers: static
+ 
+Method: public static java.lang.String java.lang.String.valueOf(int)
+Exceptions: 
+No exceptions
+Parameter Types: 
+int
+Return Type: java.lang.String
+Modifiers: public static
+ 
+Method: public static java.lang.String java.lang.String.valueOf(float)
+Exceptions: 
+No exceptions
+Parameter Types: 
+float
+Return Type: java.lang.String
+Modifiers: public static
+ 
+Method: public static java.lang.String java.lang.String.valueOf(boolean)
+Exceptions: 
+No exceptions
+Parameter Types: 
+boolean
+Return Type: java.lang.String
+Modifiers: public static
+ 
+Method: public static java.lang.String java.lang.String.valueOf(long)
+Exceptions: 
+No exceptions
+Parameter Types: 
+long
+Return Type: java.lang.String
+Modifiers: public static
+ 
+Method: public static java.lang.String java.lang.String.valueOf(double)
+Exceptions: 
+No exceptions
+Parameter Types: 
+double
+Return Type: java.lang.String
+Modifiers: public static
+ 
+Method: public static java.lang.String java.lang.String.valueOf(java.lang.Object)
+Exceptions: 
+No exceptions
+Parameter Types: 
+class java.lang.Object
+Return Type: java.lang.String
+Modifiers: public static
+ 
+Method: public static java.lang.String java.lang.String.valueOf(char)
+Exceptions: 
+No exceptions
+Parameter Types: 
+char
+Return Type: java.lang.String
+Modifiers: public static
+ 
+Method: public static java.lang.String java.lang.String.valueOf(char[])
+Exceptions: 
+No exceptions
+Parameter Types: 
+class [C
+Return Type: java.lang.String
+Modifiers: public static
+ 
+Method: public static java.lang.String java.lang.String.valueOf(char[],int,int)
+Exceptions: 
+No exceptions
+Parameter Types: 
+class [C
+int
+int
+Return Type: java.lang.String
+Modifiers: public static
+ 
+Method: byte java.lang.String.coder()
+Exceptions: 
+No exceptions
+Parameter Types: 
+No parameters
+Return Type: byte
+Modifiers: 
+ 
+Method: private static java.lang.Void java.lang.String.rangeCheck(char[],int,int)
+Exceptions: 
+No exceptions
+Parameter Types: 
+class [C
+int
+int
+Return Type: java.lang.Void
+Modifiers: private static
+ 
+Method: public java.util.stream.IntStream java.lang.String.codePoints()
+Exceptions: 
+No exceptions
+Parameter Types: 
+No parameters
+Return Type: java.util.stream.IntStream
+Modifiers: public
+ 
+Method: public boolean java.lang.String.isEmpty()
+Exceptions: 
+No exceptions
+Parameter Types: 
+No parameters
+Return Type: boolean
+Modifiers: public
+ 
+Method: public char java.lang.String.charAt(int)
+Exceptions: 
+No exceptions
+Parameter Types: 
+int
+Return Type: char
+Modifiers: public
+ 
+Method: public int java.lang.String.codePointAt(int)
+Exceptions: 
+No exceptions
+Parameter Types: 
+int
+Return Type: int
+Modifiers: public
+ 
+Method: public int java.lang.String.codePointBefore(int)
+Exceptions: 
+No exceptions
+Parameter Types: 
+int
+Return Type: int
+Modifiers: public
+ 
+Method: public int java.lang.String.codePointCount(int,int)
+Exceptions: 
+No exceptions
+Parameter Types: 
+int
+int
+Return Type: int
+Modifiers: public
+ 
+Method: public int java.lang.String.offsetByCodePoints(int,int)
+Exceptions: 
+No exceptions
+Parameter Types: 
+int
+int
+Return Type: int
+Modifiers: public
+ 
+Method: public byte[] java.lang.String.getBytes(java.nio.charset.Charset)
+Exceptions: 
+No exceptions
+Parameter Types: 
+class java.nio.charset.Charset
+Return Type: [B
+Modifiers: public
+ 
+Method: public void java.lang.String.getBytes(int,int,byte[],int)
+Exceptions: 
+No exceptions
+Parameter Types: 
+int
+int
+class [B
+int
+Return Type: void
+Modifiers: public
+ 
+Method: public byte[] java.lang.String.getBytes(java.lang.String) throws java.io.UnsupportedEncodingException
+Exceptions: 
+class java.io.UnsupportedEncodingException
+Parameter Types: 
+class java.lang.String
+Return Type: [B
+Modifiers: public
+ 
+Method: public byte[] java.lang.String.getBytes()
+Exceptions: 
+No exceptions
+Parameter Types: 
+No parameters
+Return Type: [B
+Modifiers: public
+ 
+Method: void java.lang.String.getBytes(byte[],int,byte)
+Exceptions: 
+No exceptions
+Parameter Types: 
+class [B
+int
+byte
+Return Type: void
+Modifiers: 
+ 
+Method: public boolean java.lang.String.contentEquals(java.lang.StringBuffer)
+Exceptions: 
+No exceptions
+Parameter Types: 
+class java.lang.StringBuffer
+Return Type: boolean
+Modifiers: public
+ 
+Method: public boolean java.lang.String.contentEquals(java.lang.CharSequence)
+Exceptions: 
+No exceptions
+Parameter Types: 
+interface java.lang.CharSequence
+Return Type: boolean
+Modifiers: public
+ 
+Method: private boolean java.lang.String.nonSyncContentEquals(java.lang.AbstractStringBuilder)
+Exceptions: 
+No exceptions
+Parameter Types: 
+class java.lang.AbstractStringBuilder
+Return Type: boolean
+Modifiers: private
+ 
+Method: public boolean java.lang.String.equalsIgnoreCase(java.lang.String)
+Exceptions: 
+No exceptions
+Parameter Types: 
+class java.lang.String
+Return Type: boolean
+Modifiers: public
+ 
+Method: public int java.lang.String.compareToIgnoreCase(java.lang.String)
+Exceptions: 
+No exceptions
+Parameter Types: 
+class java.lang.String
+Return Type: int
+Modifiers: public
+ 
+Method: public boolean java.lang.String.regionMatches(boolean,int,java.lang.String,int,int)
+Exceptions: 
+No exceptions
+Parameter Types: 
+boolean
+int
+class java.lang.String
+int
+int
+Return Type: boolean
+Modifiers: public
+ 
+Method: public boolean java.lang.String.regionMatches(int,java.lang.String,int,int)
+Exceptions: 
+No exceptions
+Parameter Types: 
+int
+class java.lang.String
+int
+int
+Return Type: boolean
+Modifiers: public
+ 
+Method: public boolean java.lang.String.startsWith(java.lang.String)
+Exceptions: 
+No exceptions
+Parameter Types: 
+class java.lang.String
+Return Type: boolean
+Modifiers: public
+ 
+Method: public boolean java.lang.String.startsWith(java.lang.String,int)
+Exceptions: 
+No exceptions
+Parameter Types: 
+class java.lang.String
+int
+Return Type: boolean
+Modifiers: public
+ 
+Method: public boolean java.lang.String.endsWith(java.lang.String)
+Exceptions: 
+No exceptions
+Parameter Types: 
+class java.lang.String
+Return Type: boolean
+Modifiers: public
+ 
+Method: public int java.lang.String.lastIndexOf(int)
+Exceptions: 
+No exceptions
+Parameter Types: 
+int
+Return Type: int
+Modifiers: public
+ 
+Method: static int java.lang.String.lastIndexOf(byte[],byte,int,java.lang.String,int)
+Exceptions: 
+No exceptions
+Parameter Types: 
+class [B
+byte
+int
+class java.lang.String
+int
+Return Type: int
+Modifiers: static
+ 
+Method: public int java.lang.String.lastIndexOf(java.lang.String,int)
+Exceptions: 
+No exceptions
+Parameter Types: 
+class java.lang.String
+int
+Return Type: int
+Modifiers: public
+ 
+Method: public int java.lang.String.lastIndexOf(java.lang.String)
+Exceptions: 
+No exceptions
+Parameter Types: 
+class java.lang.String
+Return Type: int
+Modifiers: public
+ 
+Method: public int java.lang.String.lastIndexOf(int,int)
+Exceptions: 
+No exceptions
+Parameter Types: 
+int
+int
+Return Type: int
+Modifiers: public
+ 
+Method: public java.lang.String java.lang.String.substring(int,int)
+Exceptions: 
+No exceptions
+Parameter Types: 
+int
+int
+Return Type: java.lang.String
+Modifiers: public
+ 
+Method: public java.lang.String java.lang.String.substring(int)
+Exceptions: 
+No exceptions
+Parameter Types: 
+int
+Return Type: java.lang.String
+Modifiers: public
+ 
+Method: public java.lang.CharSequence java.lang.String.subSequence(int,int)
+Exceptions: 
+No exceptions
+Parameter Types: 
+int
+int
+Return Type: java.lang.CharSequence
+Modifiers: public
+ 
+Method: public java.lang.String java.lang.String.concat(java.lang.String)
+Exceptions: 
+No exceptions
+Parameter Types: 
+class java.lang.String
+Return Type: java.lang.String
+Modifiers: public
+ 
+Method: public java.lang.String java.lang.String.replace(java.lang.CharSequence,java.lang.CharSequence)
+Exceptions: 
+No exceptions
+Parameter Types: 
+interface java.lang.CharSequence
+interface java.lang.CharSequence
+Return Type: java.lang.String
+Modifiers: public
+ 
+Method: public java.lang.String java.lang.String.replace(char,char)
+Exceptions: 
+No exceptions
+Parameter Types: 
+char
+char
+Return Type: java.lang.String
+Modifiers: public
+ 
+Method: public boolean java.lang.String.matches(java.lang.String)
+Exceptions: 
+No exceptions
+Parameter Types: 
+class java.lang.String
+Return Type: boolean
+Modifiers: public
+ 
+Method: public boolean java.lang.String.contains(java.lang.CharSequence)
+Exceptions: 
+No exceptions
+Parameter Types: 
+interface java.lang.CharSequence
+Return Type: boolean
+Modifiers: public
+ 
+Method: public java.lang.String java.lang.String.replaceFirst(java.lang.String,java.lang.String)
+Exceptions: 
+No exceptions
+Parameter Types: 
+class java.lang.String
+class java.lang.String
+Return Type: java.lang.String
+Modifiers: public
+ 
+Method: public java.lang.String java.lang.String.replaceAll(java.lang.String,java.lang.String)
+Exceptions: 
+No exceptions
+Parameter Types: 
+class java.lang.String
+class java.lang.String
+Return Type: java.lang.String
+Modifiers: public
+ 
+Method: public java.lang.String[] java.lang.String.split(java.lang.String)
+Exceptions: 
+No exceptions
+Parameter Types: 
+class java.lang.String
+Return Type: [Ljava.lang.String;
+Modifiers: public
+ 
+Method: public java.lang.String[] java.lang.String.split(java.lang.String,int)
+Exceptions: 
+No exceptions
+Parameter Types: 
+class java.lang.String
+int
+Return Type: [Ljava.lang.String;
+Modifiers: public
+ 
+Method: public static java.lang.String java.lang.String.join(java.lang.CharSequence,java.lang.CharSequence[])
+Exceptions: 
+No exceptions
+Parameter Types: 
+interface java.lang.CharSequence
+class [Ljava.lang.CharSequence;
+Return Type: java.lang.String
+Modifiers: public static transient
+ 
+Method: public static java.lang.String java.lang.String.join(java.lang.CharSequence,java.lang.Iterable)
+Exceptions: 
+No exceptions
+Parameter Types: 
+interface java.lang.CharSequence
+interface java.lang.Iterable
+Return Type: java.lang.String
+Modifiers: public static
+ 
+Method: public java.lang.String java.lang.String.toLowerCase()
+Exceptions: 
+No exceptions
+Parameter Types: 
+No parameters
+Return Type: java.lang.String
+Modifiers: public
+ 
+Method: public java.lang.String java.lang.String.toLowerCase(java.util.Locale)
+Exceptions: 
+No exceptions
+Parameter Types: 
+class java.util.Locale
+Return Type: java.lang.String
+Modifiers: public
+ 
+Method: public java.lang.String java.lang.String.toUpperCase(java.util.Locale)
+Exceptions: 
+No exceptions
+Parameter Types: 
+class java.util.Locale
+Return Type: java.lang.String
+Modifiers: public
+ 
+Method: public java.lang.String java.lang.String.toUpperCase()
+Exceptions: 
+No exceptions
+Parameter Types: 
+No parameters
+Return Type: java.lang.String
+Modifiers: public
+ 
+Method: public java.lang.String java.lang.String.trim()
+Exceptions: 
+No exceptions
+Parameter Types: 
+No parameters
+Return Type: java.lang.String
+Modifiers: public
+ 
+Method: public java.lang.String java.lang.String.strip()
+Exceptions: 
+No exceptions
+Parameter Types: 
+No parameters
+Return Type: java.lang.String
+Modifiers: public
+ 
+Method: public java.lang.String java.lang.String.stripLeading()
+Exceptions: 
+No exceptions
+Parameter Types: 
+No parameters
+Return Type: java.lang.String
+Modifiers: public
+ 
+Method: public java.lang.String java.lang.String.stripTrailing()
+Exceptions: 
+No exceptions
+Parameter Types: 
+No parameters
+Return Type: java.lang.String
+Modifiers: public
+ 
+Method: public boolean java.lang.String.isBlank()
+Exceptions: 
+No exceptions
+Parameter Types: 
+No parameters
+Return Type: boolean
+Modifiers: public
+ 
+Method: private int java.lang.String.indexOfNonWhitespace()
+Exceptions: 
+No exceptions
+Parameter Types: 
+No parameters
+Return Type: int
+Modifiers: private
+ 
+Method: public java.util.stream.Stream java.lang.String.lines()
+Exceptions: 
+No exceptions
+Parameter Types: 
+No parameters
+Return Type: java.util.stream.Stream
+Modifiers: public
+ 
+Method: public java.util.stream.IntStream java.lang.String.chars()
+Exceptions: 
+No exceptions
+Parameter Types: 
+No parameters
+Return Type: java.util.stream.IntStream
+Modifiers: public
+ 
+Method: public char[] java.lang.String.toCharArray()
+Exceptions: 
+No exceptions
+Parameter Types: 
+No parameters
+Return Type: [C
+Modifiers: public
+ 
+Method: public static java.lang.String java.lang.String.format(java.lang.String,java.lang.Object[])
+Exceptions: 
+No exceptions
+Parameter Types: 
+class java.lang.String
+class [Ljava.lang.Object;
+Return Type: java.lang.String
+Modifiers: public static transient
+ 
+Method: public static java.lang.String java.lang.String.format(java.util.Locale,java.lang.String,java.lang.Object[])
+Exceptions: 
+No exceptions
+Parameter Types: 
+class java.util.Locale
+class java.lang.String
+class [Ljava.lang.Object;
+Return Type: java.lang.String
+Modifiers: public static transient
+ 
+Method: public static java.lang.String java.lang.String.copyValueOf(char[],int,int)
+Exceptions: 
+No exceptions
+Parameter Types: 
+class [C
+int
+int
+Return Type: java.lang.String
+Modifiers: public static
+ 
+Method: public static java.lang.String java.lang.String.copyValueOf(char[])
+Exceptions: 
+No exceptions
+Parameter Types: 
+class [C
+Return Type: java.lang.String
+Modifiers: public static
+ 
+Method: public native java.lang.String java.lang.String.intern()
+Exceptions: 
+No exceptions
+Parameter Types: 
+No parameters
+Return Type: java.lang.String
+Modifiers: public native
+ 
+Method: public java.lang.String java.lang.String.repeat(int)
+Exceptions: 
+No exceptions
+Parameter Types: 
+int
+Return Type: java.lang.String
+Modifiers: public
+ 
+Method: private boolean java.lang.String.isLatin1()
+Exceptions: 
+No exceptions
+Parameter Types: 
+No parameters
+Return Type: boolean
+Modifiers: private
+ 
+Method: static void java.lang.String.checkOffset(int,int)
+Exceptions: 
+No exceptions
+Parameter Types: 
+int
+int
+Return Type: void
+Modifiers: static
+ 
+Method: static void java.lang.String.checkBoundsOffCount(int,int,int)
+Exceptions: 
+No exceptions
+Parameter Types: 
+int
+int
+int
+Return Type: void
+Modifiers: static
+ 
+Method: static void java.lang.String.checkBoundsBeginEnd(int,int,int)
+Exceptions: 
+No exceptions
+Parameter Types: 
+int
+int
+int
+Return Type: void
+Modifiers: static
+ 
+Method: static java.lang.String java.lang.String.valueOfCodePoint(int)
+Exceptions: 
+No exceptions
+Parameter Types: 
+int
+Return Type: java.lang.String
+Modifiers: static
+ 
+Constructors for java.lang.String: 
 public java.lang.String(byte[])
 Parameter Types: 
 class [B
@@ -92,6 +963,7 @@ Modifiers: public
  
 public java.lang.String()
 Parameter Types: 
+No parameters
 Modifiers: public
  
 public java.lang.String(byte[],int,int,java.lang.String) throws java.io.UnsupportedEncodingException
@@ -123,851 +995,69 @@ int
 int
 Modifiers: public
  
-Methods at depth 0: 
-byte[] java.lang.String.value()
-Exceptions: 
-No exceptions
-Parameter Types: 
-No parameters
-Return Type: [B
-Modifiers: 
- 
-public boolean java.lang.String.equals(java.lang.Object)
-Exceptions: 
-No exceptions
-Parameter Types: 
-class java.lang.Object
-Return Type: boolean
-Modifiers: public
- 
-public int java.lang.String.length()
-Exceptions: 
-No exceptions
-Parameter Types: 
-No parameters
-Return Type: int
-Modifiers: public
- 
-public java.lang.String java.lang.String.toString()
-Exceptions: 
-No exceptions
-Parameter Types: 
-No parameters
-Return Type: java.lang.String
-Modifiers: public
- 
-public int java.lang.String.hashCode()
-Exceptions: 
-No exceptions
-Parameter Types: 
-No parameters
-Return Type: int
-Modifiers: public
- 
-public void java.lang.String.getChars(int,int,char[],int)
-Exceptions: 
-No exceptions
-Parameter Types: 
-int
-int
-class [C
-int
-Return Type: void
-Modifiers: public
- 
-public int java.lang.String.compareTo(java.lang.String)
-Exceptions: 
-No exceptions
-Parameter Types: 
-class java.lang.String
-Return Type: int
-Modifiers: public
- 
-public int java.lang.String.compareTo(java.lang.Object)
-Exceptions: 
-No exceptions
-Parameter Types: 
-class java.lang.Object
-Return Type: int
-Modifiers: public volatile
- 
-public int java.lang.String.indexOf(java.lang.String,int)
-Exceptions: 
-No exceptions
-Parameter Types: 
-class java.lang.String
-int
-Return Type: int
-Modifiers: public
- 
-public int java.lang.String.indexOf(int)
-Exceptions: 
-No exceptions
-Parameter Types: 
-int
-Return Type: int
-Modifiers: public
- 
-static int java.lang.String.indexOf(byte[],byte,int,java.lang.String,int)
-Exceptions: 
-No exceptions
-Parameter Types: 
-class [B
-byte
-int
-class java.lang.String
-int
-Return Type: int
-Modifiers: static
- 
-public int java.lang.String.indexOf(int,int)
-Exceptions: 
-No exceptions
-Parameter Types: 
-int
-int
-Return Type: int
-Modifiers: public
- 
-public int java.lang.String.indexOf(java.lang.String)
-Exceptions: 
-No exceptions
-Parameter Types: 
-class java.lang.String
-Return Type: int
-Modifiers: public
- 
-static void java.lang.String.checkIndex(int,int)
-Exceptions: 
-No exceptions
-Parameter Types: 
-int
-int
-Return Type: void
-Modifiers: static
- 
-public static java.lang.String java.lang.String.valueOf(int)
-Exceptions: 
-No exceptions
-Parameter Types: 
-int
-Return Type: java.lang.String
-Modifiers: public static
- 
-public static java.lang.String java.lang.String.valueOf(float)
-Exceptions: 
-No exceptions
-Parameter Types: 
-float
-Return Type: java.lang.String
-Modifiers: public static
- 
-public static java.lang.String java.lang.String.valueOf(boolean)
-Exceptions: 
-No exceptions
-Parameter Types: 
-boolean
-Return Type: java.lang.String
-Modifiers: public static
- 
-public static java.lang.String java.lang.String.valueOf(long)
-Exceptions: 
-No exceptions
-Parameter Types: 
-long
-Return Type: java.lang.String
-Modifiers: public static
- 
-public static java.lang.String java.lang.String.valueOf(double)
-Exceptions: 
-No exceptions
-Parameter Types: 
-double
-Return Type: java.lang.String
-Modifiers: public static
- 
-public static java.lang.String java.lang.String.valueOf(java.lang.Object)
-Exceptions: 
-No exceptions
-Parameter Types: 
-class java.lang.Object
-Return Type: java.lang.String
-Modifiers: public static
- 
-public static java.lang.String java.lang.String.valueOf(char)
-Exceptions: 
-No exceptions
-Parameter Types: 
-char
-Return Type: java.lang.String
-Modifiers: public static
- 
-public static java.lang.String java.lang.String.valueOf(char[])
-Exceptions: 
-No exceptions
-Parameter Types: 
-class [C
-Return Type: java.lang.String
-Modifiers: public static
- 
-public static java.lang.String java.lang.String.valueOf(char[],int,int)
-Exceptions: 
-No exceptions
-Parameter Types: 
-class [C
-int
-int
-Return Type: java.lang.String
-Modifiers: public static
- 
-byte java.lang.String.coder()
-Exceptions: 
-No exceptions
-Parameter Types: 
-No parameters
-Return Type: byte
-Modifiers: 
- 
-private static java.lang.Void java.lang.String.rangeCheck(char[],int,int)
-Exceptions: 
-No exceptions
-Parameter Types: 
-class [C
-int
-int
-Return Type: java.lang.Void
-Modifiers: private static
- 
-public java.util.stream.IntStream java.lang.String.codePoints()
-Exceptions: 
-No exceptions
-Parameter Types: 
-No parameters
-Return Type: java.util.stream.IntStream
-Modifiers: public
- 
-public boolean java.lang.String.isEmpty()
-Exceptions: 
-No exceptions
-Parameter Types: 
-No parameters
-Return Type: boolean
-Modifiers: public
- 
-public char java.lang.String.charAt(int)
-Exceptions: 
-No exceptions
-Parameter Types: 
-int
-Return Type: char
-Modifiers: public
- 
-public int java.lang.String.codePointAt(int)
-Exceptions: 
-No exceptions
-Parameter Types: 
-int
-Return Type: int
-Modifiers: public
- 
-public int java.lang.String.codePointBefore(int)
-Exceptions: 
-No exceptions
-Parameter Types: 
-int
-Return Type: int
-Modifiers: public
- 
-public int java.lang.String.codePointCount(int,int)
-Exceptions: 
-No exceptions
-Parameter Types: 
-int
-int
-Return Type: int
-Modifiers: public
- 
-public int java.lang.String.offsetByCodePoints(int,int)
-Exceptions: 
-No exceptions
-Parameter Types: 
-int
-int
-Return Type: int
-Modifiers: public
- 
-public byte[] java.lang.String.getBytes(java.nio.charset.Charset)
-Exceptions: 
-No exceptions
-Parameter Types: 
-class java.nio.charset.Charset
-Return Type: [B
-Modifiers: public
- 
-public void java.lang.String.getBytes(int,int,byte[],int)
-Exceptions: 
-No exceptions
-Parameter Types: 
-int
-int
-class [B
-int
-Return Type: void
-Modifiers: public
- 
-public byte[] java.lang.String.getBytes(java.lang.String) throws java.io.UnsupportedEncodingException
-Exceptions: 
-class java.io.UnsupportedEncodingException
-Parameter Types: 
-class java.lang.String
-Return Type: [B
-Modifiers: public
- 
-public byte[] java.lang.String.getBytes()
-Exceptions: 
-No exceptions
-Parameter Types: 
-No parameters
-Return Type: [B
-Modifiers: public
- 
-void java.lang.String.getBytes(byte[],int,byte)
-Exceptions: 
-No exceptions
-Parameter Types: 
-class [B
-int
-byte
-Return Type: void
-Modifiers: 
- 
-public boolean java.lang.String.contentEquals(java.lang.StringBuffer)
-Exceptions: 
-No exceptions
-Parameter Types: 
-class java.lang.StringBuffer
-Return Type: boolean
-Modifiers: public
- 
-public boolean java.lang.String.contentEquals(java.lang.CharSequence)
-Exceptions: 
-No exceptions
-Parameter Types: 
-interface java.lang.CharSequence
-Return Type: boolean
-Modifiers: public
- 
-private boolean java.lang.String.nonSyncContentEquals(java.lang.AbstractStringBuilder)
-Exceptions: 
-No exceptions
-Parameter Types: 
-class java.lang.AbstractStringBuilder
-Return Type: boolean
-Modifiers: private
- 
-public boolean java.lang.String.equalsIgnoreCase(java.lang.String)
-Exceptions: 
-No exceptions
-Parameter Types: 
-class java.lang.String
-Return Type: boolean
-Modifiers: public
- 
-public int java.lang.String.compareToIgnoreCase(java.lang.String)
-Exceptions: 
-No exceptions
-Parameter Types: 
-class java.lang.String
-Return Type: int
-Modifiers: public
- 
-public boolean java.lang.String.regionMatches(boolean,int,java.lang.String,int,int)
-Exceptions: 
-No exceptions
-Parameter Types: 
-boolean
-int
-class java.lang.String
-int
-int
-Return Type: boolean
-Modifiers: public
- 
-public boolean java.lang.String.regionMatches(int,java.lang.String,int,int)
-Exceptions: 
-No exceptions
-Parameter Types: 
-int
-class java.lang.String
-int
-int
-Return Type: boolean
-Modifiers: public
- 
-public boolean java.lang.String.startsWith(java.lang.String)
-Exceptions: 
-No exceptions
-Parameter Types: 
-class java.lang.String
-Return Type: boolean
-Modifiers: public
- 
-public boolean java.lang.String.startsWith(java.lang.String,int)
-Exceptions: 
-No exceptions
-Parameter Types: 
-class java.lang.String
-int
-Return Type: boolean
-Modifiers: public
- 
-public boolean java.lang.String.endsWith(java.lang.String)
-Exceptions: 
-No exceptions
-Parameter Types: 
-class java.lang.String
-Return Type: boolean
-Modifiers: public
- 
-public int java.lang.String.lastIndexOf(int)
-Exceptions: 
-No exceptions
-Parameter Types: 
-int
-Return Type: int
-Modifiers: public
- 
-static int java.lang.String.lastIndexOf(byte[],byte,int,java.lang.String,int)
-Exceptions: 
-No exceptions
-Parameter Types: 
-class [B
-byte
-int
-class java.lang.String
-int
-Return Type: int
-Modifiers: static
- 
-public int java.lang.String.lastIndexOf(java.lang.String,int)
-Exceptions: 
-No exceptions
-Parameter Types: 
-class java.lang.String
-int
-Return Type: int
-Modifiers: public
- 
-public int java.lang.String.lastIndexOf(java.lang.String)
-Exceptions: 
-No exceptions
-Parameter Types: 
-class java.lang.String
-Return Type: int
-Modifiers: public
- 
-public int java.lang.String.lastIndexOf(int,int)
-Exceptions: 
-No exceptions
-Parameter Types: 
-int
-int
-Return Type: int
-Modifiers: public
- 
-public java.lang.String java.lang.String.substring(int,int)
-Exceptions: 
-No exceptions
-Parameter Types: 
-int
-int
-Return Type: java.lang.String
-Modifiers: public
- 
-public java.lang.String java.lang.String.substring(int)
-Exceptions: 
-No exceptions
-Parameter Types: 
-int
-Return Type: java.lang.String
-Modifiers: public
- 
-public java.lang.CharSequence java.lang.String.subSequence(int,int)
-Exceptions: 
-No exceptions
-Parameter Types: 
-int
-int
-Return Type: java.lang.CharSequence
-Modifiers: public
- 
-public java.lang.String java.lang.String.concat(java.lang.String)
-Exceptions: 
-No exceptions
-Parameter Types: 
-class java.lang.String
-Return Type: java.lang.String
-Modifiers: public
- 
-public java.lang.String java.lang.String.replace(java.lang.CharSequence,java.lang.CharSequence)
-Exceptions: 
-No exceptions
-Parameter Types: 
-interface java.lang.CharSequence
-interface java.lang.CharSequence
-Return Type: java.lang.String
-Modifiers: public
- 
-public java.lang.String java.lang.String.replace(char,char)
-Exceptions: 
-No exceptions
-Parameter Types: 
-char
-char
-Return Type: java.lang.String
-Modifiers: public
- 
-public boolean java.lang.String.matches(java.lang.String)
-Exceptions: 
-No exceptions
-Parameter Types: 
-class java.lang.String
-Return Type: boolean
-Modifiers: public
- 
-public boolean java.lang.String.contains(java.lang.CharSequence)
-Exceptions: 
-No exceptions
-Parameter Types: 
-interface java.lang.CharSequence
-Return Type: boolean
-Modifiers: public
- 
-public java.lang.String java.lang.String.replaceFirst(java.lang.String,java.lang.String)
-Exceptions: 
-No exceptions
-Parameter Types: 
-class java.lang.String
-class java.lang.String
-Return Type: java.lang.String
-Modifiers: public
- 
-public java.lang.String java.lang.String.replaceAll(java.lang.String,java.lang.String)
-Exceptions: 
-No exceptions
-Parameter Types: 
-class java.lang.String
-class java.lang.String
-Return Type: java.lang.String
-Modifiers: public
- 
-public java.lang.String[] java.lang.String.split(java.lang.String)
-Exceptions: 
-No exceptions
-Parameter Types: 
-class java.lang.String
-Return Type: [Ljava.lang.String;
-Modifiers: public
- 
-public java.lang.String[] java.lang.String.split(java.lang.String,int)
-Exceptions: 
-No exceptions
-Parameter Types: 
-class java.lang.String
-int
-Return Type: [Ljava.lang.String;
-Modifiers: public
- 
-public static java.lang.String java.lang.String.join(java.lang.CharSequence,java.lang.CharSequence[])
-Exceptions: 
-No exceptions
-Parameter Types: 
-interface java.lang.CharSequence
-class [Ljava.lang.CharSequence;
-Return Type: java.lang.String
-Modifiers: public static transient
- 
-public static java.lang.String java.lang.String.join(java.lang.CharSequence,java.lang.Iterable)
-Exceptions: 
-No exceptions
-Parameter Types: 
-interface java.lang.CharSequence
-interface java.lang.Iterable
-Return Type: java.lang.String
-Modifiers: public static
- 
-public java.lang.String java.lang.String.toLowerCase()
-Exceptions: 
-No exceptions
-Parameter Types: 
-No parameters
-Return Type: java.lang.String
-Modifiers: public
- 
-public java.lang.String java.lang.String.toLowerCase(java.util.Locale)
-Exceptions: 
-No exceptions
-Parameter Types: 
-class java.util.Locale
-Return Type: java.lang.String
-Modifiers: public
- 
-public java.lang.String java.lang.String.toUpperCase(java.util.Locale)
-Exceptions: 
-No exceptions
-Parameter Types: 
-class java.util.Locale
-Return Type: java.lang.String
-Modifiers: public
- 
-public java.lang.String java.lang.String.toUpperCase()
-Exceptions: 
-No exceptions
-Parameter Types: 
-No parameters
-Return Type: java.lang.String
-Modifiers: public
- 
-public java.lang.String java.lang.String.trim()
-Exceptions: 
-No exceptions
-Parameter Types: 
-No parameters
-Return Type: java.lang.String
-Modifiers: public
- 
-public java.lang.String java.lang.String.strip()
-Exceptions: 
-No exceptions
-Parameter Types: 
-No parameters
-Return Type: java.lang.String
-Modifiers: public
- 
-public java.lang.String java.lang.String.stripLeading()
-Exceptions: 
-No exceptions
-Parameter Types: 
-No parameters
-Return Type: java.lang.String
-Modifiers: public
- 
-public java.lang.String java.lang.String.stripTrailing()
-Exceptions: 
-No exceptions
-Parameter Types: 
-No parameters
-Return Type: java.lang.String
-Modifiers: public
- 
-public boolean java.lang.String.isBlank()
-Exceptions: 
-No exceptions
-Parameter Types: 
-No parameters
-Return Type: boolean
-Modifiers: public
- 
-private int java.lang.String.indexOfNonWhitespace()
-Exceptions: 
-No exceptions
-Parameter Types: 
-No parameters
-Return Type: int
-Modifiers: private
- 
-public java.util.stream.Stream java.lang.String.lines()
-Exceptions: 
-No exceptions
-Parameter Types: 
-No parameters
-Return Type: java.util.stream.Stream
-Modifiers: public
- 
-public java.util.stream.IntStream java.lang.String.chars()
-Exceptions: 
-No exceptions
-Parameter Types: 
-No parameters
-Return Type: java.util.stream.IntStream
-Modifiers: public
- 
-public char[] java.lang.String.toCharArray()
-Exceptions: 
-No exceptions
-Parameter Types: 
-No parameters
-Return Type: [C
-Modifiers: public
- 
-public static java.lang.String java.lang.String.format(java.lang.String,java.lang.Object[])
-Exceptions: 
-No exceptions
-Parameter Types: 
-class java.lang.String
-class [Ljava.lang.Object;
-Return Type: java.lang.String
-Modifiers: public static transient
- 
-public static java.lang.String java.lang.String.format(java.util.Locale,java.lang.String,java.lang.Object[])
-Exceptions: 
-No exceptions
-Parameter Types: 
-class java.util.Locale
-class java.lang.String
-class [Ljava.lang.Object;
-Return Type: java.lang.String
-Modifiers: public static transient
- 
-public static java.lang.String java.lang.String.copyValueOf(char[],int,int)
-Exceptions: 
-No exceptions
-Parameter Types: 
-class [C
-int
-int
-Return Type: java.lang.String
-Modifiers: public static
- 
-public static java.lang.String java.lang.String.copyValueOf(char[])
-Exceptions: 
-No exceptions
-Parameter Types: 
-class [C
-Return Type: java.lang.String
-Modifiers: public static
- 
-public native java.lang.String java.lang.String.intern()
-Exceptions: 
-No exceptions
-Parameter Types: 
-No parameters
-Return Type: java.lang.String
-Modifiers: public native
- 
-public java.lang.String java.lang.String.repeat(int)
-Exceptions: 
-No exceptions
-Parameter Types: 
-int
-Return Type: java.lang.String
-Modifiers: public
- 
-private boolean java.lang.String.isLatin1()
-Exceptions: 
-No exceptions
-Parameter Types: 
-No parameters
-Return Type: boolean
-Modifiers: private
- 
-static void java.lang.String.checkOffset(int,int)
-Exceptions: 
-No exceptions
-Parameter Types: 
-int
-int
-Return Type: void
-Modifiers: static
- 
-static void java.lang.String.checkBoundsOffCount(int,int,int)
-Exceptions: 
-No exceptions
-Parameter Types: 
-int
-int
-int
-Return Type: void
-Modifiers: static
- 
-static void java.lang.String.checkBoundsBeginEnd(int,int,int)
-Exceptions: 
-No exceptions
-Parameter Types: 
-int
-int
-int
-Return Type: void
-Modifiers: static
- 
-static java.lang.String java.lang.String.valueOfCodePoint(int)
-Exceptions: 
-No exceptions
-Parameter Types: 
-int
-Return Type: java.lang.String
-Modifiers: static
- 
-start field depth 0 :
 Fields: 
 value
 Type: 
 [B
-No fields
-hello
 Modifiers: private final
-Value at depth 1: 
-[B@5197848c
+Value at value: 
+[B@5910e440
  
 coder
 Type: 
 byte
 Modifiers: private final
-Value at depth 1: 
+Value at coder: 
 0
  
 hash
 Type: 
 int
 Modifiers: private
-Value at depth 1: 
+Value at hash: 
 0
  
 serialVersionUID
 Type: 
 long
 Modifiers: private static final
-Value at depth 1: 
+Value at serialVersionUID: 
 -6849794470754667710
  
 COMPACT_STRINGS
 Type: 
 boolean
 Modifiers: static final
-Value at depth 1: 
+Value at COMPACT_STRINGS: 
 true
  
 serialPersistentFields
 Type: 
 [Ljava.io.ObjectStreamField;
-No fields
-hello
 Modifiers: private static final
-Value at depth 2: 
-[Ljava.io.ObjectStreamField;@2e5d6d97
+Value at serialPersistentFields: 
+[Ljava.io.ObjectStreamField;@3d646c37
  
 CASE_INSENSITIVE_ORDER
 Type: 
 java.util.Comparator
-No fields
-hello
 Modifiers: public static final
-Value at depth 3: 
-java.lang.String$CaseInsensitiveComparator@238e0d81
+Value at CASE_INSENSITIVE_ORDER: 
+java.lang.String$CaseInsensitiveComparator@41cf53f9
  
 LATIN1
 Type: 
 byte
 Modifiers: static final
-Value at depth 3: 
+Value at LATIN1: 
 0
  
 UTF16
 Type: 
 byte
 Modifiers: static final
-Value at depth 3: 
+Value at UTF16: 
 1
  
-No immediate superclass ie top of the hierarchy
+	Superclass of java.lang.Object: null
 ======================================================

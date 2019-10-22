@@ -1,307 +1,205 @@
 import java.lang.reflect.*;
-
 public class Inspector {
+    String tab = "";
+    String tab2 = tab;
 
     public void inspect(Object obj, boolean recursive) {
         Class c = obj.getClass();
-
-        String className = c.getName();
-        System.out.println("The declaring class name is: "+className);
-        //findInterfaces(c, 0);
         inspectClass(c, obj, recursive, 0);
-        
-    	//Constructors
-    	/*
-    	Constructor[] constructors = c.getConstructors();
-	    if(constructors.length > 0){
-	    	System.out.println("Constructors: ");
-	    	for(int i = 0; i < constructors.length; i++){
-	    		System.out.println(constructors[i]);
-
-	    		//Parameter types
-	    		Class[] params = constructors[i].getParameterTypes();
-	    		System.out.println("Parameter Types: ");
-	    		for(int j = 0; j < params.length; j++){
-	    			System.out.println(params[j]);
-	    		}
-
-	    		//Modifiers
-	    		int mod = constructors[i].getModifiers();
-	    		System.out.println("Modifiers: "+Modifier.toString(mod));	
-
-	    		System.out.println(" ");
-	    	}
-	    }else{
-	    	System.out.println("No constructors");
-	    }
-	    */
-
-	    /*
-	    //Methods
-	    Method[] m = c.getMethods();
-	    if(m.length > 0){
-	    	System.out.println("Methods: ");
-	    	for(int i = 0; i < m.length; i ++){
-	    		System.out.println(m[i]);
-
-	    		//Exceptions thrown
-	    		Class[] e = m[i].getExceptionTypes();
-	    		System.out.println("Exceptions: ");
-	    		if(e.length == 0){
-	    			System.out.println("No exceptions");
-	    		}
-	    		for(int j = 0; j < e.length; j++){
-	    			System.out.println(e[j]);
-	    		}
-	    		
-	    		//Parameter types
-	    		Class[] params = m[i].getParameterTypes();
-	    		System.out.println("Parameter Types: ");
-	    		if(params.length == 0){
-	    			System.out.println("No parameters");
-	    		}
-	    		for(int j = 0; j < params.length; j++){
-	    			System.out.println(params[j]);
-	    		}
-
-	    		//Return type
-	    		String returnType = m[i].getReturnType().getName();
-	    		System.out.println("Return Type: "+returnType);
-
-	    		//Modifiers
-	    		int mod = m[i].getModifiers();
-	    		System.out.println("Modifiers: "+Modifier.toString(mod));	
-
-	    		System.out.println(" ");
-	    	}
-	    }else{
-	    	System.out.println("No methods");
-	    	System.out.println(" ");
-	    }
-	    */
-
-
-	    
-	    //Fields
-	    /*
-	    Field[] f = c.getDeclaredFields();
-	   	if(f.length > 0){
-	   		//Names
-	   		System.out.println("Fields: ");
-	   		for(int i = 0; i < f.length; i ++){
-	   			System.out.println(f[i].getName());
-
-			    //Type
-			    System.out.println("Type: ");
-			    System.out.println(f[i].getType().getName());
-
-			    //Modifiers
-			    int mod = f[i].getModifiers();
-	    		System.out.println("Modifiers: "+Modifier.toString(mod));	
-
-			    //Current values of each field
-			   	f[i].setAccessible(true);
-			   	try{
-			   		Object value = f[i].get(obj);
-			   		System.out.println("Value: ");
-			   		System.out.println(value);
-			   	}catch(Exception e){
-			   		e.printStackTrace();
-			   	}
-			   	
-			    //6i
-
-
-			    System.out.println(" ");
-		    }
-	   	}else{
-	   		System.out.println("No fields");
-	   	*/
-	   	
-		    
+        //inspectInterface(c, obj, recursive, 0);
     }
-    
-    private void findFields(Class c, Object obj, boolean recursive, int depth){
-    	//if recursive is false and the field is an object then no need to recurse
-    	
-    	//if field type is an object of another class and recursive == true, inspect field of that class
-    	//if field type is an object of another class and recursive == false, then no recursion 
 
-    	Field[] f = c.getDeclaredFields();
-	   	if(f.length > 0){
-	   		//Names
+    private void inspectInterface(Class c, Object obj, boolean recursive, String tb){
 
-	   		System.out.println("start field depth "+depth+" :");
-	   		System.out.println("Fields: ");
-	   		for(int i = 0; i < f.length; i ++){
-	   			System.out.println(f[i].getName());
+        Class[] interfaces = c.getInterfaces();
+        if(interfaces.length > 0){
+            System.out.println(tb+"Interfaces for"+c.getName()+": ");
+            for(int i = 0; i < interfaces.length; i++){
 
-			    //Type
-			    System.out.println("Type: ");
-			    System.out.println(f[i].getType().getName());
-
-			    //if field is an object of another class and recursive is true, recurse***
-			    if(!f[i].getType().isPrimitive()){
-			    	if(recursive == true){
-			    		depth++;
-			    		findFields(f[i].getType(), obj, recursive, depth);
-				    	System.out.println("hello");
-
-			    	}
-			    }
-
-			    //Modifiers
-			    int mod = f[i].getModifiers();
-	    		System.out.println("Modifiers: "+Modifier.toString(mod));	
-
-			    //Current values of each field
-			   	f[i].setAccessible(true);
-			   	try{
-			   		Object value = f[i].get(obj);
-			   		System.out.println("Value at depth "+depth+": ");
-			   		System.out.println(value);
-			   	}catch(Exception e){
-			   		e.printStackTrace();
-			   	}
-			   	
-			    //6i
-
-
-			    System.out.println(" ");
-		    }
-	   	}else{
-	   		System.out.println("No fields");
-	   	}
+                System.out.println(tb+interfaces[i]);
+                tab2+="\t";
+                findMethods(interfaces[i], tab2);
+                findConstructors(interfaces[i], tab2);
+                findFields(interfaces[i], obj, recursive, tab2);
+                inspectInterface(interfaces[i], obj, recursive, tab2);
+            }
+        }else{
+            System.out.println(tb+"No interfaces for "+c.getName());
+        }
     }
-    
 
-    private void findMethods(Class c, int depth){
-		Method[] m = c.getDeclaredMethods();
-	    if(m.length > 0){
-	    	System.out.println("Methods at depth "+depth+": ");
-	    	for(int i = 0; i < m.length; i ++){
-	    		System.out.println(m[i]);
+    private void findMethods(Class c, String tb){
+        Method[] m = c.getDeclaredMethods();
+        if(m.length > 0){
+            System.out.println(tb+"*Methods for "+c.getName()+": ");
+            for(int i = 0; i < m.length; i ++){
+                System.out.println(tb+"Method: "+m[i]);
 
-	    		//Exceptions thrown
-	    		Class[] e = m[i].getExceptionTypes();
-	    		System.out.println("Exceptions: ");
-	    		if(e.length == 0){
-	    			System.out.println("No exceptions");
-	    		}
-	    		for(int j = 0; j < e.length; j++){
-	    			System.out.println(e[j]);
-	    		}
-	    		
-	    		//Parameter types
-	    		Class[] params = m[i].getParameterTypes();
-	    		System.out.println("Parameter Types: ");
-	    		if(params.length == 0){
-	    			System.out.println("No parameters");
-	    		}
-	    		for(int j = 0; j < params.length; j++){
-	    			System.out.println(params[j]);
-	    		}
+                //Exceptions thrown
+                Class[] e = m[i].getExceptionTypes();
+                System.out.println(tb+"Exceptions: ");
+                if(e.length == 0){
+                    System.out.println(tb+"No exceptions");
+                }
+                for(int j = 0; j < e.length; j++){
+                    System.out.println(tb+e[j]);
+                }
+                
+                //Parameter types
+                Class[] params = m[i].getParameterTypes();
+                System.out.println(tb+"Parameter Types: ");
+                if(params.length == 0){
+                    System.out.println(tb+"No parameters");
+                }
+                for(int j = 0; j < params.length; j++){
+                    System.out.println(tb+params[j]);
+                }
 
-	    		//Return type
-	    		String returnType = m[i].getReturnType().getName();
-	    		System.out.println("Return Type: "+returnType);
+                //Return type
+                String returnType = m[i].getReturnType().getName();
+                System.out.println(tb+"Return Type: "+returnType);
 
-	    		//Modifiers
-	    		int mod = m[i].getModifiers();
-	    		System.out.println("Modifiers: "+Modifier.toString(mod));	
-
-	    		System.out.println(" ");
-	    	}
-	    }else{
-	    	System.out.println("No methods");
-	    	System.out.println(" ");
-	    }
+                //Modifiers
+                int mod = m[i].getModifiers();
+                System.out.println(tb+"Modifiers: "+Modifier.toString(mod));  
+                System.out.println(" "); 
+            }
+        }else{
+            System.out.println("No methods");
+            System.out.println(" ");
+        }
     }
 
     //refactored into another method
-    private void findConstructors(Class c, int depth){
-    	Constructor[] constructors = c.getDeclaredConstructors();
-	    if(constructors.length > 0){
-	    	System.out.println("Constructors at depth "+depth+": ");
-	    	for(int i = 0; i < constructors.length; i++){
-	    		System.out.println(constructors[i]);
+    private void findConstructors(Class c, String tb){
+        Constructor[] constructors = c.getDeclaredConstructors();
+        if(constructors.length > 0){
+            System.out.println(tb+"Constructors for "+c.getName()+": ");
+            for(int i = 0; i < constructors.length; i++){
+                System.out.println(tb+constructors[i]);
 
-	    		//Parameter types
-	    		Class[] params = constructors[i].getParameterTypes();
-	    		System.out.println("Parameter Types: ");
-	    		for(int j = 0; j < params.length; j++){
-	    			System.out.println(params[j]);
-	    		}
+                //Parameter types
+                Class[] params = constructors[i].getParameterTypes();
+                System.out.println(tb+"Parameter Types: ");
+                if(params.length == 0){
+                    System.out.println(tb+"No parameters");
+                }
+                for(int j = 0; j < params.length; j++){
+                    System.out.println(tb+params[j]);
+                }
+                //Modifiers
+                int mod = constructors[i].getModifiers();
+                System.out.println(tb+"Modifiers: "+Modifier.toString(mod));   
 
-	    		//Modifiers
-	    		int mod = constructors[i].getModifiers();
-	    		System.out.println("Modifiers: "+Modifier.toString(mod));	
-
-	    		System.out.println(" ");
-	    	}
-	    }else{
-	    	System.out.println("No constructors");
-	    	System.out.println(" ");
-	    }
+                System.out.println(" ");
+            }
+        }else{
+            System.out.println(tb+"No constructors");
+            System.out.println(" ");
+        }
     }
 
-    //refactored by moving finding interfaces functionality
-    //within a method
-    private void findInterfaces(Class c, int depth){
-    	Class[] interfaces = c.getInterfaces();
-    	if(interfaces.length > 0){
-    		System.out.println("Interfaces for"+c.getName()+" at depth "+depth+": ");
-    		for(int i = 0; i < interfaces.length; i++){
+    private void findFields(Class c, Object obj, boolean recursive, String tb){
+        //if recursive is false and the field is an object then no need to recurse
+        
+        //if field type is an object of another class and recursive == true, inspect field of that class
+        //if field type is an object of another class and recursive == false, then no recursion 
 
-    			System.out.println(interfaces[i]);
-    		}
-    	}else{
-    		System.out.println("No interfaces at depth"+depth);
-    	}
-    	System.out.println(" ");
+        Field[] f = c.getDeclaredFields();
+        if(f.length > 0){
+            //Names
+
+            //System.out.println(tb+"start field depth "+depth+" :");
+            System.out.println(tb+"Fields: ");
+            for(int i = 0; i < f.length; i ++){
+                System.out.println(tb+f[i].getName());
+
+                //Type
+                System.out.println(tb+"Type: ");
+                System.out.println(tb+f[i].getType().getName());
+
+                //if field is an object of another class and recursive is true, recurse***
+                /*
+                if(!f[i].getType().isPrimitive()){
+                    if(recursive == true){
+                        depth++;
+                        findFields(f[i].getType(), obj, recursive, depth);
+                        System.out.println("hello");
+
+                    }
+                }
+                */
+
+                //Modifiers
+                int mod = f[i].getModifiers();
+                System.out.println(tb+"Modifiers: "+Modifier.toString(mod));   
+
+                //Current values of each field
+                f[i].setAccessible(true);
+                try{
+                    Object value = f[i].get(obj);
+                    System.out.println(tb+"Value at "+f[i].getName()+": ");
+                    System.out.println(tb+value);
+                }catch(Exception e){
+                    e.printStackTrace();
+                }
+                
+                //6i
+
+
+                System.out.println(" ");
+            }
+        }else{
+            System.out.println(tb+"No fields");
+        }
     }
+    
 
     private void inspectClass(Class c, Object obj, boolean recursive, int depth) {
+    	
     	Class superC = c.getSuperclass();
     	if(c.getName().equals("java.lang.Object")){
     		if(depth == 0){
     			System.out.println("Declaring class is "+superC.getName());
     			///////////////////////////
-    			findInterfaces(c, depth);
-    			findConstructors(c, depth);
-    			findMethods(c, depth);
-    			findFields(c, obj, recursive, depth);
+                inspectInterface(c, obj, recursive, tab);
+                findMethods(c, tab);
+                findConstructors(c, tab);
+    			findFields(c, obj, recursive, tab);
 
     		}else{
-    			System.out.println("No immediate superclass ie top of the hierarchy");
+                //String superClass = c.getSuperclass().getName();
+    			System.out.println(tab+"Superclass of "+c.getName()+": "+null);
     		}
     	}else{
     		if(depth == 0){
+                System.out.println("Declaring class is: "+c.getName());
+
 				String superClass = c.getSuperclass().getName();
-		    	System.out.println("Immediate superclass is "+superClass);
+		    	System.out.println(tab+"Immediate superclass is "+superClass);
 		    	superC = c.getSuperclass();
-		    	System.out.println(" ");    		
+		    	//System.out.println(" ");    		
 		    }else{
 		    	String superClass = c.getSuperclass().getName();
-		    	System.out.println("Superclass at depth "+depth+" is: "+superClass);
+                System.out.println(tab+"Superclass of "+c.getName()+": "+superClass);
+		    	//System.out.println("Superclass at depth "+depth+" is: "+superClass);
 		    	superC = c.getSuperclass();
-		    	System.out.println(" ");
+		    	//System.out.println(" ");
 		    }
     		///////////////////////////
-		    findInterfaces(c, depth);
-		    findConstructors(c, depth);
-		    findMethods(c, depth);
-   			findFields(c, obj, recursive, depth);
+            inspectInterface(c, obj, recursive, tab);
+            findMethods(c, tab);
+            findConstructors(c, tab);
+   			findFields(c, obj, recursive, tab);
 
 		    
 		    depth++;
+            tab += "\t";
 
 
 
 		    inspectClass(superC, obj, recursive, depth);
     	}
-    	
     }
-	   	
 
 }

@@ -2,23 +2,11 @@
 Filename: script5.txt
 Running Test: ClassD
 Recursive: true
-The declaring class name is: ClassD
+Declaring class is: ClassD
 Immediate superclass is java.lang.Object
- 
-No interfaces at depth0
- 
-Constructors at depth 0: 
-public ClassD()
-Parameter Types: 
-Modifiers: public
- 
-public ClassD(int)
-Parameter Types: 
-int
-Modifiers: public
- 
-Methods at depth 0: 
-public java.lang.String ClassD.toString()
+No interfaces for ClassD
+*Methods for ClassD: 
+Method: public java.lang.String ClassD.toString()
 Exceptions: 
 No exceptions
 Parameter Types: 
@@ -26,7 +14,7 @@ No parameters
 Return Type: java.lang.String
 Modifiers: public
  
-public int ClassD.getVal3()
+Method: public int ClassD.getVal3()
 Exceptions: 
 No exceptions
 Parameter Types: 
@@ -34,73 +22,45 @@ No parameters
 Return Type: int
 Modifiers: public
  
-start field depth 0 :
-Fields: 
-val
-Type: 
-ClassA
-start field depth 1 :
-Fields: 
-val
-Type: 
+Constructors for ClassD: 
+public ClassD()
+Parameter Types: 
+No parameters
+Modifiers: public
+ 
+public ClassD(int)
+Parameter Types: 
 int
-Modifiers: private
+Modifiers: public
  
-val2
-Type: 
-double
-Modifiers: private
- 
-val3
-Type: 
-boolean
-Modifiers: private
- 
-hello
-Modifiers: private
-Value at depth 1: 
-ClassA
- 
-val2
-Type: 
-ClassA
-start field depth 2 :
 Fields: 
 val
 Type: 
-int
+ClassA
 Modifiers: private
+Value at val: 
+ClassA
  
 val2
 Type: 
-double
-Modifiers: private
- 
-val3
-Type: 
-boolean
-Modifiers: private
- 
-hello
+ClassA
 Modifiers: private static
-Value at depth 2: 
+Value at val2: 
 null
  
 val3
 Type: 
 int
 Modifiers: private
-Value at depth 2: 
+Value at val3: 
 34
  
 vallarray
 Type: 
 [LClassA;
-No fields
-hello
 Modifiers: private
-Value at depth 3: 
-[LClassA;@2e817b38
+Value at vallarray: 
+[LClassA;@439f5b3d
  
-No immediate superclass ie top of the hierarchy
+	Superclass of java.lang.Object: null
 ======================================================

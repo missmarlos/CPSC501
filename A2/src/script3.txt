@@ -2,365 +2,267 @@
 Filename: script3.txt
 Running Test: ClassB
 Recursive: true
-The declaring class name is: ClassB
+Declaring class is: ClassB
 Immediate superclass is ClassC
- 
-Interfaces forClassB at depth 0: 
+Interfaces forClassB: 
 interface java.lang.Runnable
+	*Methods for java.lang.Runnable: 
+	Method: public abstract void java.lang.Runnable.run()
+	Exceptions: 
+	No exceptions
+	Parameter Types: 
+	No parameters
+	Return Type: void
+	Modifiers: public abstract
  
-Constructors at depth 0: 
+	No constructors
+ 
+	No fields
+	No interfaces for java.lang.Runnable
+*Methods for ClassB: 
+Method: public void ClassB.run()
+Exceptions: 
+No exceptions
+Parameter Types: 
+No parameters
+Return Type: void
+Modifiers: public
+ 
+Method: public java.lang.String ClassB.toString()
+Exceptions: 
+No exceptions
+Parameter Types: 
+No parameters
+Return Type: java.lang.String
+Modifiers: public
+ 
+Method: public void ClassB.func3(int)
+Exceptions: 
+No exceptions
+Parameter Types: 
+int
+Return Type: void
+Modifiers: public
+ 
+Constructors for ClassB: 
 public ClassB() throws java.lang.Exception
 Parameter Types: 
-Modifiers: public
- 
-Methods at depth 0: 
-public void ClassB.run()
-Exceptions: 
-No exceptions
-Parameter Types: 
 No parameters
-Return Type: void
 Modifiers: public
  
-public java.lang.String ClassB.toString()
-Exceptions: 
-No exceptions
-Parameter Types: 
-No parameters
-Return Type: java.lang.String
-Modifiers: public
- 
-public void ClassB.func3(int)
-Exceptions: 
-No exceptions
-Parameter Types: 
-int
-Return Type: void
-Modifiers: public
- 
-start field depth 0 :
 Fields: 
 val
 Type: 
 ClassA
-start field depth 1 :
-Fields: 
-val
-Type: 
-int
 Modifiers: private
- 
-val2
-Type: 
-double
-Modifiers: private
- 
-val3
-Type: 
-boolean
-Modifiers: private
- 
-hello
-Modifiers: private
-Value at depth 1: 
+Value at val: 
 ClassA
  
 val2
 Type: 
 ClassA
-start field depth 2 :
-Fields: 
-val
-Type: 
-int
 Modifiers: private
- 
-val2
-Type: 
-double
-Modifiers: private
- 
-val3
-Type: 
-boolean
-Modifiers: private
- 
-hello
-Modifiers: private
-Value at depth 2: 
+Value at val2: 
 ClassA
  
 val3
 Type: 
 ClassA
-start field depth 3 :
-Fields: 
-val
-Type: 
-int
 Modifiers: private
- 
-val2
-Type: 
-double
-Modifiers: private
- 
-val3
-Type: 
-boolean
-Modifiers: private
- 
-hello
-Modifiers: private
-Value at depth 3: 
+Value at val3: 
 null
  
-Superclass at depth 1 is: ClassD
+	Superclass of ClassC: ClassD
+	Interfaces forClassC: 
+	interface InterfaceA
+		*Methods for InterfaceA: 
+		Method: public abstract void InterfaceA.func1(int,double,boolean,java.lang.String) throws java.lang.Exception
+		Exceptions: 
+		class java.lang.Exception
+		Parameter Types: 
+		int
+		double
+		boolean
+		class java.lang.String
+		Return Type: void
+		Modifiers: public abstract
  
-Interfaces forClassC at depth 1: 
-interface InterfaceA
+		Method: public abstract int InterfaceA.func2(java.lang.String) throws java.lang.Exception,java.lang.ArithmeticException,java.lang.IllegalMonitorStateException
+		Exceptions: 
+		class java.lang.Exception
+		class java.lang.ArithmeticException
+		class java.lang.IllegalMonitorStateException
+		Parameter Types: 
+		class java.lang.String
+		Return Type: int
+		Modifiers: public abstract
  
-Constructors at depth 1: 
-public ClassC()
-Parameter Types: 
-Modifiers: public
+		No constructors
  
-public ClassC(int,int)
-Parameter Types: 
-int
-int
-Modifiers: public
+		No fields
+		Interfaces forInterfaceA: 
+		interface InterfaceB
+			*Methods for InterfaceB: 
+			Method: public abstract void InterfaceB.func0(int,boolean) throws java.lang.Exception
+			Exceptions: 
+			class java.lang.Exception
+			Parameter Types: 
+			int
+			boolean
+			Return Type: void
+			Modifiers: public abstract
  
-Methods at depth 1: 
-public void ClassC.run()
-Exceptions: 
-No exceptions
-Parameter Types: 
-No parameters
-Return Type: void
-Modifiers: public
+			No constructors
  
-public java.lang.String ClassC.toString()
-Exceptions: 
-No exceptions
-Parameter Types: 
-No parameters
-Return Type: java.lang.String
-Modifiers: public
+			No fields
+			No interfaces for InterfaceB
+	*Methods for ClassC: 
+	Method: public void ClassC.run()
+	Exceptions: 
+	No exceptions
+	Parameter Types: 
+	No parameters
+	Return Type: void
+	Modifiers: public
  
-public abstract void ClassC.func3(int)
-Exceptions: 
-No exceptions
-Parameter Types: 
-int
-Return Type: void
-Modifiers: public abstract
+	Method: public java.lang.String ClassC.toString()
+	Exceptions: 
+	No exceptions
+	Parameter Types: 
+	No parameters
+	Return Type: java.lang.String
+	Modifiers: public
  
-public void ClassC.func0(int,boolean) throws java.lang.Exception
-Exceptions: 
-class java.lang.Exception
-Parameter Types: 
-int
-boolean
-Return Type: void
-Modifiers: public
+	Method: public abstract void ClassC.func3(int)
+	Exceptions: 
+	No exceptions
+	Parameter Types: 
+	int
+	Return Type: void
+	Modifiers: public abstract
  
-public void ClassC.func1(int,double,boolean,java.lang.String) throws java.lang.Exception
-Exceptions: 
-class java.lang.Exception
-Parameter Types: 
-int
-double
-boolean
-class java.lang.String
-Return Type: void
-Modifiers: public
+	Method: public void ClassC.func0(int,boolean) throws java.lang.Exception
+	Exceptions: 
+	class java.lang.Exception
+	Parameter Types: 
+	int
+	boolean
+	Return Type: void
+	Modifiers: public
  
-public int ClassC.func2(java.lang.String) throws java.lang.Exception,java.lang.ArithmeticException,java.lang.IllegalMonitorStateException
-Exceptions: 
-class java.lang.Exception
-class java.lang.ArithmeticException
-class java.lang.IllegalMonitorStateException
-Parameter Types: 
-class java.lang.String
-Return Type: int
-Modifiers: public
+	Method: public void ClassC.func1(int,double,boolean,java.lang.String) throws java.lang.Exception
+	Exceptions: 
+	class java.lang.Exception
+	Parameter Types: 
+	int
+	double
+	boolean
+	class java.lang.String
+	Return Type: void
+	Modifiers: public
  
-start field depth 1 :
-Fields: 
-val2
-Type: 
-ClassA
-start field depth 2 :
-Fields: 
-val
-Type: 
-int
-Modifiers: private
+	Method: public int ClassC.func2(java.lang.String) throws java.lang.Exception,java.lang.ArithmeticException,java.lang.IllegalMonitorStateException
+	Exceptions: 
+	class java.lang.Exception
+	class java.lang.ArithmeticException
+	class java.lang.IllegalMonitorStateException
+	Parameter Types: 
+	class java.lang.String
+	Return Type: int
+	Modifiers: public
  
-val2
-Type: 
-double
-Modifiers: private
+	Constructors for ClassC: 
+	public ClassC()
+	Parameter Types: 
+	No parameters
+	Modifiers: public
  
-val3
-Type: 
-boolean
-Modifiers: private
+	public ClassC(int,int)
+	Parameter Types: 
+	int
+	int
+	Modifiers: public
  
-hello
-Modifiers: private
-Value at depth 2: 
-ClassA
+	Fields: 
+	val2
+	Type: 
+	ClassA
+	Modifiers: private
+	Value at val2: 
+	ClassA
  
-val3
-Type: 
-ClassA
-start field depth 3 :
-Fields: 
-val
-Type: 
-int
-Modifiers: private
+	val3
+	Type: 
+	ClassA
+	Modifiers: private
+	Value at val3: 
+	ClassA
  
-val2
-Type: 
-double
-Modifiers: private
+	val4
+	Type: 
+	ClassA
+	Modifiers: private
+	Value at val4: 
+	ClassA
  
-val3
-Type: 
-boolean
-Modifiers: private
+		Superclass of ClassD: java.lang.Object
+		No interfaces for ClassD
+		*Methods for ClassD: 
+		Method: public java.lang.String ClassD.toString()
+		Exceptions: 
+		No exceptions
+		Parameter Types: 
+		No parameters
+		Return Type: java.lang.String
+		Modifiers: public
  
-hello
-Modifiers: private
-Value at depth 3: 
-ClassA
+		Method: public int ClassD.getVal3()
+		Exceptions: 
+		No exceptions
+		Parameter Types: 
+		No parameters
+		Return Type: int
+		Modifiers: public
  
-val4
-Type: 
-ClassA
-start field depth 4 :
-Fields: 
-val
-Type: 
-int
-Modifiers: private
+		Constructors for ClassD: 
+		public ClassD()
+		Parameter Types: 
+		No parameters
+		Modifiers: public
  
-val2
-Type: 
-double
-Modifiers: private
+		public ClassD(int)
+		Parameter Types: 
+		int
+		Modifiers: public
  
-val3
-Type: 
-boolean
-Modifiers: private
+		Fields: 
+		val
+		Type: 
+		ClassA
+		Modifiers: private
+		Value at val: 
+		ClassA
  
-hello
-Modifiers: private
-Value at depth 4: 
-ClassA
+		val2
+		Type: 
+		ClassA
+		Modifiers: private static
+		Value at val2: 
+		null
  
-Superclass at depth 2 is: java.lang.Object
+		val3
+		Type: 
+		int
+		Modifiers: private
+		Value at val3: 
+		34
  
-No interfaces at depth2
+		vallarray
+		Type: 
+		[LClassA;
+		Modifiers: private
+		Value at vallarray: 
+		[LClassA;@20ad9418
  
-Constructors at depth 2: 
-public ClassD()
-Parameter Types: 
-Modifiers: public
- 
-public ClassD(int)
-Parameter Types: 
-int
-Modifiers: public
- 
-Methods at depth 2: 
-public java.lang.String ClassD.toString()
-Exceptions: 
-No exceptions
-Parameter Types: 
-No parameters
-Return Type: java.lang.String
-Modifiers: public
- 
-public int ClassD.getVal3()
-Exceptions: 
-No exceptions
-Parameter Types: 
-No parameters
-Return Type: int
-Modifiers: public
- 
-start field depth 2 :
-Fields: 
-val
-Type: 
-ClassA
-start field depth 3 :
-Fields: 
-val
-Type: 
-int
-Modifiers: private
- 
-val2
-Type: 
-double
-Modifiers: private
- 
-val3
-Type: 
-boolean
-Modifiers: private
- 
-hello
-Modifiers: private
-Value at depth 3: 
-ClassA
- 
-val2
-Type: 
-ClassA
-start field depth 4 :
-Fields: 
-val
-Type: 
-int
-Modifiers: private
- 
-val2
-Type: 
-double
-Modifiers: private
- 
-val3
-Type: 
-boolean
-Modifiers: private
- 
-hello
-Modifiers: private static
-Value at depth 4: 
-null
- 
-val3
-Type: 
-int
-Modifiers: private
-Value at depth 4: 
-34
- 
-vallarray
-Type: 
-[LClassA;
-No fields
-hello
-Modifiers: private
-Value at depth 5: 
-[LClassA;@378fd1ac
- 
-No immediate superclass ie top of the hierarchy
+			Superclass of java.lang.Object: null
 ======================================================

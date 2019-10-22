@@ -1,18 +1,28 @@
 ======================================================
 Filename: script7.txt
-Running Test: [[LClassB;@3f91beef
+Running Test: [[LClassB;@17f052a3
 Recursive: true
-The declaring class name is: [[LClassB;
+Declaring class is: [[LClassB;
 Immediate superclass is java.lang.Object
- 
-Interfaces for[[LClassB; at depth 0: 
+Interfaces for[[LClassB;: 
 interface java.lang.Cloneable
+No methods
+ 
+	No constructors
+ 
+	No fields
+	No interfaces for java.lang.Cloneable
 interface java.io.Serializable
+No methods
+ 
+		No constructors
+ 
+		No fields
+		No interfaces for java.io.Serializable
+No methods
  
 No constructors
  
-No methods
- 
 No fields
-No immediate superclass ie top of the hierarchy
+	Superclass of java.lang.Object: null
 ======================================================
