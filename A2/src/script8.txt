@@ -999,9 +999,11 @@ Fields:
 value
 Type: 
 [B
+	No fields
+hello
 Modifiers: private final
 Value at value: 
-[B@5910e440
+[B@2cdf8d8a
  
 coder
 Type: 
@@ -1034,16 +1036,20 @@ true
 serialPersistentFields
 Type: 
 [Ljava.io.ObjectStreamField;
+	No fields
+hello
 Modifiers: private static final
 Value at serialPersistentFields: 
-[Ljava.io.ObjectStreamField;@3d646c37
+[Ljava.io.ObjectStreamField;@5f4da5c3
  
 CASE_INSENSITIVE_ORDER
 Type: 
 java.util.Comparator
+	No fields
+hello
 Modifiers: public static final
 Value at CASE_INSENSITIVE_ORDER: 
-java.lang.String$CaseInsensitiveComparator@41cf53f9
+java.lang.String$CaseInsensitiveComparator@443b7951
  
 LATIN1
 Type: 

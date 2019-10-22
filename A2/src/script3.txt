@@ -54,6 +54,23 @@ Fields:
 val
 Type: 
 ClassA
+	Fields: 
+	val
+	Type: 
+	int
+	Modifiers: private
+ 
+	val2
+	Type: 
+	double
+	Modifiers: private
+ 
+	val3
+	Type: 
+	boolean
+	Modifiers: private
+ 
+hello
 Modifiers: private
 Value at val: 
 ClassA
@@ -61,6 +78,23 @@ ClassA
 val2
 Type: 
 ClassA
+	Fields: 
+	val
+	Type: 
+	int
+	Modifiers: private
+ 
+	val2
+	Type: 
+	double
+	Modifiers: private
+ 
+	val3
+	Type: 
+	boolean
+	Modifiers: private
+ 
+hello
 Modifiers: private
 Value at val2: 
 ClassA
@@ -68,6 +102,23 @@ ClassA
 val3
 Type: 
 ClassA
+	Fields: 
+	val
+	Type: 
+	int
+	Modifiers: private
+ 
+	val2
+	Type: 
+	double
+	Modifiers: private
+ 
+	val3
+	Type: 
+	boolean
+	Modifiers: private
+ 
+hello
 Modifiers: private
 Value at val3: 
 null
@@ -187,6 +238,23 @@ null
 	val2
 	Type: 
 	ClassA
+		Fields: 
+		val
+		Type: 
+		int
+		Modifiers: private
+ 
+		val2
+		Type: 
+		double
+		Modifiers: private
+ 
+		val3
+		Type: 
+		boolean
+		Modifiers: private
+ 
+hello
 	Modifiers: private
 	Value at val2: 
 	ClassA
@@ -194,6 +262,23 @@ null
 	val3
 	Type: 
 	ClassA
+		Fields: 
+		val
+		Type: 
+		int
+		Modifiers: private
+ 
+		val2
+		Type: 
+		double
+		Modifiers: private
+ 
+		val3
+		Type: 
+		boolean
+		Modifiers: private
+ 
+hello
 	Modifiers: private
 	Value at val3: 
 	ClassA
@@ -201,6 +286,23 @@ null
 	val4
 	Type: 
 	ClassA
+		Fields: 
+		val
+		Type: 
+		int
+		Modifiers: private
+ 
+		val2
+		Type: 
+		double
+		Modifiers: private
+ 
+		val3
+		Type: 
+		boolean
+		Modifiers: private
+ 
+hello
 	Modifiers: private
 	Value at val4: 
 	ClassA
@@ -239,6 +341,23 @@ null
 		val
 		Type: 
 		ClassA
+			Fields: 
+			val
+			Type: 
+			int
+			Modifiers: private
+ 
+			val2
+			Type: 
+			double
+			Modifiers: private
+ 
+			val3
+			Type: 
+			boolean
+			Modifiers: private
+ 
+hello
 		Modifiers: private
 		Value at val: 
 		ClassA
@@ -246,6 +365,23 @@ null
 		val2
 		Type: 
 		ClassA
+			Fields: 
+			val
+			Type: 
+			int
+			Modifiers: private
+ 
+			val2
+			Type: 
+			double
+			Modifiers: private
+ 
+			val3
+			Type: 
+			boolean
+			Modifiers: private
+ 
+hello
 		Modifiers: private static
 		Value at val2: 
 		null
@@ -260,9 +396,11 @@ null
 		vallarray
 		Type: 
 		[LClassA;
+			No fields
+hello
 		Modifiers: private
 		Value at vallarray: 
-		[LClassA;@20ad9418
+		[LClassA;@b81eda8
  
 			Superclass of java.lang.Object: null
 ======================================================

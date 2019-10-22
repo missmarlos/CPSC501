@@ -2,6 +2,7 @@ import java.lang.reflect.*;
 public class Inspector {
     String tab = "";
     String tab2 = tab;
+    String tab3 = "";
 
     public void inspect(Object obj, boolean recursive) {
         Class c = obj.getClass();
@@ -119,16 +120,20 @@ public class Inspector {
                 System.out.println(tb+f[i].getType().getName());
 
                 //if field is an object of another class and recursive is true, recurse***
-                /*
                 if(!f[i].getType().isPrimitive()){
                     if(recursive == true){
-                        depth++;
-                        findFields(f[i].getType(), obj, recursive, depth);
+                        tab3 = tb + "\t";
+                        findFields(f[i].getType(), obj, recursive, tab3);
                         System.out.println("hello");
 
+                    }else if(recursive == false){
+                        //print out the reference value 
+                        //ie print out objects class and identity hash code
+                        System.out.println(c.getName()+"@"+Integer.toHexString(System.identityHashCode(obj)));
                     }
+
                 }
-                */
+                
 
                 //Modifiers
                 int mod = f[i].getModifiers();
