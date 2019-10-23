@@ -2,6 +2,7 @@
 Filename: script8.txt
 Running Test: Test String
 Recursive: true
+NEW CLASS java.lang.String
 Declaring class is: java.lang.String
 Immediate superclass is java.lang.Object
 Interfaces forjava.lang.String: 
@@ -995,15 +996,142 @@ int
 int
 Modifiers: public
  
-Fields: 
+Fields for java.lang.String: 
 value
 Type: 
 [B
-	No fields
-hello
 Modifiers: private final
-Value at value: 
-[B@2cdf8d8a
+NEW CLASS [B
+Declaring class is: [B
+Immediate superclass is java.lang.Object
+Interfaces for[B: 
+interface java.lang.Cloneable
+No methods
+ 
+				No constructors
+ 
+				No fields
+				No interfaces for java.lang.Cloneable
+interface java.io.Serializable
+No methods
+ 
+					No constructors
+ 
+					No fields
+					No interfaces for java.io.Serializable
+No methods
+ 
+No constructors
+ 
+No fields
+	NEW CLASS java.lang.Object
+	Superclass of java.lang.Object: null
+	No interfaces for java.lang.Object
+	*Methods for java.lang.Object: 
+	Method: protected void java.lang.Object.finalize() throws java.lang.Throwable
+	Exceptions: 
+	class java.lang.Throwable
+	Parameter Types: 
+	No parameters
+	Return Type: void
+	Modifiers: protected
+ 
+	Method: public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
+	Exceptions: 
+	class java.lang.InterruptedException
+	Parameter Types: 
+	long
+	Return Type: void
+	Modifiers: public final native
+ 
+	Method: public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
+	Exceptions: 
+	class java.lang.InterruptedException
+	Parameter Types: 
+	long
+	int
+	Return Type: void
+	Modifiers: public final
+ 
+	Method: public final void java.lang.Object.wait() throws java.lang.InterruptedException
+	Exceptions: 
+	class java.lang.InterruptedException
+	Parameter Types: 
+	No parameters
+	Return Type: void
+	Modifiers: public final
+ 
+	Method: public boolean java.lang.Object.equals(java.lang.Object)
+	Exceptions: 
+	No exceptions
+	Parameter Types: 
+	class java.lang.Object
+	Return Type: boolean
+	Modifiers: public
+ 
+	Method: public java.lang.String java.lang.Object.toString()
+	Exceptions: 
+	No exceptions
+	Parameter Types: 
+	No parameters
+	Return Type: java.lang.String
+	Modifiers: public
+ 
+	Method: public native int java.lang.Object.hashCode()
+	Exceptions: 
+	No exceptions
+	Parameter Types: 
+	No parameters
+	Return Type: int
+	Modifiers: public native
+ 
+	Method: public final native java.lang.Class java.lang.Object.getClass()
+	Exceptions: 
+	No exceptions
+	Parameter Types: 
+	No parameters
+	Return Type: java.lang.Class
+	Modifiers: public final native
+ 
+	Method: protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException
+	Exceptions: 
+	class java.lang.CloneNotSupportedException
+	Parameter Types: 
+	No parameters
+	Return Type: java.lang.Object
+	Modifiers: protected native
+ 
+	Method: public final native void java.lang.Object.notify()
+	Exceptions: 
+	No exceptions
+	Parameter Types: 
+	No parameters
+	Return Type: void
+	Modifiers: public final native
+ 
+	Method: public final native void java.lang.Object.notifyAll()
+	Exceptions: 
+	No exceptions
+	Parameter Types: 
+	No parameters
+	Return Type: void
+	Modifiers: public final native
+ 
+	Method: private static native void java.lang.Object.registerNatives()
+	Exceptions: 
+	No exceptions
+	Parameter Types: 
+	No parameters
+	Return Type: void
+	Modifiers: private static native
+ 
+	Constructors for java.lang.Object: 
+	public java.lang.Object()
+	Parameter Types: 
+	No parameters
+	Modifiers: public
+ 
+	No fields
  
 coder
 Type: 
@@ -1036,34 +1164,142 @@ true
 serialPersistentFields
 Type: 
 [Ljava.io.ObjectStreamField;
-	No fields
-hello
 Modifiers: private static final
-Value at serialPersistentFields: 
-[Ljava.io.ObjectStreamField;@5f4da5c3
+	NEW CLASS [Ljava.io.ObjectStreamField;
+Declaring class is: [Ljava.io.ObjectStreamField;
+	Immediate superclass is java.lang.Object
+	Interfaces for[Ljava.io.ObjectStreamField;: 
+	interface java.lang.Cloneable
+No methods
+ 
+						No constructors
+ 
+						No fields
+						No interfaces for java.lang.Cloneable
+	interface java.io.Serializable
+No methods
+ 
+							No constructors
+ 
+							No fields
+							No interfaces for java.io.Serializable
+No methods
+ 
+	No constructors
+ 
+	No fields
+		NEW CLASS java.lang.Object
+		Superclass of java.lang.Object: null
+		No interfaces for java.lang.Object
+		*Methods for java.lang.Object: 
+		Method: protected void java.lang.Object.finalize() throws java.lang.Throwable
+		Exceptions: 
+		class java.lang.Throwable
+		Parameter Types: 
+		No parameters
+		Return Type: void
+		Modifiers: protected
+ 
+		Method: public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
+		Exceptions: 
+		class java.lang.InterruptedException
+		Parameter Types: 
+		long
+		Return Type: void
+		Modifiers: public final native
+ 
+		Method: public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
+		Exceptions: 
+		class java.lang.InterruptedException
+		Parameter Types: 
+		long
+		int
+		Return Type: void
+		Modifiers: public final
+ 
+		Method: public final void java.lang.Object.wait() throws java.lang.InterruptedException
+		Exceptions: 
+		class java.lang.InterruptedException
+		Parameter Types: 
+		No parameters
+		Return Type: void
+		Modifiers: public final
+ 
+		Method: public boolean java.lang.Object.equals(java.lang.Object)
+		Exceptions: 
+		No exceptions
+		Parameter Types: 
+		class java.lang.Object
+		Return Type: boolean
+		Modifiers: public
+ 
+		Method: public java.lang.String java.lang.Object.toString()
+		Exceptions: 
+		No exceptions
+		Parameter Types: 
+		No parameters
+		Return Type: java.lang.String
+		Modifiers: public
+ 
+		Method: public native int java.lang.Object.hashCode()
+		Exceptions: 
+		No exceptions
+		Parameter Types: 
+		No parameters
+		Return Type: int
+		Modifiers: public native
+ 
+		Method: public final native java.lang.Class java.lang.Object.getClass()
+		Exceptions: 
+		No exceptions
+		Parameter Types: 
+		No parameters
+		Return Type: java.lang.Class
+		Modifiers: public final native
+ 
+		Method: protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException
+		Exceptions: 
+		class java.lang.CloneNotSupportedException
+		Parameter Types: 
+		No parameters
+		Return Type: java.lang.Object
+		Modifiers: protected native
+ 
+		Method: public final native void java.lang.Object.notify()
+		Exceptions: 
+		No exceptions
+		Parameter Types: 
+		No parameters
+		Return Type: void
+		Modifiers: public final native
+ 
+		Method: public final native void java.lang.Object.notifyAll()
+		Exceptions: 
+		No exceptions
+		Parameter Types: 
+		No parameters
+		Return Type: void
+		Modifiers: public final native
+ 
+		Method: private static native void java.lang.Object.registerNatives()
+		Exceptions: 
+		No exceptions
+		Parameter Types: 
+		No parameters
+		Return Type: void
+		Modifiers: private static native
+ 
+		Constructors for java.lang.Object: 
+		public java.lang.Object()
+		Parameter Types: 
+		No parameters
+		Modifiers: public
+ 
+		No fields
  
 CASE_INSENSITIVE_ORDER
 Type: 
 java.util.Comparator
-	No fields
-hello
 Modifiers: public static final
-Value at CASE_INSENSITIVE_ORDER: 
-java.lang.String$CaseInsensitiveComparator@443b7951
- 
-LATIN1
-Type: 
-byte
-Modifiers: static final
-Value at LATIN1: 
-0
- 
-UTF16
-Type: 
-byte
-Modifiers: static final
-Value at UTF16: 
-1
- 
-	Superclass of java.lang.Object: null
-======================================================
+		NEW CLASS java.util.Comparator
+Declaring class is: java.util.Comparator

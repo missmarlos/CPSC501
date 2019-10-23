@@ -21,7 +21,7 @@ public class Inspector {
                 tab2+="\t";
                 findMethods(interfaces[i], tab2);
                 findConstructors(interfaces[i], tab2);
-                findFields(interfaces[i], obj, recursive, tab2);
+                findFields(interfaces[i], obj, recursive, tab2, 0);
                 inspectInterface(interfaces[i], obj, recursive, tab2);
             }
         }else{
@@ -100,18 +100,13 @@ public class Inspector {
         }
     }
 
-    private void findFields(Class c, Object obj, boolean recursive, String tb){
-        //if recursive is false and the field is an object then no need to recurse
-        
-        //if field type is an object of another class and recursive == true, inspect field of that class
-        //if field type is an object of another class and recursive == false, then no recursion 
-
+    private void findFields(Class c, Object obj, boolean recursive, String tb, int depth){
         Field[] f = c.getDeclaredFields();
         if(f.length > 0){
             //Names
 
             //System.out.println(tb+"start field depth "+depth+" :");
-            System.out.println(tb+"Fields: ");
+            System.out.println(tb+"Fields for "+c.getName()+": ");
             for(int i = 0; i < f.length; i ++){
                 System.out.println(tb+f[i].getName());
 
@@ -119,36 +114,54 @@ public class Inspector {
                 System.out.println(tb+"Type: ");
                 System.out.println(tb+f[i].getType().getName());
 
-                //if field is an object of another class and recursive is true, recurse***
-                if(!f[i].getType().isPrimitive()){
-                    if(recursive == true){
-                        tab3 = tb + "\t";
-                        findFields(f[i].getType(), obj, recursive, tab3);
-                        System.out.println("hello");
-
-                    }else if(recursive == false){
-                        //print out the reference value 
-                        //ie print out objects class and identity hash code
-                        System.out.println(c.getName()+"@"+Integer.toHexString(System.identityHashCode(obj)));
-                    }
-
-                }
                 
+                /*
+                }if(f[i].getType().isArray()){
+                    ////////array stuff//////
+                }
+                */
 
                 //Modifiers
                 int mod = f[i].getModifiers();
                 System.out.println(tb+"Modifiers: "+Modifier.toString(mod));   
 
                 //Current values of each field
+
+
                 f[i].setAccessible(true);
-                try{
-                    Object value = f[i].get(obj);
-                    System.out.println(tb+"Value at "+f[i].getName()+": ");
-                    System.out.println(tb+value);
-                }catch(Exception e){
-                    e.printStackTrace();
+                if(!f[i].getType().isPrimitive()){
+                    if(recursive == true){
+                        inspectClass(f[i].getType(), obj, recursive, depth);
+                    }else{
+                        System.out.println(c.getName()+"@"+Integer.toHexString(System.identityHashCode(obj)));
+                    }
+                }else{
+                    try{
+                        Object value = f[i].get(obj);
+                        System.out.println(tb+"Value at "+f[i].getName()+": ");
+                        System.out.println(tb+value);
+                    }catch(Exception e){
+                        e.printStackTrace();
+                    }
                 }
                 
+                /*
+                f[i].setAccessible(true);
+                if(!f[i].getType().isPrimitive()){
+                    if(recursive == true){
+                        tab3 = tb + "\t";
+                        System.out.println(tb+"The field is a reference object to "+f[i].getType());
+                        inspectClass(f[i].getType(), obj, recursive, depth);
+                        //inspectClass(f[i].getType(), f[i].getType(), recursive, 0, tab3);
+                        //findFields(f[i].getType(), f[i].getType(), recursive, tab3);
+                        //tab = tab3;
+                    }else if(recursive == false){
+                        //print out the reference value 
+                        //ie print out objects class and identity hash code
+                        System.out.println(c.getName()+"@"+Integer.toHexString(System.identityHashCode(obj)));
+                    }
+                }
+                */
                 //6i
 
 
@@ -161,7 +174,7 @@ public class Inspector {
     
 
     private void inspectClass(Class c, Object obj, boolean recursive, int depth) {
-    	
+    	System.out.println(tab+"NEW CLASS "+c.getName());
     	Class superC = c.getSuperclass();
     	if(c.getName().equals("java.lang.Object")){
     		if(depth == 0){
@@ -170,11 +183,15 @@ public class Inspector {
                 inspectInterface(c, obj, recursive, tab);
                 findMethods(c, tab);
                 findConstructors(c, tab);
-    			findFields(c, obj, recursive, tab);
+    			findFields(c, obj, recursive, tab, depth);
 
     		}else{
                 //String superClass = c.getSuperclass().getName();
     			System.out.println(tab+"Superclass of "+c.getName()+": "+null);
+                inspectInterface(c, obj, recursive, tab);
+                findMethods(c, tab);
+                findConstructors(c, tab);
+                findFields(c, obj, recursive, tab, depth);
     		}
     	}else{
     		if(depth == 0){
@@ -195,7 +212,7 @@ public class Inspector {
             inspectInterface(c, obj, recursive, tab);
             findMethods(c, tab);
             findConstructors(c, tab);
-   			findFields(c, obj, recursive, tab);
+   			findFields(c, obj, recursive, tab, depth);
 
 		    
 		    depth++;

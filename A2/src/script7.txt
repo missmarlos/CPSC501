@@ -1,7 +1,8 @@
 ======================================================
 Filename: script7.txt
-Running Test: [[LClassB;@7aec35a
+Running Test: [[LClassB;@446cdf90
 Recursive: true
+NEW CLASS [[LClassB;
 Declaring class is: [[LClassB;
 Immediate superclass is java.lang.Object
 Interfaces for[[LClassB;: 
@@ -24,5 +25,112 @@ No methods
 No constructors
  
 No fields
+	NEW CLASS java.lang.Object
 	Superclass of java.lang.Object: null
+	No interfaces for java.lang.Object
+	*Methods for java.lang.Object: 
+	Method: protected void java.lang.Object.finalize() throws java.lang.Throwable
+	Exceptions: 
+	class java.lang.Throwable
+	Parameter Types: 
+	No parameters
+	Return Type: void
+	Modifiers: protected
+ 
+	Method: public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
+	Exceptions: 
+	class java.lang.InterruptedException
+	Parameter Types: 
+	long
+	Return Type: void
+	Modifiers: public final native
+ 
+	Method: public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
+	Exceptions: 
+	class java.lang.InterruptedException
+	Parameter Types: 
+	long
+	int
+	Return Type: void
+	Modifiers: public final
+ 
+	Method: public final void java.lang.Object.wait() throws java.lang.InterruptedException
+	Exceptions: 
+	class java.lang.InterruptedException
+	Parameter Types: 
+	No parameters
+	Return Type: void
+	Modifiers: public final
+ 
+	Method: public boolean java.lang.Object.equals(java.lang.Object)
+	Exceptions: 
+	No exceptions
+	Parameter Types: 
+	class java.lang.Object
+	Return Type: boolean
+	Modifiers: public
+ 
+	Method: public java.lang.String java.lang.Object.toString()
+	Exceptions: 
+	No exceptions
+	Parameter Types: 
+	No parameters
+	Return Type: java.lang.String
+	Modifiers: public
+ 
+	Method: public native int java.lang.Object.hashCode()
+	Exceptions: 
+	No exceptions
+	Parameter Types: 
+	No parameters
+	Return Type: int
+	Modifiers: public native
+ 
+	Method: public final native java.lang.Class java.lang.Object.getClass()
+	Exceptions: 
+	No exceptions
+	Parameter Types: 
+	No parameters
+	Return Type: java.lang.Class
+	Modifiers: public final native
+ 
+	Method: protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException
+	Exceptions: 
+	class java.lang.CloneNotSupportedException
+	Parameter Types: 
+	No parameters
+	Return Type: java.lang.Object
+	Modifiers: protected native
+ 
+	Method: public final native void java.lang.Object.notify()
+	Exceptions: 
+	No exceptions
+	Parameter Types: 
+	No parameters
+	Return Type: void
+	Modifiers: public final native
+ 
+	Method: public final native void java.lang.Object.notifyAll()
+	Exceptions: 
+	No exceptions
+	Parameter Types: 
+	No parameters
+	Return Type: void
+	Modifiers: public final native
+ 
+	Method: private static native void java.lang.Object.registerNatives()
+	Exceptions: 
+	No exceptions
+	Parameter Types: 
+	No parameters
+	Return Type: void
+	Modifiers: private static native
+ 
+	Constructors for java.lang.Object: 
+	public java.lang.Object()
+	Parameter Types: 
+	No parameters
+	Modifiers: public
+ 
+	No fields
 ======================================================
