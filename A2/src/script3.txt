@@ -16,9 +16,8 @@ interface java.lang.Runnable
 	Return Type: void
 	Modifiers: public abstract
  
-	No constructors
- 
-	No fields
+	No constructors for java.lang.Runnable
+	No fields for java.lang.Runnable
 	No interfaces for java.lang.Runnable
 *Methods for ClassB: 
 Method: public void ClassB.run()
@@ -61,11 +60,9 @@ Declaring class is: ClassA
 Immediate superclass is java.lang.Object
 Interfaces forClassA: 
 interface java.io.Serializable
-No methods
- 
-		No constructors
- 
-		No fields
+		No methods for java.io.Serializable
+		No constructors for java.io.Serializable
+		No fields for java.io.Serializable
 		No interfaces for java.io.Serializable
 interface java.lang.Runnable
 			*Methods for java.lang.Runnable: 
@@ -77,9 +74,8 @@ interface java.lang.Runnable
 			Return Type: void
 			Modifiers: public abstract
  
-			No constructors
- 
-			No fields
+			No constructors for java.lang.Runnable
+			No fields for java.lang.Runnable
 			No interfaces for java.lang.Runnable
 *Methods for ClassA: 
 Method: public void ClassA.setVal(int) throws java.lang.Exception
@@ -138,19 +134,24 @@ val
 Type: 
 int
 Modifiers: private
+Value at val: 
+3
  
 val2
 Type: 
 double
 Modifiers: private
+Value at val2: 
+0.2
  
 val3
 Type: 
 boolean
 Modifiers: private
+Value at val3: 
+true
  
 	NEW CLASS java.lang.Object
-	Superclass of java.lang.Object: null
 	No interfaces for java.lang.Object
 	*Methods for java.lang.Object: 
 	Method: protected void java.lang.Object.finalize() throws java.lang.Throwable
@@ -256,7 +257,7 @@ Modifiers: private
 	No parameters
 	Modifiers: public
  
-	No fields
+	No fields for java.lang.Object
  
 val2
 Type: 
@@ -267,11 +268,9 @@ Declaring class is: ClassA
 	Immediate superclass is java.lang.Object
 	Interfaces forClassA: 
 	interface java.io.Serializable
-No methods
- 
-				No constructors
- 
-				No fields
+				No methods for java.io.Serializable
+				No constructors for java.io.Serializable
+				No fields for java.io.Serializable
 				No interfaces for java.io.Serializable
 	interface java.lang.Runnable
 					*Methods for java.lang.Runnable: 
@@ -283,9 +282,8 @@ No methods
 					Return Type: void
 					Modifiers: public abstract
  
-					No constructors
- 
-					No fields
+					No constructors for java.lang.Runnable
+					No fields for java.lang.Runnable
 					No interfaces for java.lang.Runnable
 	*Methods for ClassA: 
 	Method: public void ClassA.setVal(int) throws java.lang.Exception
@@ -344,19 +342,24 @@ No methods
 	Type: 
 	int
 	Modifiers: private
+	Value at val: 
+	12
  
 	val2
 	Type: 
 	double
 	Modifiers: private
+	Value at val2: 
+	0.2
  
 	val3
 	Type: 
 	boolean
 	Modifiers: private
+	Value at val3: 
+	true
  
 		NEW CLASS java.lang.Object
-		Superclass of java.lang.Object: null
 		No interfaces for java.lang.Object
 		*Methods for java.lang.Object: 
 		Method: protected void java.lang.Object.finalize() throws java.lang.Throwable
@@ -462,151 +465,66 @@ No methods
 		No parameters
 		Modifiers: public
  
-		No fields
+		No fields for java.lang.Object
  
 val3
 Type: 
 ClassA
 Modifiers: private
-		NEW CLASS ClassA
-Declaring class is: ClassA
-		Immediate superclass is java.lang.Object
-		Interfaces forClassA: 
-		interface java.io.Serializable
-No methods
+val3 is null.
+			NEW CLASS ClassC
+			Superclass of ClassC: ClassD
+			Interfaces forClassC: 
+			interface InterfaceA
+						*Methods for InterfaceA: 
+						Method: public abstract void InterfaceA.func1(int,double,boolean,java.lang.String) throws java.lang.Exception
+						Exceptions: 
+						class java.lang.Exception
+						Parameter Types: 
+						int
+						double
+						boolean
+						class java.lang.String
+						Return Type: void
+						Modifiers: public abstract
  
-						No constructors
+						Method: public abstract int InterfaceA.func2(java.lang.String) throws java.lang.Exception,java.lang.ArithmeticException,java.lang.IllegalMonitorStateException
+						Exceptions: 
+						class java.lang.Exception
+						class java.lang.ArithmeticException
+						class java.lang.IllegalMonitorStateException
+						Parameter Types: 
+						class java.lang.String
+						Return Type: int
+						Modifiers: public abstract
  
-						No fields
-						No interfaces for java.io.Serializable
-		interface java.lang.Runnable
-							*Methods for java.lang.Runnable: 
-							Method: public abstract void java.lang.Runnable.run()
+						No constructors for InterfaceA
+						No fields for InterfaceA
+						Interfaces forInterfaceA: 
+						interface InterfaceB
+							*Methods for InterfaceB: 
+							Method: public abstract void InterfaceB.func0(int,boolean) throws java.lang.Exception
 							Exceptions: 
-							No exceptions
+							class java.lang.Exception
 							Parameter Types: 
-							No parameters
+							int
+							boolean
 							Return Type: void
 							Modifiers: public abstract
  
-							No constructors
- 
-							No fields
-							No interfaces for java.lang.Runnable
-		*Methods for ClassA: 
-		Method: public void ClassA.setVal(int) throws java.lang.Exception
-		Exceptions: 
-		class java.lang.Exception
-		Parameter Types: 
-		int
-		Return Type: void
-		Modifiers: public
- 
-		Method: public void ClassA.run()
-		Exceptions: 
-		No exceptions
-		Parameter Types: 
-		No parameters
-		Return Type: void
-		Modifiers: public
- 
-		Method: public java.lang.String ClassA.toString()
-		Exceptions: 
-		No exceptions
-		Parameter Types: 
-		No parameters
-		Return Type: java.lang.String
-		Modifiers: public
- 
-		Method: public int ClassA.getVal()
-		Exceptions: 
-		No exceptions
-		Parameter Types: 
-		No parameters
-		Return Type: int
-		Modifiers: public
- 
-		Method: private void ClassA.printSomething()
-		Exceptions: 
-		No exceptions
-		Parameter Types: 
-		No parameters
-		Return Type: void
-		Modifiers: private
- 
-		Constructors for ClassA: 
-		public ClassA()
-		Parameter Types: 
-		No parameters
-		Modifiers: public
- 
-		public ClassA(int)
-		Parameter Types: 
-		int
-		Modifiers: public
- 
-		Fields for ClassA: 
-		val
-		Type: 
-		int
-		Modifiers: private
- 
-		val2
-		Type: 
-		double
-		Modifiers: private
- 
-		val3
-		Type: 
-		boolean
-		Modifiers: private
- 
-			NEW CLASS java.lang.Object
-			Superclass of java.lang.Object: null
-			No interfaces for java.lang.Object
-			*Methods for java.lang.Object: 
-			Method: protected void java.lang.Object.finalize() throws java.lang.Throwable
-			Exceptions: 
-			class java.lang.Throwable
-			Parameter Types: 
-			No parameters
-			Return Type: void
-			Modifiers: protected
- 
-			Method: public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
-			Exceptions: 
-			class java.lang.InterruptedException
-			Parameter Types: 
-			long
-			Return Type: void
-			Modifiers: public final native
- 
-			Method: public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
-			Exceptions: 
-			class java.lang.InterruptedException
-			Parameter Types: 
-			long
-			int
-			Return Type: void
-			Modifiers: public final
- 
-			Method: public final void java.lang.Object.wait() throws java.lang.InterruptedException
-			Exceptions: 
-			class java.lang.InterruptedException
-			Parameter Types: 
-			No parameters
-			Return Type: void
-			Modifiers: public final
- 
-			Method: public boolean java.lang.Object.equals(java.lang.Object)
+							No constructors for InterfaceB
+							No fields for InterfaceB
+							No interfaces for InterfaceB
+			*Methods for ClassC: 
+			Method: public void ClassC.run()
 			Exceptions: 
 			No exceptions
 			Parameter Types: 
-			class java.lang.Object
-			Return Type: boolean
+			No parameters
+			Return Type: void
 			Modifiers: public
  
-			Method: public java.lang.String java.lang.Object.toString()
+			Method: public java.lang.String ClassC.toString()
 			Exceptions: 
 			No exceptions
 			Parameter Types: 
@@ -614,117 +532,201 @@ No methods
 			Return Type: java.lang.String
 			Modifiers: public
  
-			Method: public native int java.lang.Object.hashCode()
+			Method: public abstract void ClassC.func3(int)
+			Exceptions: 
+			No exceptions
+			Parameter Types: 
+			int
+			Return Type: void
+			Modifiers: public abstract
+ 
+			Method: public void ClassC.func0(int,boolean) throws java.lang.Exception
+			Exceptions: 
+			class java.lang.Exception
+			Parameter Types: 
+			int
+			boolean
+			Return Type: void
+			Modifiers: public
+ 
+			Method: public void ClassC.func1(int,double,boolean,java.lang.String) throws java.lang.Exception
+			Exceptions: 
+			class java.lang.Exception
+			Parameter Types: 
+			int
+			double
+			boolean
+			class java.lang.String
+			Return Type: void
+			Modifiers: public
+ 
+			Method: public int ClassC.func2(java.lang.String) throws java.lang.Exception,java.lang.ArithmeticException,java.lang.IllegalMonitorStateException
+			Exceptions: 
+			class java.lang.Exception
+			class java.lang.ArithmeticException
+			class java.lang.IllegalMonitorStateException
+			Parameter Types: 
+			class java.lang.String
+			Return Type: int
+			Modifiers: public
+ 
+			Constructors for ClassC: 
+			public ClassC()
+			Parameter Types: 
+			No parameters
+			Modifiers: public
+ 
+			public ClassC(int,int)
+			Parameter Types: 
+			int
+			int
+			Modifiers: public
+ 
+			Fields for ClassC: 
+			val2
+			Type: 
+			ClassA
+			Modifiers: private
+			NEW CLASS ClassA
+			Superclass of ClassA: java.lang.Object
+			Interfaces forClassA: 
+			interface java.io.Serializable
+								No methods for java.io.Serializable
+								No constructors for java.io.Serializable
+								No fields for java.io.Serializable
+								No interfaces for java.io.Serializable
+			interface java.lang.Runnable
+									*Methods for java.lang.Runnable: 
+									Method: public abstract void java.lang.Runnable.run()
+									Exceptions: 
+									No exceptions
+									Parameter Types: 
+									No parameters
+									Return Type: void
+									Modifiers: public abstract
+ 
+									No constructors for java.lang.Runnable
+									No fields for java.lang.Runnable
+									No interfaces for java.lang.Runnable
+			*Methods for ClassA: 
+			Method: public void ClassA.setVal(int) throws java.lang.Exception
+			Exceptions: 
+			class java.lang.Exception
+			Parameter Types: 
+			int
+			Return Type: void
+			Modifiers: public
+ 
+			Method: public void ClassA.run()
+			Exceptions: 
+			No exceptions
+			Parameter Types: 
+			No parameters
+			Return Type: void
+			Modifiers: public
+ 
+			Method: public java.lang.String ClassA.toString()
+			Exceptions: 
+			No exceptions
+			Parameter Types: 
+			No parameters
+			Return Type: java.lang.String
+			Modifiers: public
+ 
+			Method: public int ClassA.getVal()
 			Exceptions: 
 			No exceptions
 			Parameter Types: 
 			No parameters
 			Return Type: int
-			Modifiers: public native
+			Modifiers: public
  
-			Method: public final native java.lang.Class java.lang.Object.getClass()
-			Exceptions: 
-			No exceptions
-			Parameter Types: 
-			No parameters
-			Return Type: java.lang.Class
-			Modifiers: public final native
- 
-			Method: protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException
-			Exceptions: 
-			class java.lang.CloneNotSupportedException
-			Parameter Types: 
-			No parameters
-			Return Type: java.lang.Object
-			Modifiers: protected native
- 
-			Method: public final native void java.lang.Object.notify()
+			Method: private void ClassA.printSomething()
 			Exceptions: 
 			No exceptions
 			Parameter Types: 
 			No parameters
 			Return Type: void
-			Modifiers: public final native
+			Modifiers: private
  
-			Method: public final native void java.lang.Object.notifyAll()
-			Exceptions: 
-			No exceptions
-			Parameter Types: 
-			No parameters
-			Return Type: void
-			Modifiers: public final native
- 
-			Method: private static native void java.lang.Object.registerNatives()
-			Exceptions: 
-			No exceptions
-			Parameter Types: 
-			No parameters
-			Return Type: void
-			Modifiers: private static native
- 
-			Constructors for java.lang.Object: 
-			public java.lang.Object()
+			Constructors for ClassA: 
+			public ClassA()
 			Parameter Types: 
 			No parameters
 			Modifiers: public
  
-			No fields
+			public ClassA(int)
+			Parameter Types: 
+			int
+			Modifiers: public
  
-				NEW CLASS ClassC
-				Superclass of ClassC: ClassD
-				Interfaces forClassC: 
-				interface InterfaceA
-								*Methods for InterfaceA: 
-								Method: public abstract void InterfaceA.func1(int,double,boolean,java.lang.String) throws java.lang.Exception
-								Exceptions: 
-								class java.lang.Exception
-								Parameter Types: 
-								int
-								double
-								boolean
-								class java.lang.String
-								Return Type: void
-								Modifiers: public abstract
+			Fields for ClassA: 
+			val
+			Type: 
+			int
+			Modifiers: private
+			Value at val: 
+			100
  
-								Method: public abstract int InterfaceA.func2(java.lang.String) throws java.lang.Exception,java.lang.ArithmeticException,java.lang.IllegalMonitorStateException
-								Exceptions: 
-								class java.lang.Exception
-								class java.lang.ArithmeticException
-								class java.lang.IllegalMonitorStateException
-								Parameter Types: 
-								class java.lang.String
-								Return Type: int
-								Modifiers: public abstract
+			val2
+			Type: 
+			double
+			Modifiers: private
+			Value at val2: 
+			0.2
  
-								No constructors
+			val3
+			Type: 
+			boolean
+			Modifiers: private
+			Value at val3: 
+			true
  
-								No fields
-								Interfaces forInterfaceA: 
-								interface InterfaceB
-									*Methods for InterfaceB: 
-									Method: public abstract void InterfaceB.func0(int,boolean) throws java.lang.Exception
-									Exceptions: 
-									class java.lang.Exception
-									Parameter Types: 
-									int
-									boolean
-									Return Type: void
-									Modifiers: public abstract
- 
-									No constructors
- 
-									No fields
-									No interfaces for InterfaceB
-				*Methods for ClassC: 
-				Method: public void ClassC.run()
+				NEW CLASS java.lang.Object
+				No interfaces for java.lang.Object
+				*Methods for java.lang.Object: 
+				Method: protected void java.lang.Object.finalize() throws java.lang.Throwable
 				Exceptions: 
-				No exceptions
+				class java.lang.Throwable
 				Parameter Types: 
 				No parameters
 				Return Type: void
+				Modifiers: protected
+ 
+				Method: public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
+				Exceptions: 
+				class java.lang.InterruptedException
+				Parameter Types: 
+				long
+				Return Type: void
+				Modifiers: public final native
+ 
+				Method: public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
+				Exceptions: 
+				class java.lang.InterruptedException
+				Parameter Types: 
+				long
+				int
+				Return Type: void
+				Modifiers: public final
+ 
+				Method: public final void java.lang.Object.wait() throws java.lang.InterruptedException
+				Exceptions: 
+				class java.lang.InterruptedException
+				Parameter Types: 
+				No parameters
+				Return Type: void
+				Modifiers: public final
+ 
+				Method: public boolean java.lang.Object.equals(java.lang.Object)
+				Exceptions: 
+				No exceptions
+				Parameter Types: 
+				class java.lang.Object
+				Return Type: boolean
 				Modifiers: public
  
-				Method: public java.lang.String ClassC.toString()
+				Method: public java.lang.String java.lang.Object.toString()
 				Exceptions: 
 				No exceptions
 				Parameter Types: 
@@ -732,70 +734,73 @@ No methods
 				Return Type: java.lang.String
 				Modifiers: public
  
-				Method: public abstract void ClassC.func3(int)
+				Method: public native int java.lang.Object.hashCode()
 				Exceptions: 
 				No exceptions
 				Parameter Types: 
-				int
-				Return Type: void
-				Modifiers: public abstract
- 
-				Method: public void ClassC.func0(int,boolean) throws java.lang.Exception
-				Exceptions: 
-				class java.lang.Exception
-				Parameter Types: 
-				int
-				boolean
-				Return Type: void
-				Modifiers: public
- 
-				Method: public void ClassC.func1(int,double,boolean,java.lang.String) throws java.lang.Exception
-				Exceptions: 
-				class java.lang.Exception
-				Parameter Types: 
-				int
-				double
-				boolean
-				class java.lang.String
-				Return Type: void
-				Modifiers: public
- 
-				Method: public int ClassC.func2(java.lang.String) throws java.lang.Exception,java.lang.ArithmeticException,java.lang.IllegalMonitorStateException
-				Exceptions: 
-				class java.lang.Exception
-				class java.lang.ArithmeticException
-				class java.lang.IllegalMonitorStateException
-				Parameter Types: 
-				class java.lang.String
+				No parameters
 				Return Type: int
-				Modifiers: public
+				Modifiers: public native
  
-				Constructors for ClassC: 
-				public ClassC()
+				Method: public final native java.lang.Class java.lang.Object.getClass()
+				Exceptions: 
+				No exceptions
+				Parameter Types: 
+				No parameters
+				Return Type: java.lang.Class
+				Modifiers: public final native
+ 
+				Method: protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException
+				Exceptions: 
+				class java.lang.CloneNotSupportedException
+				Parameter Types: 
+				No parameters
+				Return Type: java.lang.Object
+				Modifiers: protected native
+ 
+				Method: public final native void java.lang.Object.notify()
+				Exceptions: 
+				No exceptions
+				Parameter Types: 
+				No parameters
+				Return Type: void
+				Modifiers: public final native
+ 
+				Method: public final native void java.lang.Object.notifyAll()
+				Exceptions: 
+				No exceptions
+				Parameter Types: 
+				No parameters
+				Return Type: void
+				Modifiers: public final native
+ 
+				Method: private static native void java.lang.Object.registerNatives()
+				Exceptions: 
+				No exceptions
+				Parameter Types: 
+				No parameters
+				Return Type: void
+				Modifiers: private static native
+ 
+				Constructors for java.lang.Object: 
+				public java.lang.Object()
 				Parameter Types: 
 				No parameters
 				Modifiers: public
  
-				public ClassC(int,int)
-				Parameter Types: 
-				int
-				int
-				Modifiers: public
+				No fields for java.lang.Object
  
-				Fields for ClassC: 
-				val2
-				Type: 
-				ClassA
-				Modifiers: private
+			val3
+			Type: 
+			ClassA
+			Modifiers: private
 				NEW CLASS ClassA
 				Superclass of ClassA: java.lang.Object
 				Interfaces forClassA: 
 				interface java.io.Serializable
-No methods
- 
-										No constructors
- 
-										No fields
+										No methods for java.io.Serializable
+										No constructors for java.io.Serializable
+										No fields for java.io.Serializable
 										No interfaces for java.io.Serializable
 				interface java.lang.Runnable
 											*Methods for java.lang.Runnable: 
@@ -807,9 +812,8 @@ No methods
 											Return Type: void
 											Modifiers: public abstract
  
-											No constructors
- 
-											No fields
+											No constructors for java.lang.Runnable
+											No fields for java.lang.Runnable
 											No interfaces for java.lang.Runnable
 				*Methods for ClassA: 
 				Method: public void ClassA.setVal(int) throws java.lang.Exception
@@ -868,19 +872,24 @@ No methods
 				Type: 
 				int
 				Modifiers: private
+				Value at val: 
+				2
  
 				val2
 				Type: 
 				double
 				Modifiers: private
+				Value at val2: 
+				0.2
  
 				val3
 				Type: 
 				boolean
 				Modifiers: private
+				Value at val3: 
+				true
  
 					NEW CLASS java.lang.Object
-					Superclass of java.lang.Object: null
 					No interfaces for java.lang.Object
 					*Methods for java.lang.Object: 
 					Method: protected void java.lang.Object.finalize() throws java.lang.Throwable
@@ -986,21 +995,19 @@ No methods
 					No parameters
 					Modifiers: public
  
-					No fields
+					No fields for java.lang.Object
  
-				val3
-				Type: 
-				ClassA
-				Modifiers: private
+			val4
+			Type: 
+			ClassA
+			Modifiers: private
 					NEW CLASS ClassA
 					Superclass of ClassA: java.lang.Object
 					Interfaces forClassA: 
 					interface java.io.Serializable
-No methods
- 
-												No constructors
- 
-												No fields
+												No methods for java.io.Serializable
+												No constructors for java.io.Serializable
+												No fields for java.io.Serializable
 												No interfaces for java.io.Serializable
 					interface java.lang.Runnable
 													*Methods for java.lang.Runnable: 
@@ -1012,9 +1019,8 @@ No methods
 													Return Type: void
 													Modifiers: public abstract
  
-													No constructors
- 
-													No fields
+													No constructors for java.lang.Runnable
+													No fields for java.lang.Runnable
 													No interfaces for java.lang.Runnable
 					*Methods for ClassA: 
 					Method: public void ClassA.setVal(int) throws java.lang.Exception
@@ -1073,19 +1079,24 @@ No methods
 					Type: 
 					int
 					Modifiers: private
+					Value at val: 
+					3
  
 					val2
 					Type: 
 					double
 					Modifiers: private
+					Value at val2: 
+					0.2
  
 					val3
 					Type: 
 					boolean
 					Modifiers: private
+					Value at val3: 
+					true
  
 						NEW CLASS java.lang.Object
-						Superclass of java.lang.Object: null
 						No interfaces for java.lang.Object
 						*Methods for java.lang.Object: 
 						Method: protected void java.lang.Object.finalize() throws java.lang.Throwable
@@ -1191,23 +1202,53 @@ No methods
 						No parameters
 						Modifiers: public
  
-						No fields
+						No fields for java.lang.Object
  
-				val4
-				Type: 
-				ClassA
-				Modifiers: private
-						NEW CLASS ClassA
-						Superclass of ClassA: java.lang.Object
-						Interfaces forClassA: 
-						interface java.io.Serializable
-No methods
+							NEW CLASS ClassD
+							Superclass of ClassD: java.lang.Object
+							No interfaces for ClassD
+							*Methods for ClassD: 
+							Method: public java.lang.String ClassD.toString()
+							Exceptions: 
+							No exceptions
+							Parameter Types: 
+							No parameters
+							Return Type: java.lang.String
+							Modifiers: public
  
-														No constructors
+							Method: public int ClassD.getVal3()
+							Exceptions: 
+							No exceptions
+							Parameter Types: 
+							No parameters
+							Return Type: int
+							Modifiers: public
  
-														No fields
+							Constructors for ClassD: 
+							public ClassD()
+							Parameter Types: 
+							No parameters
+							Modifiers: public
+ 
+							public ClassD(int)
+							Parameter Types: 
+							int
+							Modifiers: public
+ 
+							Fields for ClassD: 
+							val
+							Type: 
+							ClassA
+							Modifiers: private
+							NEW CLASS ClassA
+							Superclass of ClassA: java.lang.Object
+							Interfaces forClassA: 
+							interface java.io.Serializable
+														No methods for java.io.Serializable
+														No constructors for java.io.Serializable
+														No fields for java.io.Serializable
 														No interfaces for java.io.Serializable
-						interface java.lang.Runnable
+							interface java.lang.Runnable
 															*Methods for java.lang.Runnable: 
 															Method: public abstract void java.lang.Runnable.run()
 															Exceptions: 
@@ -1217,124 +1258,27 @@ No methods
 															Return Type: void
 															Modifiers: public abstract
  
-															No constructors
- 
-															No fields
+															No constructors for java.lang.Runnable
+															No fields for java.lang.Runnable
 															No interfaces for java.lang.Runnable
-						*Methods for ClassA: 
-						Method: public void ClassA.setVal(int) throws java.lang.Exception
-						Exceptions: 
-						class java.lang.Exception
-						Parameter Types: 
-						int
-						Return Type: void
-						Modifiers: public
- 
-						Method: public void ClassA.run()
-						Exceptions: 
-						No exceptions
-						Parameter Types: 
-						No parameters
-						Return Type: void
-						Modifiers: public
- 
-						Method: public java.lang.String ClassA.toString()
-						Exceptions: 
-						No exceptions
-						Parameter Types: 
-						No parameters
-						Return Type: java.lang.String
-						Modifiers: public
- 
-						Method: public int ClassA.getVal()
-						Exceptions: 
-						No exceptions
-						Parameter Types: 
-						No parameters
-						Return Type: int
-						Modifiers: public
- 
-						Method: private void ClassA.printSomething()
-						Exceptions: 
-						No exceptions
-						Parameter Types: 
-						No parameters
-						Return Type: void
-						Modifiers: private
- 
-						Constructors for ClassA: 
-						public ClassA()
-						Parameter Types: 
-						No parameters
-						Modifiers: public
- 
-						public ClassA(int)
-						Parameter Types: 
-						int
-						Modifiers: public
- 
-						Fields for ClassA: 
-						val
-						Type: 
-						int
-						Modifiers: private
- 
-						val2
-						Type: 
-						double
-						Modifiers: private
- 
-						val3
-						Type: 
-						boolean
-						Modifiers: private
- 
-							NEW CLASS java.lang.Object
-							Superclass of java.lang.Object: null
-							No interfaces for java.lang.Object
-							*Methods for java.lang.Object: 
-							Method: protected void java.lang.Object.finalize() throws java.lang.Throwable
+							*Methods for ClassA: 
+							Method: public void ClassA.setVal(int) throws java.lang.Exception
 							Exceptions: 
-							class java.lang.Throwable
+							class java.lang.Exception
 							Parameter Types: 
-							No parameters
-							Return Type: void
-							Modifiers: protected
- 
-							Method: public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
-							Exceptions: 
-							class java.lang.InterruptedException
-							Parameter Types: 
-							long
-							Return Type: void
-							Modifiers: public final native
- 
-							Method: public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
-							Exceptions: 
-							class java.lang.InterruptedException
-							Parameter Types: 
-							long
 							int
 							Return Type: void
-							Modifiers: public final
+							Modifiers: public
  
-							Method: public final void java.lang.Object.wait() throws java.lang.InterruptedException
-							Exceptions: 
-							class java.lang.InterruptedException
-							Parameter Types: 
-							No parameters
-							Return Type: void
-							Modifiers: public final
- 
-							Method: public boolean java.lang.Object.equals(java.lang.Object)
+							Method: public void ClassA.run()
 							Exceptions: 
 							No exceptions
 							Parameter Types: 
-							class java.lang.Object
-							Return Type: boolean
+							No parameters
+							Return Type: void
 							Modifiers: public
  
-							Method: public java.lang.String java.lang.Object.toString()
+							Method: public java.lang.String ClassA.toString()
 							Exceptions: 
 							No exceptions
 							Parameter Types: 
@@ -1342,67 +1286,100 @@ No methods
 							Return Type: java.lang.String
 							Modifiers: public
  
-							Method: public native int java.lang.Object.hashCode()
+							Method: public int ClassA.getVal()
 							Exceptions: 
 							No exceptions
 							Parameter Types: 
 							No parameters
 							Return Type: int
-							Modifiers: public native
+							Modifiers: public
  
-							Method: public final native java.lang.Class java.lang.Object.getClass()
-							Exceptions: 
-							No exceptions
-							Parameter Types: 
-							No parameters
-							Return Type: java.lang.Class
-							Modifiers: public final native
- 
-							Method: protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException
-							Exceptions: 
-							class java.lang.CloneNotSupportedException
-							Parameter Types: 
-							No parameters
-							Return Type: java.lang.Object
-							Modifiers: protected native
- 
-							Method: public final native void java.lang.Object.notify()
+							Method: private void ClassA.printSomething()
 							Exceptions: 
 							No exceptions
 							Parameter Types: 
 							No parameters
 							Return Type: void
-							Modifiers: public final native
+							Modifiers: private
  
-							Method: public final native void java.lang.Object.notifyAll()
-							Exceptions: 
-							No exceptions
-							Parameter Types: 
-							No parameters
-							Return Type: void
-							Modifiers: public final native
- 
-							Method: private static native void java.lang.Object.registerNatives()
-							Exceptions: 
-							No exceptions
-							Parameter Types: 
-							No parameters
-							Return Type: void
-							Modifiers: private static native
- 
-							Constructors for java.lang.Object: 
-							public java.lang.Object()
+							Constructors for ClassA: 
+							public ClassA()
 							Parameter Types: 
 							No parameters
 							Modifiers: public
  
-							No fields
+							public ClassA(int)
+							Parameter Types: 
+							int
+							Modifiers: public
  
-								NEW CLASS ClassD
-								Superclass of ClassD: java.lang.Object
-								No interfaces for ClassD
-								*Methods for ClassD: 
-								Method: public java.lang.String ClassD.toString()
+							Fields for ClassA: 
+							val
+							Type: 
+							int
+							Modifiers: private
+							Value at val: 
+							17
+ 
+							val2
+							Type: 
+							double
+							Modifiers: private
+							Value at val2: 
+							0.2
+ 
+							val3
+							Type: 
+							boolean
+							Modifiers: private
+							Value at val3: 
+							true
+ 
+								NEW CLASS java.lang.Object
+								No interfaces for java.lang.Object
+								*Methods for java.lang.Object: 
+								Method: protected void java.lang.Object.finalize() throws java.lang.Throwable
+								Exceptions: 
+								class java.lang.Throwable
+								Parameter Types: 
+								No parameters
+								Return Type: void
+								Modifiers: protected
+ 
+								Method: public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
+								Exceptions: 
+								class java.lang.InterruptedException
+								Parameter Types: 
+								long
+								Return Type: void
+								Modifiers: public final native
+ 
+								Method: public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
+								Exceptions: 
+								class java.lang.InterruptedException
+								Parameter Types: 
+								long
+								int
+								Return Type: void
+								Modifiers: public final
+ 
+								Method: public final void java.lang.Object.wait() throws java.lang.InterruptedException
+								Exceptions: 
+								class java.lang.InterruptedException
+								Parameter Types: 
+								No parameters
+								Return Type: void
+								Modifiers: public final
+ 
+								Method: public boolean java.lang.Object.equals(java.lang.Object)
+								Exceptions: 
+								No exceptions
+								Parameter Types: 
+								class java.lang.Object
+								Return Type: boolean
+								Modifiers: public
+ 
+								Method: public java.lang.String java.lang.Object.toString()
 								Exceptions: 
 								No exceptions
 								Parameter Types: 
@@ -1410,124 +1387,68 @@ No methods
 								Return Type: java.lang.String
 								Modifiers: public
  
-								Method: public int ClassD.getVal3()
+								Method: public native int java.lang.Object.hashCode()
 								Exceptions: 
 								No exceptions
 								Parameter Types: 
 								No parameters
 								Return Type: int
-								Modifiers: public
+								Modifiers: public native
  
-								Constructors for ClassD: 
-								public ClassD()
+								Method: public final native java.lang.Class java.lang.Object.getClass()
+								Exceptions: 
+								No exceptions
 								Parameter Types: 
 								No parameters
-								Modifiers: public
+								Return Type: java.lang.Class
+								Modifiers: public final native
  
-								public ClassD(int)
-								Parameter Types: 
-								int
-								Modifiers: public
- 
-								Fields for ClassD: 
-								val
-								Type: 
-								ClassA
-								Modifiers: private
-								NEW CLASS ClassA
-								Superclass of ClassA: java.lang.Object
-								Interfaces forClassA: 
-								interface java.io.Serializable
-No methods
- 
-																No constructors
- 
-																No fields
-																No interfaces for java.io.Serializable
-								interface java.lang.Runnable
-																	*Methods for java.lang.Runnable: 
-																	Method: public abstract void java.lang.Runnable.run()
-																	Exceptions: 
-																	No exceptions
-																	Parameter Types: 
-																	No parameters
-																	Return Type: void
-																	Modifiers: public abstract
- 
-																	No constructors
- 
-																	No fields
-																	No interfaces for java.lang.Runnable
-								*Methods for ClassA: 
-								Method: public void ClassA.setVal(int) throws java.lang.Exception
+								Method: protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException
 								Exceptions: 
-								class java.lang.Exception
+								class java.lang.CloneNotSupportedException
 								Parameter Types: 
-								int
-								Return Type: void
-								Modifiers: public
+								No parameters
+								Return Type: java.lang.Object
+								Modifiers: protected native
  
-								Method: public void ClassA.run()
+								Method: public final native void java.lang.Object.notify()
 								Exceptions: 
 								No exceptions
 								Parameter Types: 
 								No parameters
 								Return Type: void
-								Modifiers: public
+								Modifiers: public final native
  
-								Method: public java.lang.String ClassA.toString()
-								Exceptions: 
-								No exceptions
-								Parameter Types: 
-								No parameters
-								Return Type: java.lang.String
-								Modifiers: public
- 
-								Method: public int ClassA.getVal()
-								Exceptions: 
-								No exceptions
-								Parameter Types: 
-								No parameters
-								Return Type: int
-								Modifiers: public
- 
-								Method: private void ClassA.printSomething()
+								Method: public final native void java.lang.Object.notifyAll()
 								Exceptions: 
 								No exceptions
 								Parameter Types: 
 								No parameters
 								Return Type: void
-								Modifiers: private
+								Modifiers: public final native
  
-								Constructors for ClassA: 
-								public ClassA()
+								Method: private static native void java.lang.Object.registerNatives()
+								Exceptions: 
+								No exceptions
+								Parameter Types: 
+								No parameters
+								Return Type: void
+								Modifiers: private static native
+ 
+								Constructors for java.lang.Object: 
+								public java.lang.Object()
 								Parameter Types: 
 								No parameters
 								Modifiers: public
  
-								public ClassA(int)
-								Parameter Types: 
-								int
-								Modifiers: public
+								No fields for java.lang.Object
  
-								Fields for ClassA: 
-								val
-								Type: 
-								int
-								Modifiers: private
- 
-								val2
-								Type: 
-								double
-								Modifiers: private
- 
-								val3
-								Type: 
-								boolean
-								Modifiers: private
- 
+							val2
+							Type: 
+							ClassA
+							Modifiers: private static
+val2 is null.
 									NEW CLASS java.lang.Object
-									Superclass of java.lang.Object: null
 									No interfaces for java.lang.Object
 									*Methods for java.lang.Object: 
 									Method: protected void java.lang.Object.finalize() throws java.lang.Throwable
@@ -1633,461 +1554,5 @@ No methods
 									No parameters
 									Modifiers: public
  
-									No fields
- 
-								val2
-								Type: 
-								ClassA
-								Modifiers: private static
-									NEW CLASS ClassA
-									Superclass of ClassA: java.lang.Object
-									Interfaces forClassA: 
-									interface java.io.Serializable
-No methods
- 
-																		No constructors
- 
-																		No fields
-																		No interfaces for java.io.Serializable
-									interface java.lang.Runnable
-																			*Methods for java.lang.Runnable: 
-																			Method: public abstract void java.lang.Runnable.run()
-																			Exceptions: 
-																			No exceptions
-																			Parameter Types: 
-																			No parameters
-																			Return Type: void
-																			Modifiers: public abstract
- 
-																			No constructors
- 
-																			No fields
-																			No interfaces for java.lang.Runnable
-									*Methods for ClassA: 
-									Method: public void ClassA.setVal(int) throws java.lang.Exception
-									Exceptions: 
-									class java.lang.Exception
-									Parameter Types: 
-									int
-									Return Type: void
-									Modifiers: public
- 
-									Method: public void ClassA.run()
-									Exceptions: 
-									No exceptions
-									Parameter Types: 
-									No parameters
-									Return Type: void
-									Modifiers: public
- 
-									Method: public java.lang.String ClassA.toString()
-									Exceptions: 
-									No exceptions
-									Parameter Types: 
-									No parameters
-									Return Type: java.lang.String
-									Modifiers: public
- 
-									Method: public int ClassA.getVal()
-									Exceptions: 
-									No exceptions
-									Parameter Types: 
-									No parameters
-									Return Type: int
-									Modifiers: public
- 
-									Method: private void ClassA.printSomething()
-									Exceptions: 
-									No exceptions
-									Parameter Types: 
-									No parameters
-									Return Type: void
-									Modifiers: private
- 
-									Constructors for ClassA: 
-									public ClassA()
-									Parameter Types: 
-									No parameters
-									Modifiers: public
- 
-									public ClassA(int)
-									Parameter Types: 
-									int
-									Modifiers: public
- 
-									Fields for ClassA: 
-									val
-									Type: 
-									int
-									Modifiers: private
- 
-									val2
-									Type: 
-									double
-									Modifiers: private
- 
-									val3
-									Type: 
-									boolean
-									Modifiers: private
- 
-										NEW CLASS java.lang.Object
-										Superclass of java.lang.Object: null
-										No interfaces for java.lang.Object
-										*Methods for java.lang.Object: 
-										Method: protected void java.lang.Object.finalize() throws java.lang.Throwable
-										Exceptions: 
-										class java.lang.Throwable
-										Parameter Types: 
-										No parameters
-										Return Type: void
-										Modifiers: protected
- 
-										Method: public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
-										Exceptions: 
-										class java.lang.InterruptedException
-										Parameter Types: 
-										long
-										Return Type: void
-										Modifiers: public final native
- 
-										Method: public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
-										Exceptions: 
-										class java.lang.InterruptedException
-										Parameter Types: 
-										long
-										int
-										Return Type: void
-										Modifiers: public final
- 
-										Method: public final void java.lang.Object.wait() throws java.lang.InterruptedException
-										Exceptions: 
-										class java.lang.InterruptedException
-										Parameter Types: 
-										No parameters
-										Return Type: void
-										Modifiers: public final
- 
-										Method: public boolean java.lang.Object.equals(java.lang.Object)
-										Exceptions: 
-										No exceptions
-										Parameter Types: 
-										class java.lang.Object
-										Return Type: boolean
-										Modifiers: public
- 
-										Method: public java.lang.String java.lang.Object.toString()
-										Exceptions: 
-										No exceptions
-										Parameter Types: 
-										No parameters
-										Return Type: java.lang.String
-										Modifiers: public
- 
-										Method: public native int java.lang.Object.hashCode()
-										Exceptions: 
-										No exceptions
-										Parameter Types: 
-										No parameters
-										Return Type: int
-										Modifiers: public native
- 
-										Method: public final native java.lang.Class java.lang.Object.getClass()
-										Exceptions: 
-										No exceptions
-										Parameter Types: 
-										No parameters
-										Return Type: java.lang.Class
-										Modifiers: public final native
- 
-										Method: protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException
-										Exceptions: 
-										class java.lang.CloneNotSupportedException
-										Parameter Types: 
-										No parameters
-										Return Type: java.lang.Object
-										Modifiers: protected native
- 
-										Method: public final native void java.lang.Object.notify()
-										Exceptions: 
-										No exceptions
-										Parameter Types: 
-										No parameters
-										Return Type: void
-										Modifiers: public final native
- 
-										Method: public final native void java.lang.Object.notifyAll()
-										Exceptions: 
-										No exceptions
-										Parameter Types: 
-										No parameters
-										Return Type: void
-										Modifiers: public final native
- 
-										Method: private static native void java.lang.Object.registerNatives()
-										Exceptions: 
-										No exceptions
-										Parameter Types: 
-										No parameters
-										Return Type: void
-										Modifiers: private static native
- 
-										Constructors for java.lang.Object: 
-										public java.lang.Object()
-										Parameter Types: 
-										No parameters
-										Modifiers: public
- 
-										No fields
- 
-								val3
-								Type: 
-								int
-								Modifiers: private
-								Value at val3: 
-								34
- 
-								vallarray
-								Type: 
-								[LClassA;
-								Modifiers: private
-										NEW CLASS [LClassA;
-										Superclass of [LClassA;: java.lang.Object
-										Interfaces for[LClassA;: 
-										interface java.lang.Cloneable
-No methods
- 
-																				No constructors
- 
-																				No fields
-																				No interfaces for java.lang.Cloneable
-										interface java.io.Serializable
-No methods
- 
-																					No constructors
- 
-																					No fields
-																					No interfaces for java.io.Serializable
-No methods
- 
-										No constructors
- 
-										No fields
-											NEW CLASS java.lang.Object
-											Superclass of java.lang.Object: null
-											No interfaces for java.lang.Object
-											*Methods for java.lang.Object: 
-											Method: protected void java.lang.Object.finalize() throws java.lang.Throwable
-											Exceptions: 
-											class java.lang.Throwable
-											Parameter Types: 
-											No parameters
-											Return Type: void
-											Modifiers: protected
- 
-											Method: public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
-											Exceptions: 
-											class java.lang.InterruptedException
-											Parameter Types: 
-											long
-											Return Type: void
-											Modifiers: public final native
- 
-											Method: public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
-											Exceptions: 
-											class java.lang.InterruptedException
-											Parameter Types: 
-											long
-											int
-											Return Type: void
-											Modifiers: public final
- 
-											Method: public final void java.lang.Object.wait() throws java.lang.InterruptedException
-											Exceptions: 
-											class java.lang.InterruptedException
-											Parameter Types: 
-											No parameters
-											Return Type: void
-											Modifiers: public final
- 
-											Method: public boolean java.lang.Object.equals(java.lang.Object)
-											Exceptions: 
-											No exceptions
-											Parameter Types: 
-											class java.lang.Object
-											Return Type: boolean
-											Modifiers: public
- 
-											Method: public java.lang.String java.lang.Object.toString()
-											Exceptions: 
-											No exceptions
-											Parameter Types: 
-											No parameters
-											Return Type: java.lang.String
-											Modifiers: public
- 
-											Method: public native int java.lang.Object.hashCode()
-											Exceptions: 
-											No exceptions
-											Parameter Types: 
-											No parameters
-											Return Type: int
-											Modifiers: public native
- 
-											Method: public final native java.lang.Class java.lang.Object.getClass()
-											Exceptions: 
-											No exceptions
-											Parameter Types: 
-											No parameters
-											Return Type: java.lang.Class
-											Modifiers: public final native
- 
-											Method: protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException
-											Exceptions: 
-											class java.lang.CloneNotSupportedException
-											Parameter Types: 
-											No parameters
-											Return Type: java.lang.Object
-											Modifiers: protected native
- 
-											Method: public final native void java.lang.Object.notify()
-											Exceptions: 
-											No exceptions
-											Parameter Types: 
-											No parameters
-											Return Type: void
-											Modifiers: public final native
- 
-											Method: public final native void java.lang.Object.notifyAll()
-											Exceptions: 
-											No exceptions
-											Parameter Types: 
-											No parameters
-											Return Type: void
-											Modifiers: public final native
- 
-											Method: private static native void java.lang.Object.registerNatives()
-											Exceptions: 
-											No exceptions
-											Parameter Types: 
-											No parameters
-											Return Type: void
-											Modifiers: private static native
- 
-											Constructors for java.lang.Object: 
-											public java.lang.Object()
-											Parameter Types: 
-											No parameters
-											Modifiers: public
- 
-											No fields
- 
-												NEW CLASS java.lang.Object
-												Superclass of java.lang.Object: null
-												No interfaces for java.lang.Object
-												*Methods for java.lang.Object: 
-												Method: protected void java.lang.Object.finalize() throws java.lang.Throwable
-												Exceptions: 
-												class java.lang.Throwable
-												Parameter Types: 
-												No parameters
-												Return Type: void
-												Modifiers: protected
- 
-												Method: public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
-												Exceptions: 
-												class java.lang.InterruptedException
-												Parameter Types: 
-												long
-												Return Type: void
-												Modifiers: public final native
- 
-												Method: public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
-												Exceptions: 
-												class java.lang.InterruptedException
-												Parameter Types: 
-												long
-												int
-												Return Type: void
-												Modifiers: public final
- 
-												Method: public final void java.lang.Object.wait() throws java.lang.InterruptedException
-												Exceptions: 
-												class java.lang.InterruptedException
-												Parameter Types: 
-												No parameters
-												Return Type: void
-												Modifiers: public final
- 
-												Method: public boolean java.lang.Object.equals(java.lang.Object)
-												Exceptions: 
-												No exceptions
-												Parameter Types: 
-												class java.lang.Object
-												Return Type: boolean
-												Modifiers: public
- 
-												Method: public java.lang.String java.lang.Object.toString()
-												Exceptions: 
-												No exceptions
-												Parameter Types: 
-												No parameters
-												Return Type: java.lang.String
-												Modifiers: public
- 
-												Method: public native int java.lang.Object.hashCode()
-												Exceptions: 
-												No exceptions
-												Parameter Types: 
-												No parameters
-												Return Type: int
-												Modifiers: public native
- 
-												Method: public final native java.lang.Class java.lang.Object.getClass()
-												Exceptions: 
-												No exceptions
-												Parameter Types: 
-												No parameters
-												Return Type: java.lang.Class
-												Modifiers: public final native
- 
-												Method: protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException
-												Exceptions: 
-												class java.lang.CloneNotSupportedException
-												Parameter Types: 
-												No parameters
-												Return Type: java.lang.Object
-												Modifiers: protected native
- 
-												Method: public final native void java.lang.Object.notify()
-												Exceptions: 
-												No exceptions
-												Parameter Types: 
-												No parameters
-												Return Type: void
-												Modifiers: public final native
- 
-												Method: public final native void java.lang.Object.notifyAll()
-												Exceptions: 
-												No exceptions
-												Parameter Types: 
-												No parameters
-												Return Type: void
-												Modifiers: public final native
- 
-												Method: private static native void java.lang.Object.registerNatives()
-												Exceptions: 
-												No exceptions
-												Parameter Types: 
-												No parameters
-												Return Type: void
-												Modifiers: private static native
- 
-												Constructors for java.lang.Object: 
-												public java.lang.Object()
-												Parameter Types: 
-												No parameters
-												Modifiers: public
- 
-												No fields
+									No fields for java.lang.Object
 ======================================================

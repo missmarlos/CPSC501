@@ -7,11 +7,9 @@ Declaring class is: ClassA
 Immediate superclass is java.lang.Object
 Interfaces forClassA: 
 interface java.io.Serializable
-No methods
- 
-	No constructors
- 
-	No fields
+	No methods for java.io.Serializable
+	No constructors for java.io.Serializable
+	No fields for java.io.Serializable
 	No interfaces for java.io.Serializable
 interface java.lang.Runnable
 		*Methods for java.lang.Runnable: 
@@ -23,9 +21,8 @@ interface java.lang.Runnable
 		Return Type: void
 		Modifiers: public abstract
  
-		No constructors
- 
-		No fields
+		No constructors for java.lang.Runnable
+		No fields for java.lang.Runnable
 		No interfaces for java.lang.Runnable
 *Methods for ClassA: 
 Method: public void ClassA.setVal(int) throws java.lang.Exception
@@ -102,7 +99,6 @@ Value at val3:
 true
  
 	NEW CLASS java.lang.Object
-	Superclass of java.lang.Object: null
 	No interfaces for java.lang.Object
 	*Methods for java.lang.Object: 
 	Method: protected void java.lang.Object.finalize() throws java.lang.Throwable
@@ -208,5 +204,5 @@ true
 	No parameters
 	Modifiers: public
  
-	No fields
+	No fields for java.lang.Object
 ======================================================

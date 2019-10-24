@@ -7,11 +7,9 @@ Declaring class is: java.lang.String
 Immediate superclass is java.lang.Object
 Interfaces forjava.lang.String: 
 interface java.io.Serializable
-No methods
- 
-	No constructors
- 
-	No fields
+	No methods for java.io.Serializable
+	No constructors for java.io.Serializable
+	No fields for java.io.Serializable
 	No interfaces for java.io.Serializable
 interface java.lang.Comparable
 		*Methods for java.lang.Comparable: 
@@ -23,9 +21,8 @@ interface java.lang.Comparable
 		Return Type: int
 		Modifiers: public abstract
  
-		No constructors
- 
-		No fields
+		No constructors for java.lang.Comparable
+		No fields for java.lang.Comparable
 		No interfaces for java.lang.Comparable
 interface java.lang.CharSequence
 			*Methods for java.lang.CharSequence: 
@@ -103,9 +100,8 @@ interface java.lang.CharSequence
 			Return Type: java.util.Spliterator$OfInt
 			Modifiers: private
  
-			No constructors
- 
-			No fields
+			No constructors for java.lang.CharSequence
+			No fields for java.lang.CharSequence
 			No interfaces for java.lang.CharSequence
 *Methods for java.lang.String: 
 Method: byte[] java.lang.String.value()
@@ -1006,26 +1002,19 @@ Declaring class is: [B
 Immediate superclass is java.lang.Object
 Interfaces for[B: 
 interface java.lang.Cloneable
-No methods
- 
-				No constructors
- 
-				No fields
+				No methods for java.lang.Cloneable
+				No constructors for java.lang.Cloneable
+				No fields for java.lang.Cloneable
 				No interfaces for java.lang.Cloneable
 interface java.io.Serializable
-No methods
- 
-					No constructors
- 
-					No fields
+					No methods for java.io.Serializable
+					No constructors for java.io.Serializable
+					No fields for java.io.Serializable
 					No interfaces for java.io.Serializable
-No methods
- 
-No constructors
- 
-No fields
+No methods for [B
+No constructors for [B
+No fields for [B
 	NEW CLASS java.lang.Object
-	Superclass of java.lang.Object: null
 	No interfaces for java.lang.Object
 	*Methods for java.lang.Object: 
 	Method: protected void java.lang.Object.finalize() throws java.lang.Throwable
@@ -1131,7 +1120,7 @@ No fields
 	No parameters
 	Modifiers: public
  
-	No fields
+	No fields for java.lang.Object
  
 coder
 Type: 
@@ -1170,26 +1159,19 @@ Declaring class is: [Ljava.io.ObjectStreamField;
 	Immediate superclass is java.lang.Object
 	Interfaces for[Ljava.io.ObjectStreamField;: 
 	interface java.lang.Cloneable
-No methods
- 
-						No constructors
- 
-						No fields
+						No methods for java.lang.Cloneable
+						No constructors for java.lang.Cloneable
+						No fields for java.lang.Cloneable
 						No interfaces for java.lang.Cloneable
 	interface java.io.Serializable
-No methods
- 
-							No constructors
- 
-							No fields
+							No methods for java.io.Serializable
+							No constructors for java.io.Serializable
+							No fields for java.io.Serializable
 							No interfaces for java.io.Serializable
-No methods
- 
-	No constructors
- 
-	No fields
+	No methods for [Ljava.io.ObjectStreamField;
+	No constructors for [Ljava.io.ObjectStreamField;
+	No fields for [Ljava.io.ObjectStreamField;
 		NEW CLASS java.lang.Object
-		Superclass of java.lang.Object: null
 		No interfaces for java.lang.Object
 		*Methods for java.lang.Object: 
 		Method: protected void java.lang.Object.finalize() throws java.lang.Throwable
@@ -1295,11 +1277,353 @@ No methods
 		No parameters
 		Modifiers: public
  
-		No fields
+		No fields for java.lang.Object
  
 CASE_INSENSITIVE_ORDER
 Type: 
 java.util.Comparator
 Modifiers: public static final
 		NEW CLASS java.util.Comparator
-Declaring class is: java.util.Comparator
+		No interfaces for java.util.Comparator
+		*Methods for java.util.Comparator: 
+		Method: public abstract boolean java.util.Comparator.equals(java.lang.Object)
+		Exceptions: 
+		No exceptions
+		Parameter Types: 
+		class java.lang.Object
+		Return Type: boolean
+		Modifiers: public abstract
+ 
+		Method: public abstract int java.util.Comparator.compare(java.lang.Object,java.lang.Object)
+		Exceptions: 
+		No exceptions
+		Parameter Types: 
+		class java.lang.Object
+		class java.lang.Object
+		Return Type: int
+		Modifiers: public abstract
+ 
+		Method: public default java.util.Comparator java.util.Comparator.reversed()
+		Exceptions: 
+		No exceptions
+		Parameter Types: 
+		No parameters
+		Return Type: java.util.Comparator
+		Modifiers: public
+ 
+		Method: public default java.util.Comparator java.util.Comparator.thenComparing(java.util.function.Function)
+		Exceptions: 
+		No exceptions
+		Parameter Types: 
+		interface java.util.function.Function
+		Return Type: java.util.Comparator
+		Modifiers: public
+ 
+		Method: public default java.util.Comparator java.util.Comparator.thenComparing(java.util.function.Function,java.util.Comparator)
+		Exceptions: 
+		No exceptions
+		Parameter Types: 
+		interface java.util.function.Function
+		interface java.util.Comparator
+		Return Type: java.util.Comparator
+		Modifiers: public
+ 
+		Method: public default java.util.Comparator java.util.Comparator.thenComparing(java.util.Comparator)
+		Exceptions: 
+		No exceptions
+		Parameter Types: 
+		interface java.util.Comparator
+		Return Type: java.util.Comparator
+		Modifiers: public
+ 
+		Method: public default java.util.Comparator java.util.Comparator.thenComparingInt(java.util.function.ToIntFunction)
+		Exceptions: 
+		No exceptions
+		Parameter Types: 
+		interface java.util.function.ToIntFunction
+		Return Type: java.util.Comparator
+		Modifiers: public
+ 
+		Method: public default java.util.Comparator java.util.Comparator.thenComparingLong(java.util.function.ToLongFunction)
+		Exceptions: 
+		No exceptions
+		Parameter Types: 
+		interface java.util.function.ToLongFunction
+		Return Type: java.util.Comparator
+		Modifiers: public
+ 
+		Method: public default java.util.Comparator java.util.Comparator.thenComparingDouble(java.util.function.ToDoubleFunction)
+		Exceptions: 
+		No exceptions
+		Parameter Types: 
+		interface java.util.function.ToDoubleFunction
+		Return Type: java.util.Comparator
+		Modifiers: public
+ 
+		Method: public static java.util.Comparator java.util.Comparator.reverseOrder()
+		Exceptions: 
+		No exceptions
+		Parameter Types: 
+		No parameters
+		Return Type: java.util.Comparator
+		Modifiers: public static
+ 
+		Method: public static java.util.Comparator java.util.Comparator.naturalOrder()
+		Exceptions: 
+		No exceptions
+		Parameter Types: 
+		No parameters
+		Return Type: java.util.Comparator
+		Modifiers: public static
+ 
+		Method: public static java.util.Comparator java.util.Comparator.nullsFirst(java.util.Comparator)
+		Exceptions: 
+		No exceptions
+		Parameter Types: 
+		interface java.util.Comparator
+		Return Type: java.util.Comparator
+		Modifiers: public static
+ 
+		Method: public static java.util.Comparator java.util.Comparator.nullsLast(java.util.Comparator)
+		Exceptions: 
+		No exceptions
+		Parameter Types: 
+		interface java.util.Comparator
+		Return Type: java.util.Comparator
+		Modifiers: public static
+ 
+		Method: public static java.util.Comparator java.util.Comparator.comparing(java.util.function.Function,java.util.Comparator)
+		Exceptions: 
+		No exceptions
+		Parameter Types: 
+		interface java.util.function.Function
+		interface java.util.Comparator
+		Return Type: java.util.Comparator
+		Modifiers: public static
+ 
+		Method: public static java.util.Comparator java.util.Comparator.comparing(java.util.function.Function)
+		Exceptions: 
+		No exceptions
+		Parameter Types: 
+		interface java.util.function.Function
+		Return Type: java.util.Comparator
+		Modifiers: public static
+ 
+		Method: public static java.util.Comparator java.util.Comparator.comparingInt(java.util.function.ToIntFunction)
+		Exceptions: 
+		No exceptions
+		Parameter Types: 
+		interface java.util.function.ToIntFunction
+		Return Type: java.util.Comparator
+		Modifiers: public static
+ 
+		Method: public static java.util.Comparator java.util.Comparator.comparingLong(java.util.function.ToLongFunction)
+		Exceptions: 
+		No exceptions
+		Parameter Types: 
+		interface java.util.function.ToLongFunction
+		Return Type: java.util.Comparator
+		Modifiers: public static
+ 
+		Method: public static java.util.Comparator java.util.Comparator.comparingDouble(java.util.function.ToDoubleFunction)
+		Exceptions: 
+		No exceptions
+		Parameter Types: 
+		interface java.util.function.ToDoubleFunction
+		Return Type: java.util.Comparator
+		Modifiers: public static
+ 
+		Method: private static java.lang.Object java.util.Comparator.$deserializeLambda$(java.lang.invoke.SerializedLambda)
+		Exceptions: 
+		No exceptions
+		Parameter Types: 
+		class java.lang.invoke.SerializedLambda
+		Return Type: java.lang.Object
+		Modifiers: private static
+ 
+		Method: private static int java.util.Comparator.lambda$comparingDouble$8dcf42ea$1(java.util.function.ToDoubleFunction,java.lang.Object,java.lang.Object)
+		Exceptions: 
+		No exceptions
+		Parameter Types: 
+		interface java.util.function.ToDoubleFunction
+		class java.lang.Object
+		class java.lang.Object
+		Return Type: int
+		Modifiers: private static
+ 
+		Method: private static int java.util.Comparator.lambda$comparingLong$6043328a$1(java.util.function.ToLongFunction,java.lang.Object,java.lang.Object)
+		Exceptions: 
+		No exceptions
+		Parameter Types: 
+		interface java.util.function.ToLongFunction
+		class java.lang.Object
+		class java.lang.Object
+		Return Type: int
+		Modifiers: private static
+ 
+		Method: private static int java.util.Comparator.lambda$comparingInt$7b0bb60$1(java.util.function.ToIntFunction,java.lang.Object,java.lang.Object)
+		Exceptions: 
+		No exceptions
+		Parameter Types: 
+		interface java.util.function.ToIntFunction
+		class java.lang.Object
+		class java.lang.Object
+		Return Type: int
+		Modifiers: private static
+ 
+		Method: private static int java.util.Comparator.lambda$comparing$77a9974f$1(java.util.function.Function,java.lang.Object,java.lang.Object)
+		Exceptions: 
+		No exceptions
+		Parameter Types: 
+		interface java.util.function.Function
+		class java.lang.Object
+		class java.lang.Object
+		Return Type: int
+		Modifiers: private static
+ 
+		Method: private static int java.util.Comparator.lambda$comparing$ea9a8b3a$1(java.util.Comparator,java.util.function.Function,java.lang.Object,java.lang.Object)
+		Exceptions: 
+		No exceptions
+		Parameter Types: 
+		interface java.util.Comparator
+		interface java.util.function.Function
+		class java.lang.Object
+		class java.lang.Object
+		Return Type: int
+		Modifiers: private static
+ 
+		Method: private int java.util.Comparator.lambda$thenComparing$36697e65$1(java.util.Comparator,java.lang.Object,java.lang.Object)
+		Exceptions: 
+		No exceptions
+		Parameter Types: 
+		interface java.util.Comparator
+		class java.lang.Object
+		class java.lang.Object
+		Return Type: int
+		Modifiers: private
+ 
+		No constructors for java.util.Comparator
+		No fields for java.util.Comparator
+ 
+LATIN1
+Type: 
+byte
+Modifiers: static final
+Value at LATIN1: 
+0
+ 
+UTF16
+Type: 
+byte
+Modifiers: static final
+Value at UTF16: 
+1
+ 
+			NEW CLASS java.lang.Object
+			No interfaces for java.lang.Object
+			*Methods for java.lang.Object: 
+			Method: protected void java.lang.Object.finalize() throws java.lang.Throwable
+			Exceptions: 
+			class java.lang.Throwable
+			Parameter Types: 
+			No parameters
+			Return Type: void
+			Modifiers: protected
+ 
+			Method: public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
+			Exceptions: 
+			class java.lang.InterruptedException
+			Parameter Types: 
+			long
+			Return Type: void
+			Modifiers: public final native
+ 
+			Method: public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
+			Exceptions: 
+			class java.lang.InterruptedException
+			Parameter Types: 
+			long
+			int
+			Return Type: void
+			Modifiers: public final
+ 
+			Method: public final void java.lang.Object.wait() throws java.lang.InterruptedException
+			Exceptions: 
+			class java.lang.InterruptedException
+			Parameter Types: 
+			No parameters
+			Return Type: void
+			Modifiers: public final
+ 
+			Method: public boolean java.lang.Object.equals(java.lang.Object)
+			Exceptions: 
+			No exceptions
+			Parameter Types: 
+			class java.lang.Object
+			Return Type: boolean
+			Modifiers: public
+ 
+			Method: public java.lang.String java.lang.Object.toString()
+			Exceptions: 
+			No exceptions
+			Parameter Types: 
+			No parameters
+			Return Type: java.lang.String
+			Modifiers: public
+ 
+			Method: public native int java.lang.Object.hashCode()
+			Exceptions: 
+			No exceptions
+			Parameter Types: 
+			No parameters
+			Return Type: int
+			Modifiers: public native
+ 
+			Method: public final native java.lang.Class java.lang.Object.getClass()
+			Exceptions: 
+			No exceptions
+			Parameter Types: 
+			No parameters
+			Return Type: java.lang.Class
+			Modifiers: public final native
+ 
+			Method: protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException
+			Exceptions: 
+			class java.lang.CloneNotSupportedException
+			Parameter Types: 
+			No parameters
+			Return Type: java.lang.Object
+			Modifiers: protected native
+ 
+			Method: public final native void java.lang.Object.notify()
+			Exceptions: 
+			No exceptions
+			Parameter Types: 
+			No parameters
+			Return Type: void
+			Modifiers: public final native
+ 
+			Method: public final native void java.lang.Object.notifyAll()
+			Exceptions: 
+			No exceptions
+			Parameter Types: 
+			No parameters
+			Return Type: void
+			Modifiers: public final native
+ 
+			Method: private static native void java.lang.Object.registerNatives()
+			Exceptions: 
+			No exceptions
+			Parameter Types: 
+			No parameters
+			Return Type: void
+			Modifiers: private static native
+ 
+			Constructors for java.lang.Object: 
+			public java.lang.Object()
+			Parameter Types: 
+			No parameters
+			Modifiers: public
+ 
+			No fields for java.lang.Object
+======================================================

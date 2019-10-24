@@ -1,32 +1,25 @@
 ======================================================
 Filename: script6.txt
-Running Test: [LClassB;@506c589e
+Running Test: [LClassB;@20ad9418
 Recursive: true
 NEW CLASS [LClassB;
 Declaring class is: [LClassB;
 Immediate superclass is java.lang.Object
 Interfaces for[LClassB;: 
 interface java.lang.Cloneable
-No methods
- 
-	No constructors
- 
-	No fields
+	No methods for java.lang.Cloneable
+	No constructors for java.lang.Cloneable
+	No fields for java.lang.Cloneable
 	No interfaces for java.lang.Cloneable
 interface java.io.Serializable
-No methods
- 
-		No constructors
- 
-		No fields
+		No methods for java.io.Serializable
+		No constructors for java.io.Serializable
+		No fields for java.io.Serializable
 		No interfaces for java.io.Serializable
-No methods
- 
-No constructors
- 
-No fields
+No methods for [LClassB;
+No constructors for [LClassB;
+No fields for [LClassB;
 	NEW CLASS java.lang.Object
-	Superclass of java.lang.Object: null
 	No interfaces for java.lang.Object
 	*Methods for java.lang.Object: 
 	Method: protected void java.lang.Object.finalize() throws java.lang.Throwable
@@ -132,5 +125,5 @@ No fields
 	No parameters
 	Modifiers: public
  
-	No fields
+	No fields for java.lang.Object
 ======================================================
