@@ -119,21 +119,21 @@ Type:
 int
 Modifiers: private
 Value at val: 
-17
+(ClassA)17
  
 val2
 Type: 
 double
 Modifiers: private
 Value at val2: 
-0.2
+(ClassA)0.2
  
 val3
 Type: 
 boolean
 Modifiers: private
 Value at val3: 
-true
+(ClassA)true
  
 	NEW CLASS java.lang.Object
 	No interfaces for java.lang.Object

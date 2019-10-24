@@ -7,11 +7,9 @@ public class Inspector {
     public void inspect(Object obj, boolean recursive) {
         Class c = obj.getClass();
         inspectClass(c, obj, recursive, 0);
-        //inspectInterface(c, obj, recursive, 0);
     }
 
     public Class[] inspectInterface(Class c, Object obj, boolean recursive, String tb){
-
         Class[] interfaces = c.getInterfaces();
         if(interfaces.length > 0){
             System.out.println(tb+"Interfaces for"+c.getName()+": ");
@@ -72,7 +70,6 @@ public class Inspector {
         return m;
     }
 
-    //refactored into another method
     public Constructor[] findConstructors(Class c, String tb){
         Constructor[] constructors = c.getDeclaredConstructors();
         if(constructors.length > 0){
@@ -104,9 +101,6 @@ public class Inspector {
     public void findFields(Class c, Object obj, boolean recursive, String tb, int depth){
         Field[] f = c.getDeclaredFields();
         if(f.length > 0){
-            //Names
-
-            //System.out.println(tb+"start field depth "+depth+" :");
             System.out.println(tb+"Fields for "+c.getName()+": ");
             for(int i = 0; i < f.length; i ++){
                 System.out.println(tb+f[i].getName());
@@ -114,9 +108,6 @@ public class Inspector {
                 //Type
                 System.out.println(tb+"Type: ");
                 System.out.println(tb+f[i].getType().getName());
-
-                //Be sure you can also handle any array you might encounter, printing out its name, component type,
-                //length, and all its contents.
 
                 if(obj.getClass().isArray()){
                     System.out.println("array");
@@ -127,7 +118,6 @@ public class Inspector {
                 System.out.println(tb+"Modifiers: "+Modifier.toString(mod));   
 
                 //Current values of each field
-
                 try{
                     f[i].setAccessible(true);
 
@@ -138,18 +128,13 @@ public class Inspector {
                     if(!f[i].getType().isPrimitive()){
                         if(recursive == true){
                             inspectClass(f[i].getType(), f[i].get(obj), recursive, depth);
-                            //inspectClass(f[i].getType(), c.getConstructor().newInstance(), recursive, depth);
                         }else{
                             System.out.println(c.getName()+"@"+Integer.toHexString(System.identityHashCode(obj)));
                         }
                     }else{
-                        //try{
                             Object value = f[i].get(obj);
                             System.out.println(tb+"Value at "+f[i].getName()+": ");
-                            System.out.println(tb+value);
-                        //}catch(xEception e){
-                        //    e.printStackTrace();
-                        //}
+                            System.out.println(tb+"("+c.getName()+")"+value);
                     }    
                 }catch(Exception e){
                     e.printStackTrace();
@@ -164,73 +149,46 @@ public class Inspector {
 
     }
     
-
     public void inspectClass(Class c, Object obj, boolean recursive, int depth) {
     	System.out.println(tab+"NEW CLASS "+c.getName());
     	Class superC = c.getSuperclass();
         if(c.getSuperclass() != null){
         	if(c.getName().equals("java.lang.Object")){
-                
                 if(depth == 0){
                     System.out.println("Declaring class is "+superC.getName());
-                    ///////////////////////////
-                    inspectInterface(c, obj, recursive, tab);
-                    findMethods(c, tab);
-                    findConstructors(c, tab);
-                    findFields(c, obj, recursive, tab, depth);
-
+                    callFuncs(c, obj, recursive, depth);
                 }else{
-                    //String superClass = c.getSuperclass().getName();
+                    
                     System.out.println(tab+"Superclass of "+c.getName()+": "+null);
-                    inspectInterface(c, obj, recursive, tab);
-                    findMethods(c, tab);
-                    findConstructors(c, tab);
-                    findFields(c, obj, recursive, tab, depth);
+                    callFuncs(c, obj, recursive, depth);
                 }
-
-        		
         	}else{
         		if(depth == 0){
                     System.out.println("Declaring class is: "+c.getName());
-
-    				//String superClass = c.getSuperclass().getName();
-    		    	//System.out.println(tab+"Immediate superclass is "+superClass);
                     System.out.println(tab+"Immediate superclass is "+c.getSuperclass().getName());
-                    superC = c.getSuperclass();
-    		    	//System.out.println(" ");    		
+                    superC = c.getSuperclass();  		
     		    }else{
     		    	String superClass = c.getSuperclass().getName();
                     System.out.println(tab+"Superclass of "+c.getName()+": "+superClass);
-    		    	//System.out.println("Superclass at depth "+depth+" is: "+superClass);
     		    	superC = c.getSuperclass();
-    		    	//System.out.println(" ");
     		    }
-        		///////////////////////////
-                inspectInterface(c, obj, recursive, tab);
-                findMethods(c, tab);
-                findConstructors(c, tab);
-       			findFields(c, obj, recursive, tab, depth);
-
-    		    
+                callFuncs(c, obj, recursive, depth);
     		    depth++;
                 tab += "\t";
-
-
-
     		    inspectClass(superC, obj, recursive, depth);
         	}
+        
         }else{
-            inspectInterface(c, obj, recursive, tab);
-            findMethods(c, tab);
-            findConstructors(c, tab);
-            findFields(c, obj, recursive, tab, depth);
+            callFuncs(c, obj, recursive, depth);
         }
-        /*
+        
+    }
+
+    public void callFuncs(Class c, Object obj, boolean recursive, int depth){
         inspectInterface(c, obj, recursive, tab);
         findMethods(c, tab);
         findConstructors(c, tab);
         findFields(c, obj, recursive, tab, depth);
-        */
     }
 
 }

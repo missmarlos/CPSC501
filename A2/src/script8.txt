@@ -1127,28 +1127,28 @@ Type:
 byte
 Modifiers: private final
 Value at coder: 
-0
+(java.lang.String)0
  
 hash
 Type: 
 int
 Modifiers: private
 Value at hash: 
-0
+(java.lang.String)0
  
 serialVersionUID
 Type: 
 long
 Modifiers: private static final
 Value at serialVersionUID: 
--6849794470754667710
+(java.lang.String)-6849794470754667710
  
 COMPACT_STRINGS
 Type: 
 boolean
 Modifiers: static final
 Value at COMPACT_STRINGS: 
-true
+(java.lang.String)true
  
 serialPersistentFields
 Type: 
@@ -1510,14 +1510,14 @@ Type:
 byte
 Modifiers: static final
 Value at LATIN1: 
-0
+(java.lang.String)0
  
 UTF16
 Type: 
 byte
 Modifiers: static final
 Value at UTF16: 
-1
+(java.lang.String)1
  
 			NEW CLASS java.lang.Object
 			No interfaces for java.lang.Object
