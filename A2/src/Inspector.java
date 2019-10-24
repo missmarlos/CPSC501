@@ -10,7 +10,7 @@ public class Inspector {
         //inspectInterface(c, obj, recursive, 0);
     }
 
-    private void inspectInterface(Class c, Object obj, boolean recursive, String tb){
+    public Class[] inspectInterface(Class c, Object obj, boolean recursive, String tb){
 
         Class[] interfaces = c.getInterfaces();
         if(interfaces.length > 0){
@@ -27,9 +27,10 @@ public class Inspector {
         }else{
             System.out.println(tb+"No interfaces for "+c.getName());
         }
+        return interfaces;
     }
 
-    private void findMethods(Class c, String tb){
+    public Method[] findMethods(Class c, String tb){
         Method[] m = c.getDeclaredMethods();
         if(m.length > 0){
             System.out.println(tb+"*Methods for "+c.getName()+": ");
@@ -68,10 +69,11 @@ public class Inspector {
         }else{
             System.out.println(tb+"No methods for "+c.getName());
         }
+        return m;
     }
 
     //refactored into another method
-    private void findConstructors(Class c, String tb){
+    public Constructor[] findConstructors(Class c, String tb){
         Constructor[] constructors = c.getDeclaredConstructors();
         if(constructors.length > 0){
             System.out.println(tb+"Constructors for "+c.getName()+": ");
@@ -96,9 +98,10 @@ public class Inspector {
         }else{
             System.out.println(tb+"No constructors for "+c.getName());
         }
+        return constructors;
     }
 
-    private void findFields(Class c, Object obj, boolean recursive, String tb, int depth){
+    public void findFields(Class c, Object obj, boolean recursive, String tb, int depth){
         Field[] f = c.getDeclaredFields();
         if(f.length > 0){
             //Names
@@ -144,7 +147,7 @@ public class Inspector {
                             Object value = f[i].get(obj);
                             System.out.println(tb+"Value at "+f[i].getName()+": ");
                             System.out.println(tb+value);
-                        //}catch(Exception e){
+                        //}catch(xEception e){
                         //    e.printStackTrace();
                         //}
                     }    
@@ -158,10 +161,11 @@ public class Inspector {
         }else{
             System.out.println(tb+"No fields for "+c.getName());
         }
+
     }
     
 
-    private void inspectClass(Class c, Object obj, boolean recursive, int depth) {
+    public void inspectClass(Class c, Object obj, boolean recursive, int depth) {
     	System.out.println(tab+"NEW CLASS "+c.getName());
     	Class superC = c.getSuperclass();
         if(c.getSuperclass() != null){
