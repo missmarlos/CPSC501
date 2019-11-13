@@ -1,11 +1,10 @@
 
 public class Object4 {
-	Object[] objArr = new Object[3];
+	Object[] objArr = new Object[2];
 	
-	public Object4(Object first, Object second, Object third) {
-		objArr[0] = first;
-		objArr[1] = second;
-		objArr[2] = third;
+	public Object4(Object1 firstObj, Object3 secondObj) {
+		objArr[0] = firstObj;
+		objArr[1] = secondObj;
 		System.out.println("Array of objects made Object4");
 	}
 }

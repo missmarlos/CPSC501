@@ -73,20 +73,130 @@ public class ObjectCreator {
 				System.out.println("Invalid input try again.");
 			}
 			
-		}else if(input.equals("Object3")) {
+		}else if(input.equals("Object3")) {			
 			System.out.println("Object3 entered");
+			System.out.println("Enter first integer");
+			String intFirst = in.nextLine();
+			System.out.println("Enter second integer");
+			String intSecond = in.nextLine();
+			System.out.println("Enter third integer");
+			String intThird = in.nextLine();
+			
+			if(isInt(intFirst) && isInt(intSecond) && isInt(intThird)) {
+				int first = Integer.parseInt(intFirst);
+				int second = Integer.parseInt(intSecond);
+				int third = Integer.parseInt(intThird);
+				
+				Object3 obj3 = new Object3(first, second, third);
+				objArrList.add(obj3);
+				
+			}
+			
 		}else if(input.equals("Object4")) {
+			Object1 obj1;
+			Object3 obj3;
+			Object4 obj4;
+			
 			System.out.println("Object4 entered");
+			
+			System.out.println("Object1 entered");
+			
+			System.out.println("Enter an int:");
+			String firstInt = in.nextLine();
+			
+			System.out.println("Enter a char:");
+			String secondChar = in.nextLine();
+			
+			System.out.println("Enter a double:");
+			String thirdDouble = in.nextLine();
+			
+			if(isInt(firstInt) && isChar(secondChar) && isDouble(thirdDouble)) {
+				integer = Integer.parseInt(firstInt);
+				character = secondChar.charAt(0);
+				doubles = Double.parseDouble(thirdDouble);
+				
+				System.out.println("Object3 entered");
+				System.out.println("Enter first integer");
+				String intFirst = in.nextLine();
+				System.out.println("Enter second integer");
+				String intSecond = in.nextLine();
+				System.out.println("Enter third integer");
+				String intThird = in.nextLine();
+				
+				if(isInt(intFirst) && isInt(intSecond) && isInt(intThird)) {
+					int first = Integer.parseInt(intFirst);
+					int second = Integer.parseInt(intSecond);
+					int third = Integer.parseInt(intThird);
+					
+					obj1 = new Object1(integer, character, doubles);
+					obj3 = new Object3(first, second, third);
+					obj4 = new Object4(obj1, obj3);
+					
+					objArrList.add(obj1);
+					objArrList.add(obj3);
+					objArrList.add(obj4);
+					
+				}
+				
+			}else {
+				System.out.println("Invalid input try again.");
+			}
+			
 		}else if(input.equals("Object5")) {
 			System.out.println("Object5 entered");
-		}else {
-			System.out.println("Error: Input entered in the wrong format.");
+			Object1 obj1;
+			Object3 obj3;
+			Object5 obj5;
+						
+			System.out.println("Object1 entered");
+			
+			System.out.println("Enter an int:");
+			String firstInt = in.nextLine();
+			
+			System.out.println("Enter a char:");
+			String secondChar = in.nextLine();
+			
+			System.out.println("Enter a double:");
+			String thirdDouble = in.nextLine();
+			
+			if(isInt(firstInt) && isChar(secondChar) && isDouble(thirdDouble)) {
+				integer = Integer.parseInt(firstInt);
+				character = secondChar.charAt(0);
+				doubles = Double.parseDouble(thirdDouble);
+				
+				System.out.println("Object3 entered");
+				System.out.println("Enter first integer");
+				String intFirst = in.nextLine();
+				System.out.println("Enter second integer");
+				String intSecond = in.nextLine();
+				System.out.println("Enter third integer");
+				String intThird = in.nextLine();
+				
+				if(isInt(intFirst) && isInt(intSecond) && isInt(intThird)) {
+					int first = Integer.parseInt(intFirst);
+					int second = Integer.parseInt(intSecond);
+					int third = Integer.parseInt(intThird);
+					
+					obj1 = new Object1(integer, character, doubles);
+					obj3 = new Object3(first, second, third);
+					obj5 = new Object5(obj1, obj3);
+					
+					objArrList.add(obj1);
+					objArrList.add(obj3);
+					objArrList.add(obj5);
+					
+				
+			
+				}else {
+					System.out.println("Error: Input entered in the wrong format.");
+				}
+			}
 		}
+		
+		System.out.println(Arrays.toString(objArrList.toArray()));
 	}
 	
-	public void makeObject1(int firstInt, char secondChar, double thirdDouble) {
-		
-	}
+
 	
 	public boolean isInt(String s)
 	{
