@@ -7,4 +7,8 @@ public class Object5 {
 		stack.push(second);
 		System.out.println("Collection instance refers to other objects Object5");
 	}
+	
+	public Stack<Object> getStack(){
+		return stack;
+	}
 }

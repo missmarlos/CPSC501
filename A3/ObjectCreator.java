@@ -7,17 +7,42 @@ public class ObjectCreator {
 	Scanner in = new Scanner(System.in);
 	
 	public void userInput() {
-	
-		System.out.println("Objects: ");
-		System.out.println("Object1");
-		System.out.println("Object2");
-		System.out.println("Object3");
-		System.out.println("Object4");
-		System.out.println("Object5");
-		System.out.println("Enter an object from the menu that you would like to create.");
 		
-		String input = in.nextLine();
-		makeObject(input);
+			System.out.println("Objects: ");
+			System.out.println("Object1");
+			System.out.println("Object2");
+			System.out.println("Object3");
+			System.out.println("Object4");
+			System.out.println("Object5");
+			System.out.println("Enter an object from the menu that you would like to create.");
+			System.out.println("Enter 'exit' to end program.");
+			
+			
+			String input = in.nextLine();
+			while(!input.equals("exit")) {
+				System.out.println("Objects: ");
+				System.out.println("Object1");
+				System.out.println("Object2");
+				System.out.println("Object3");
+				System.out.println("Object4");
+				System.out.println("Object5");
+				System.out.println("Enter an object from the menu that you would like to create.");
+				System.out.println("Enter 'exit' to end program.");
+				makeObject(input);
+				System.out.println("Objects: ");
+				System.out.println("Object1");
+				System.out.println("Object2");
+				System.out.println("Object3");
+				System.out.println("Object4");
+				System.out.println("Object5");
+				System.out.println("Enter an object from the menu that you would like to create.");
+				System.out.println("Enter 'exit' to end program.");
+				input = in.nextLine();
+			}if(input.equals("exit")) {
+				//serialize
+				Serializer ser = new Serializer();
+				ser.Serialize();
+			}
 	}
 	
 	public void makeObject(String input) {
@@ -192,8 +217,6 @@ public class ObjectCreator {
 				}
 			}
 		}
-		
-		System.out.println(Arrays.toString(objArrList.toArray()));
 	}
 	
 

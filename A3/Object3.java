@@ -8,4 +8,9 @@ public class Object3 {
 		this.arr[2] = third;
 		System.out.println("Array of primitives made in Object3");
 	}
+
+	public int[] getArr() {
+		return arr;
+	}
 }
+

@@ -15,4 +15,17 @@ public class Object1 {
 		this.c = third;
 		System.out.println("Primitives created in Object1");
 	}
+	
+	public int getA(){
+		return a;
+	}
+	
+	public char getB() {
+		return b;
+	}
+	
+	public double getC() {
+		return c;
+	}
+	
 }

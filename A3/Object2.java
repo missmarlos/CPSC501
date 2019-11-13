@@ -6,4 +6,9 @@ public class Object2 {
 		this.obj1 = obj;
 		System.out.println("Object created in Object2");
 	}
+	
+	public Object1 getObject1() {
+		return obj1;
+	}
+	
 }
