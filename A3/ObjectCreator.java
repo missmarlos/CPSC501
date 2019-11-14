@@ -4,7 +4,9 @@ import java.lang.reflect.*;
 
 public class ObjectCreator {
 	ArrayList<Object> objArrList = new ArrayList<Object>();
+	IdentityHashMap objectMap = new IdentityHashMap<>();
 	Scanner in = new Scanner(System.in);
+	int count = 0;
 	
 	public void userInput() {
 		
@@ -20,14 +22,7 @@ public class ObjectCreator {
 			
 			String input = in.nextLine();
 			while(!input.equals("exit")) {
-				System.out.println("Objects: ");
-				System.out.println("Object1");
-				System.out.println("Object2");
-				System.out.println("Object3");
-				System.out.println("Object4");
-				System.out.println("Object5");
-				System.out.println("Enter an object from the menu that you would like to create.");
-				System.out.println("Enter 'exit' to end program.");
+				
 				makeObject(input);
 				System.out.println("Objects: ");
 				System.out.println("Object1");
@@ -40,7 +35,7 @@ public class ObjectCreator {
 				input = in.nextLine();
 			}if(input.equals("exit")) {
 				//serialize
-				Serializer ser = new Serializer();
+				Serializer ser = new Serializer(objectMap);
 				ser.Serialize();
 			}
 	}
@@ -68,11 +63,15 @@ public class ObjectCreator {
 				doubles = Double.parseDouble(thirdDouble);
 				
 				Object1 obj1 =  new Object1(integer, character, doubles);
-				objArrList.add(obj1);
+				objectMap.put(count, obj1);
+				count++;
+				//objArrList.add(obj1);
 			}else {
 				System.out.println("Invalid input try again.");
 			}
 		}else if(input.equals("Object2")) {
+			ArrayList<Object> obj2list = new ArrayList<Object>();
+			
 			System.out.println("Object1 entered");
 			
 			System.out.println("Enter an int:");
@@ -89,11 +88,18 @@ public class ObjectCreator {
 				character = secondChar.charAt(0);
 				doubles = Double.parseDouble(thirdDouble);
 				
+				
 				Object1 obj2to1 =  new Object1(integer, character, doubles);
 				Object2 obj2 = new Object2(obj2to1);
+				//obj2list.add(obj2to1);
+				//obj2list.add(obj2);
 				
-				objArrList.add(obj2to1);
-				objArrList.add(obj2);
+				//objectMap.put(count, obj2);
+				objectMap.put(count, obj2to1);
+				objectMap.put(count, obj2);
+
+				count++;
+				//objArrList.add(obj2list);
 			}else {
 				System.out.println("Invalid input try again.");
 			}
@@ -113,11 +119,14 @@ public class ObjectCreator {
 				int third = Integer.parseInt(intThird);
 				
 				Object3 obj3 = new Object3(first, second, third);
-				objArrList.add(obj3);
+				//objArrList.add(obj3);
+				objectMap.put(count, obj3);
+				count++;
 				
 			}
 			
 		}else if(input.equals("Object4")) {
+			ArrayList<Object> obj4List = new ArrayList<Object>();
 			Object1 obj1;
 			Object3 obj3;
 			Object4 obj4;
@@ -157,9 +166,17 @@ public class ObjectCreator {
 					obj3 = new Object3(first, second, third);
 					obj4 = new Object4(obj1, obj3);
 					
-					objArrList.add(obj1);
-					objArrList.add(obj3);
-					objArrList.add(obj4);
+					//obj4List.add(obj1);
+					//obj4List.add(obj3);
+					//obj4List.add(obj4);
+					//objArrList.add(obj4List);
+					
+					//objectMap.put(count, obj4);
+					objectMap.put(count, obj1);
+					objectMap.put(count, obj3);
+					objectMap.put(count, obj4);
+
+					count++;
 					
 				}
 				
@@ -169,6 +186,8 @@ public class ObjectCreator {
 			
 		}else if(input.equals("Object5")) {
 			System.out.println("Object5 entered");
+			ArrayList<Object> obj5List = new ArrayList<Object>();
+			
 			Object1 obj1;
 			Object3 obj3;
 			Object5 obj5;
@@ -206,9 +225,19 @@ public class ObjectCreator {
 					obj3 = new Object3(first, second, third);
 					obj5 = new Object5(obj1, obj3);
 					
-					objArrList.add(obj1);
-					objArrList.add(obj3);
-					objArrList.add(obj5);
+					//obj5List.add(obj1);
+					//obj5List.add(obj3);
+					//obj5List.add(obj5);
+					
+					//objArrList.add(obj5List);
+					
+					//objectMap.put(count, obj5);
+					objectMap.put(count, obj1);
+					objectMap.put(count, obj3);
+					objectMap.put(count, obj5);
+
+					
+					count++;
 					
 				
 			

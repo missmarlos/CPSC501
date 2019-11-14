@@ -1,6 +1,6 @@
 
 public class Object3 {
-	int[] arr = new int[4];
+	int[] arr = new int[3];
 	
 	public Object3(int first, int second, int third) {
 		this.arr[0] = first;
