@@ -48,7 +48,27 @@ public class Deserializer {
                         		System.out.println(value.getText());
                         	}
                     	}else if((child.getAttribute("class").toString()).contains("Object4")) {
-                    		
+                    		List fields = child.getChildren();
+                            for(int i = 0; i < 3; i++) {
+                            	Element field = (Element) fields.get(i);
+                            	System.out.println("Field is "+field);
+                            	System.out.println(field.getAttribute("name"));
+                            	System.out.println(field.getAttribute("declaringclass"));
+                            	List values = field.getChildren();
+                            	for(Object value_ : values) {
+                            		Element value = (Element) value_;
+                            		System.out.println("Value is "+value);
+                            		System.out.println(value.getText());
+                            	}
+                            }
+                            
+                            List vals = child.getChildren();
+                        	for(int i = 3; i < vals.size(); i++) {
+                        		Element val = (Element) vals.get(i);
+                        		System.out.println("Value is "+val);
+                        		System.out.println(val.getText());
+                        	}
+                        	
                     	}
                     }else {
                     	List fields = child.getChildren();
