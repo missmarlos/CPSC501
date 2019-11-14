@@ -6,9 +6,15 @@ import java.lang.reflect.*;
 import org.jdom2.*;
 import org.jdom2.output.Format;
 import org.jdom2.output.XMLOutputter;
+import java.io.*;
+import java.util.*;
 
 public class Serializer {
 	IdentityHashMap objectMap = new IdentityHashMap<>();
+	
+	public Serializer() {
+		
+	}
 	
 	public Serializer(IdentityHashMap objMap) {
 		this.objectMap = objMap;
@@ -57,8 +63,14 @@ public class Serializer {
             // Display in a readable format
             xmlOutput.setFormat(Format.getPrettyFormat());
             xmlOutput.output(doc, new FileWriter("file.xml"));
+            
+            File file = new File("file.xml");
 
             System.out.println("File Saved!");
+            
+            //send over socket
+            
+            
         } catch (IOException io) {
             System.out.println(io.getMessage());
         }

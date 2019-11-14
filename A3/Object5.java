@@ -1,14 +1,15 @@
 import java.util.*;
 public class Object5 {
-	Stack<Object> stack = new Stack<Object>();
+	//Stack<Object> stack = new Stack<Object>();
+	ArrayList<Object> arrList = new ArrayList<Object>();
 	
 	public Object5(Object1 first, Object3 second) {
-		stack.push(first);
-		stack.push(second);
+		arrList.add(first);
+		arrList.add(second);
 		System.out.println("Collection instance refers to other objects Object5");
 	}
 	
-	public Stack<Object> getStack(){
-		return stack;
+	public ArrayList<Object> getArrList(){
+		return arrList;
 	}
 }
