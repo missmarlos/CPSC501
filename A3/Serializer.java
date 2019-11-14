@@ -99,7 +99,7 @@ public class Serializer {
                 	//Element field = new Element("field");
                  	//field.setAttribute(new Attribute("name", f[i].getName()));
                  	//declaring class?
-                 	//field.setAttribute(new Attribute("declaringlcass", obj.getClass().getName()));
+                 	//field.setAttribute(new Attribute("declaringclass", obj.getClass().getName()));
                  	//Element val = new Element("value").setText(value.toString());
                  	//field.addContent(val);
                  	//el.addContent(field);
@@ -158,7 +158,7 @@ public class Serializer {
                             Element field = new Element("field");
                         	field.setAttribute(new Attribute("name", f[i].getName()));
                         	//declaring class?
-                        	field.setAttribute(new Attribute("declaringlcass", obj.getClass().getName()));
+                        	field.setAttribute(new Attribute("declaringclass", obj.getClass().getName()));
                         	Element ref = new Element("reference").setText(Integer.toString(i));
                         	
                         	el2 = new Element("object");
@@ -190,7 +190,7 @@ public class Serializer {
                         Element field = new Element("field");
                     	field.setAttribute(new Attribute("name", f[i].getName()));
                     	//declaring class?
-                    	field.setAttribute(new Attribute("declaringlcass", obj.getClass().getName()));
+                    	field.setAttribute(new Attribute("declaringclass", obj.getClass().getName()));
                     	Element val = new Element("value").setText(value.toString());
                     	
                     	field.addContent(val);
