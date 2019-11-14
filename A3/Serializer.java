@@ -8,7 +8,6 @@ import org.jdom2.output.Format;
 import org.jdom2.output.XMLOutputter;
 
 public class Serializer {
-	ArrayList<Object> objArrListSend = new ArrayList<Object>();
 	IdentityHashMap objectMap = new IdentityHashMap<>();
 	
 	public Serializer(IdentityHashMap objMap) {
@@ -41,7 +40,7 @@ public class Serializer {
             	objRef.setAttribute(new Attribute("class", obj.getClass().getName()));
             	objRef.setAttribute(new Attribute("id", Integer.toString(i)));
             	
-            	object.addContent(objRef);
+            	//object.addContent(objRef);
             	
             	doc.getRootElement().addContent(object);
             	
@@ -78,13 +77,35 @@ public class Serializer {
                 if(f[i].getType().isArray()) {
                 	System.out.println("Array");
                 	
+                	try {
+                     	el.setAttribute(new Attribute("length", Integer.toString(Array.getLength(f[i].get(obj)))));
+
+                	}catch(Exception e) {
+                		e.printStackTrace();
+                	}
+                	
+                	//Element field = new Element("field");
+                 	//field.setAttribute(new Attribute("name", f[i].getName()));
+                 	//declaring class?
+                 	//field.setAttribute(new Attribute("declaringlcass", obj.getClass().getName()));
+                 	//Element val = new Element("value").setText(value.toString());
+                 	//field.addContent(val);
+                 	//el.addContent(field);
+                	
                 	Class componentType = f[i].getType().getComponentType();
                 	if(componentType.isPrimitive()) {
                 		try {
                     		int length = Array.getLength(f[i].get(obj));
+                    		
                             for (int j= 0; j < length; j ++) {
                                 Object arrayElement = Array.get(f[i].get(obj), j);
                                 System.out.println("Array element: "+arrayElement);
+                                //write to xml doc
+                                Class arrayElementClass = arrayElement.getClass();
+                                
+                                Element val = new Element("value").setText(arrayElement.toString());
+                                
+                                el.addContent(val);
                                 
                             }
                     	}catch(Exception e) {
@@ -92,24 +113,20 @@ public class Serializer {
                     	}
                 	}else {
                 		System.out.println("not primitive");
+                		try {
+                			int length = Array.getLength(f[i].get(obj));
+                    		for(int k = 0; k < length; k++) {
+                    			Object arrayElement = Array.get(f[i].get(obj), k);
+                    			Class arrayElementClass = arrayElement.getClass();
+                        		findFields(arrayElementClass, arrayElement, true, doc, el, el2);
+                    		}
+                		}catch(Exception e){
+                			e.printStackTrace();
+                		}
                 	}
-                	
-                	
-                    
-                
                 	
                 }
 
-                /*
-                if(obj.getClass().isArray()){
-                    System.out.println("array");
-                }
-                */
-                /*
-                //Modifiers
-                int mod = f[i].getModifiers();
-                System.out.println("Modifiers: "+Modifier.toString(mod));   
-				*/
                 
                 //Current values of each field
                 try{
@@ -119,8 +136,28 @@ public class Serializer {
                         System.out.println(f[i].getName()+" is null.");
                         return;
                     }
-                    if(!f[i].getType().isPrimitive()){
+    				Object value = f[i].get(obj);
+
+                    if(!f[i].getType().isPrimitive() && !f[i].getType().isArray()){
                         if(recursive == true){
+                        	System.out.println("Value at "+f[i].getName()+": ");
+                            System.out.println("("+c.getName()+")"+value);
+
+                            Element field = new Element("field");
+                        	field.setAttribute(new Attribute("name", f[i].getName()));
+                        	//declaring class?
+                        	field.setAttribute(new Attribute("declaringlcass", obj.getClass().getName()));
+                        	Element ref = new Element("reference").setText(Integer.toString(i));
+                        	
+                        	el2 = new Element("object");
+                        	el2.setAttribute(new Attribute("class", f[i].getClass().getName()));
+                        	el2.setAttribute(new Attribute("id", Integer.toString(i)));
+                        	//print information about object reference
+                        	
+                        	field.addContent(ref);
+                        	el.addContent(field);
+                                            					
+        					System.out.println("is not primitive");
                             findFields(f[i].getType(), f[i].get(obj), true, doc, el, el2);
                         }else{
                         	
@@ -130,27 +167,28 @@ public class Serializer {
                         	
                         	System.out.println(c.getName()+"@"+Integer.toHexString(System.identityHashCode(obj)));
                         }
-                    }else{
-                            Object value = f[i].get(obj);
-                            System.out.println("Value at "+f[i].getName()+": ");
-                            System.out.println("("+c.getName()+")"+value);
-
-
-                        	
-                        	
-                            Element field = new Element("field");
-                        	field.setAttribute(new Attribute("name", f[i].getName()));
-                        	//declaring class?
-                        	field.setAttribute(new Attribute("declaringlcass", obj.getClass().getName()));
-                        	Element val = new Element("value").setText(value.toString());
-                        	
-                        	field.addContent(val);
-                        	el2.addContent(field);
-                        	//el.addContent(el2);
-
-                        	//field.setAttribute(new Attribute("declaringlcass", obj.getClass().getDeclaringClass().getName()));
-                        	//doc.getRootElement().addContent(el);
-                    }    
+                    }else if(f[i].getType().isPrimitive() && !f[i].getType().isArray()){
+                    	
+                    		
+                    	//Object value = f[i].get(obj);
+    				
+    					System.out.println("Value at "+f[i].getName()+": ");
+                        System.out.println("("+c.getName()+")"+value);
+                    	
+                        Element field = new Element("field");
+                    	field.setAttribute(new Attribute("name", f[i].getName()));
+                    	//declaring class?
+                    	field.setAttribute(new Attribute("declaringlcass", obj.getClass().getName()));
+                    	Element val = new Element("value").setText(value.toString());
+                    	
+                    	field.addContent(val);
+                    	el.addContent(field);
+                    	
+                    	System.out.println("is primitive");
+                    }else if(f[i].getClass().isInterface()) {
+                    	System.out.println("Collections class");
+                    }
+                    
                 }catch(Exception e){
                     e.printStackTrace();
                 }
