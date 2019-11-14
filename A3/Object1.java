@@ -1,15 +1,14 @@
-import java.io.FileWriter;
-import java.io.IOException;
-import org.jdom2.*;
-import org.jdom2.output.Format;
-import org.jdom2.output.XMLOutputter;
 
 public class Object1 {
 	int a;
 	char b;
 	double c;
 	
-	Object1(int first, char second, double third){
+	public Object1() {
+		
+	}
+	
+	public Object1(int first, char second, double third){
 		this.a = first;
 		this.b = second;
 		this.c = third;
@@ -26,6 +25,18 @@ public class Object1 {
 	
 	public double getC() {
 		return c;
+	}
+	
+	public void setA(int val) {
+		a = val;
+	}
+	
+	public void setB(char val) {
+		b = val;
+	}
+
+	public void setC(double val) {
+		c = val;
 	}
 	
 }

@@ -2,6 +2,11 @@
 public class Object3 {
 	int[] arr = new int[3];
 	
+	public Object3() {
+		
+	}
+	
+	
 	public Object3(int first, int second, int third) {
 		this.arr[0] = first;
 		this.arr[1] = second;
@@ -11,6 +16,10 @@ public class Object3 {
 
 	public int[] getArr() {
 		return arr;
+	}
+	
+	public void setArr(int[] val) {
+		arr = val;
 	}
 }
 
