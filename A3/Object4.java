@@ -13,7 +13,7 @@ public class Object4 {
 		objArr[1] = secondObj;
 		System.out.println("Array of objects made Object4");
 	}
-	
+	 
 	public Object[] getObjArr() {
 		return objArr;
 	}
