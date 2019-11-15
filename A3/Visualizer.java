@@ -36,11 +36,21 @@ public class Visualizer {
 					Object value = f[i].get(obj);
 					System.out.println("Value: "+value);
 				}else {
+					
 					if(f[i].getType().isArray()) {
+						
 						System.out.println("Length of array: "+Array.getLength(f[i].get(obj)));
 						for(int j = 0; j < Array.getLength(f[i].get(obj)); j++) {
-							Object value = Array.get(f[i].get(obj), j).getClass().getName();
-							System.out.println("Value in array: "+value);
+							if(f[i].getType().getComponentType().isPrimitive()) {
+								Object value = Array.get(f[i].get(obj), j);
+								System.out.println("Value in array: "+value);
+							}else {
+								Object value = Array.get(f[i].get(obj), j).getClass().getName();
+								Object val = Array.get(f[i].get(obj), j);
+								System.out.println("Value in array: "+value);
+								visualize(val);
+							}
+							
 						}
 					}else {
 						System.out.println("Declaring class: "+f[i].getDeclaringClass());
