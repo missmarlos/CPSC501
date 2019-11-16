@@ -259,7 +259,7 @@ public class ObjectCreator {
 	        Integer.parseInt(s);
 	        return true;
 	    }catch (NumberFormatException ex){
-	        System.out.println("Error: "+s+" is not an int");
+	        //System.out.println("Error: "+s+" is not an int");
 	    	return false;
 	    }
 	}
@@ -268,7 +268,7 @@ public class ObjectCreator {
         if(s.length() == 1 && (!isInt(s)) && (!isDouble(s))) {
         	return true;
         }else {
-	        System.out.println("Error: "+s+" is not a char");
+	        //System.out.println("Error: "+s+" is not a char");
         	return false;
         }
 	}
@@ -279,7 +279,7 @@ public class ObjectCreator {
 	        return true;
 	    }catch (NumberFormatException e){
 	    	//e.printStackTrace();
-	        System.out.println("Error: "+s+" is not an double");
+	        //System.out.println("Error: "+s+" is not an double");
 	    	return false;
 	    }
 	}

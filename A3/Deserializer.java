@@ -27,17 +27,17 @@ public class Deserializer {
             Document doc = builder.build(new File(fileName));
             Element rootElement = doc.getRootElement();
 
-            System.out.println("Root element is: "+rootElement);
+            //System.out.println("Root element is: "+rootElement);
             
             
             List children = rootElement.getChildren();
             for(Object child_ : children){
             	
             		Element child = (Element) child_;
-                    System.out.println("Child is "+ child);
+                    //System.out.println("Child is "+ child);
                     
-                    System.out.println(child.getAttribute("class"));
-                    System.out.println(child.getAttribute("id"));
+                    //System.out.println(child.getAttribute("class"));
+                    //System.out.println(child.getAttribute("id"));
                     
                     if((child.getAttribute("class").toString()).contains("Object1")){
                     	Object1 obj1 = new Object1();
@@ -45,16 +45,16 @@ public class Deserializer {
 		                List fields = child.getChildren();
                         for(int k = 0; k < fields.size(); k++) {
                         	Element field = (Element) fields.get(k);
-                        	System.out.println("Field is "+field+" at "+k);
-                        	System.out.println(field.getAttribute("name"));
-                        	System.out.println(field.getAttribute("declaringclass"));
+                        	//System.out.println("Field is "+field+" at "+k);
+                        	//System.out.println(field.getAttribute("name"));
+                        	//System.out.println(field.getAttribute("declaringclass"));
                         	
                         	
                         	List values = field.getChildren();
                         	for(Object value_ : values) {
                         		Element value = (Element) value_;
-                        		System.out.println("Value is "+value);
-                        		System.out.println(value.getText());
+                        		//System.out.println("Value is "+value);
+                        		//System.out.println(value.getText());
                         		if(k == 0) {
                         			obj1.setA(Integer.parseInt(value.getText()));
                         		}if(k == 1) {
@@ -93,16 +93,16 @@ public class Deserializer {
                     	List fields = child.getChildren();
                     	for(int k = 0; k < fields.size(); k++) {
                         	Element field = (Element) fields.get(k);
-                        	System.out.println("Field is "+field+" at "+k);
-                        	System.out.println(field.getAttribute("name"));
-                        	System.out.println(field.getAttribute("declaringclass"));
+                        	//System.out.println("Field is "+field+" at "+k);
+                        	//System.out.println(field.getAttribute("name"));
+                        	//System.out.println(field.getAttribute("declaringclass"));
                         	
                         	
                         	List values = field.getChildren();
                         	for(Object value_ : values) {
                         		Element value = (Element) value_;
-                        		System.out.println("Value is "+value);
-                        		System.out.println(value.getText());
+                        		//System.out.println("Value is "+value);
+                        		//System.out.println(value.getText());
                         		if(k == 0) {
                         			obj2.setObject1(obj1);
                         		}if(k == 1) {
@@ -117,7 +117,7 @@ public class Deserializer {
                     	objectList.add(obj2);
                     	
                     }else if((child.getAttribute("class").toString()).contains("Object3") || (child.getAttribute("class").toString()).contains("Object4") ) {
-                    	System.out.println(child.getAttribute("length"));
+                    	//System.out.println(child.getAttribute("length"));
                     	if((child.getAttribute("class").toString()).contains("Object3")) {
                     		Object3 obj3 = new Object3();
                     		
@@ -126,8 +126,8 @@ public class Deserializer {
                     		
                         	for(int k = 0; k < values.size(); k++) {
                         		Element value = (Element) values.get(k);
-                        		System.out.println("Value is "+value+ " at "+k);
-                        		System.out.println(value.getText());
+                        		//System.out.println("Value is "+value+ " at "+k);
+                        		//System.out.println(value.getText());
                         		arr[k] = Integer.parseInt(value.getText());
                         	}
                         	obj3.setArr(arr);
@@ -140,14 +140,14 @@ public class Deserializer {
                     		List fields = child.getChildren();
                             for(int i = 0; i < 3; i++) {
                             	Element field = (Element) fields.get(i);
-                            	System.out.println("Field is "+field);
-                            	System.out.println(field.getAttribute("name"));
-                            	System.out.println(field.getAttribute("declaringclass")); 
+                            	//System.out.println("Field is "+field);
+                            	//System.out.println(field.getAttribute("name"));
+                            	//System.out.println(field.getAttribute("declaringclass")); 
                             	List values = field.getChildren();
                             	for(Object value_ : values) {
                             		Element value = (Element) value_;
-                            		System.out.println("Value is "+value);
-                            		System.out.println(value.getText());
+                            		//System.out.println("Value is "+value);
+                            		//System.out.println(value.getText());
                             		if(i == 0) {
                             			obj1.setA(Integer.parseInt(value.getText()));
                             		}if(i == 1) {
@@ -159,14 +159,14 @@ public class Deserializer {
                             }
                             
                             List vals = child.getChildren();
-                            System.out.println("Value size "+vals.size());
+                            //System.out.println("Value size "+vals.size());
                             int[] arr = new int[3];
                
                     		
                         	for(int k = 3; k < vals.size(); k++) {
                         		Element value = (Element) vals.get(k);
-                        		System.out.println("Value is "+value+ " at "+k);
-                        		System.out.println(value.getText());
+                        		//System.out.println("Value is "+value+ " at "+k);
+                        		//System.out.println(value.getText());
                         		arr[k-3] = Integer.parseInt(value.getText());
                         	}
                         	obj3.setArr(arr);

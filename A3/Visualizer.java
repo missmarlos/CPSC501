@@ -7,6 +7,7 @@ public class Visualizer {
 		
 		System.out.println("Size of list "+list.size());
 		for(int i = 0; i < list.size(); i++) {
+			System.out.println(" ");
 			visualize(list.get(i));
 		}
 	}

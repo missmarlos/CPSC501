@@ -30,7 +30,7 @@ public class Serializer {
             
             //go through identityhashmap and print accordingly.
             for(int i = 0; i < objectMap.size(); i++) {
-            	System.out.println(objectMap.get(i));
+            	//System.out.println(objectMap.get(i));
             	Object obj =  objectMap.get(i);
             	Class cl = obj.getClass();
             	
@@ -51,8 +51,8 @@ public class Serializer {
             	doc.getRootElement().addContent(object);
             	
             }
-            System.out.println(objectMap.entrySet());
-            System.out.println(objectMap.size());
+            //System.out.println(objectMap.entrySet());
+            //System.out.println(objectMap.size());
 
             
 
@@ -66,30 +66,31 @@ public class Serializer {
             
             File file = new File("file.xml");
 
-            System.out.println("File Saved!");
+            //System.out.println("File Saved!");
             
             //send over socket 
             
             
         } catch (IOException io) {
-            System.out.println(io.getMessage());
+            //System.out.println(io.getMessage());
         }
 	}
-	
+	 
 	public void findFields(Class c, Object obj, boolean recursive, Document doc, Element el, Element el2){
         Field[] f = c.getDeclaredFields();
         if(f.length > 0){
-            System.out.println("Fields for "+c.getName()+": ");
+            //System.out.println("Fields for "+c.getName()+": ");
             for(int i = 0; i < f.length; i ++){
-                System.out.println(f[i].getName());
+                //System.out.println(f[i].getName());
 
                 //Type
-                System.out.println("Type: ");
-                System.out.println(f[i].getType().getName());
+                //System.out.println("Type: ");
+                //System.out.println(f[i].getType().getName());
                 if(f[i].getType().isArray()) {
-                	System.out.println("Array");
+                	//System.out.println("Array");
                 	
                 	try {
+                		f[i].setAccessible(true);
                      	el.setAttribute(new Attribute("length", Integer.toString(Array.getLength(f[i].get(obj)))));
 
                 	}catch(Exception e) {
@@ -103,7 +104,7 @@ public class Serializer {
                     		
                             for (int j= 0; j < length; j ++) {
                                 Object arrayElement = Array.get(f[i].get(obj), j);
-                                System.out.println("Array element: "+arrayElement);
+                                //System.out.println("Array element: "+arrayElement);
                                 //write to xml doc
                                 Class arrayElementClass = arrayElement.getClass();
                                 
@@ -116,7 +117,7 @@ public class Serializer {
                     		e.printStackTrace();
                     	}
                 	}else {
-                		System.out.println("not primitive");
+                		//System.out.println("not primitive");
                 		try {
                 			int length = Array.getLength(f[i].get(obj));
                     		for(int k = 0; k < length; k++) {
@@ -135,15 +136,15 @@ public class Serializer {
                     f[i].setAccessible(true);
 
                     if(f[i].get(obj) == null){
-                        System.out.println(f[i].getName()+" is null.");
+                        //System.out.println(f[i].getName()+" is null.");
                         return;
                     }
     				Object value = f[i].get(obj);
 
                     if(!f[i].getType().isPrimitive() && !f[i].getType().isArray()){
                         if(recursive == true){
-                        	System.out.println("Value at "+f[i].getName()+": ");
-                            System.out.println("("+c.getName()+")"+value);
+                        	//System.out.println("Value at "+f[i].getName()+": ");
+                            //System.out.println("("+c.getName()+")"+value);
 
                             Element field = new Element("field");
                         	field.setAttribute(new Attribute("name", f[i].getName()));
@@ -159,7 +160,7 @@ public class Serializer {
                         	field.addContent(ref);
                         	el.addContent(field);
                                             					
-        					System.out.println("is not primitive");
+        					//System.out.println("is not primitive");
                             findFields(f[i].getType(), f[i].get(obj), true, doc, el, el2);
                         }else{
                         	
@@ -167,15 +168,15 @@ public class Serializer {
           
                         	//doc.getRootElement().addContent(el);
                         	
-                        	System.out.println(c.getName()+"@"+Integer.toHexString(System.identityHashCode(obj)));
+                        	//System.out.println(c.getName()+"@"+Integer.toHexString(System.identityHashCode(obj)));
                         }
                     }else if(f[i].getType().isPrimitive() && !f[i].getType().isArray()){
                     	
                     		
                     	//Object value = f[i].get(obj);
     				
-    					System.out.println("Value at "+f[i].getName()+": ");
-                        System.out.println("("+c.getName()+")"+value);
+    					//System.out.println("Value at "+f[i].getName()+": ");
+                        //System.out.println("("+c.getName()+")"+value);
                     	
                         Element field = new Element("field");
                     	field.setAttribute(new Attribute("name", f[i].getName()));
@@ -186,9 +187,9 @@ public class Serializer {
                     	field.addContent(val);
                     	el.addContent(field);
                     	
-                    	System.out.println("is primitive");
+                    	//System.out.println("is primitive");
                     }else if(f[i].getClass().isInterface()) {
-                    	System.out.println("Collections class");
+                    	//System.out.println("Collections class");
                     }
                     
                 }catch(Exception e){
@@ -196,10 +197,10 @@ public class Serializer {
                 }
                 
 
-                System.out.println(" ");
+                //System.out.println(" ");
             }
         }else{
-            System.out.println("No fields for "+c.getName());
+            //System.out.println("No fields for "+c.getName());
         }
 
     }
