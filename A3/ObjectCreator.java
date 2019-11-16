@@ -8,6 +8,10 @@ public class ObjectCreator {
 	Scanner in = new Scanner(System.in);
 	int count = 0;
 	
+	int integer;
+	char character;
+	double doubles;
+	
 	public void userInput() {
 		
 			System.out.println("Objects: ");
@@ -46,65 +50,128 @@ public class ObjectCreator {
 		double doubles;
 		
 		if(input.equals("Object1")) {			
-			System.out.println("Object1 entered");
+			makeObject1();
 			
-			System.out.println("Enter an int:");
-			String firstInt = in.nextLine();
-			
-			System.out.println("Enter a char:");
-			String secondChar = in.nextLine();
-			
-			System.out.println("Enter a double:");
-			String thirdDouble = in.nextLine();
-			
-			if(isInt(firstInt) && isChar(secondChar) && isDouble(thirdDouble)) {
-				integer = Integer.parseInt(firstInt);
-				character = secondChar.charAt(0);
-				doubles = Double.parseDouble(thirdDouble);
-				
-				Object1 obj1 =  new Object1(integer, character, doubles);
-				objectMap.put(count, obj1);
-				count++;
-				//objArrList.add(obj1);
-			}else {
-				System.out.println("Invalid input try again.");
-			}
 		}else if(input.equals("Object2")) {
-			ArrayList<Object> obj2list = new ArrayList<Object>();
+			makeObject2();
 			
-			System.out.println("Object1 entered");
+		}else if(input.equals("Object3")) {		
+			makeObject3();
 			
-			System.out.println("Enter an int:");
-			String firstInt = in.nextLine();
+		}else if(input.equals("Object4")) {
+			makeObject4();
 			
-			System.out.println("Enter a char:");
-			String secondChar = in.nextLine();
+		}else if(input.equals("Object5")) {
+			makeObject5();
 			
-			System.out.println("Enter a double:");
-			String thirdDouble = in.nextLine();
+		}
+	}
+	
+	public void makeObject1() {
+		System.out.println("Object1 entered");
+		
+		System.out.println("Enter an int:");
+		String firstInt = in.nextLine();
+		
+		System.out.println("Enter a char:");
+		String secondChar = in.nextLine();
+		
+		System.out.println("Enter a double:");
+		String thirdDouble = in.nextLine();
+		
+		if(isInt(firstInt) && isChar(secondChar) && isDouble(thirdDouble)) {
+			integer = Integer.parseInt(firstInt);
+			character = secondChar.charAt(0);
+			doubles = Double.parseDouble(thirdDouble);
 			
-			if(isInt(firstInt) && isChar(secondChar) && isDouble(thirdDouble)) {
-				integer = Integer.parseInt(firstInt);
-				character = secondChar.charAt(0);
-				doubles = Double.parseDouble(thirdDouble);
-				
-				
-				Object1 obj2to1 =  new Object1(integer, character, doubles);
-				Object2 obj2 = new Object2(obj2to1);
-				//obj2list.add(obj2to1);
-				//obj2list.add(obj2);
-				
-				//objectMap.put(count, obj2);
-				objectMap.put(count, obj2to1);
-				objectMap.put(count, obj2);
+			Object1 obj1 =  new Object1(integer, character, doubles);
+			objectMap.put(count, obj1);
+			count++;
+			//objArrList.add(obj1);
+		}else {
+			System.out.println("Invalid input try again.");
+		}
+	}
+	
+	public void makeObject2() {
+		ArrayList<Object> obj2list = new ArrayList<Object>();
+		
+		System.out.println("Object2 entered");
+		
+		System.out.println("Enter an int:");
+		String firstInt = in.nextLine();
+		
+		System.out.println("Enter a char:");
+		String secondChar = in.nextLine();
+		
+		System.out.println("Enter a double:");
+		String thirdDouble = in.nextLine();
+		
+		if(isInt(firstInt) && isChar(secondChar) && isDouble(thirdDouble)) {
+			integer = Integer.parseInt(firstInt);
+			character = secondChar.charAt(0);
+			doubles = Double.parseDouble(thirdDouble);
+			
+			
+			Object1 obj2to1 =  new Object1(integer, character, doubles);
+			Object2 obj2 = new Object2(obj2to1);
+			objectMap.put(count, obj2to1);
+			objectMap.put(count, obj2);
 
-				count++;
-				//objArrList.add(obj2list);
-			}else {
-				System.out.println("Invalid input try again.");
-			}
+			count++;
+		}else {
+			System.out.println("Invalid input try again.");
+		}
+		
+	}
+	
+	public void makeObject3() {
+		System.out.println("Object3 entered");
+		System.out.println("Enter first integer");
+		String intFirst = in.nextLine();
+		System.out.println("Enter second integer");
+		String intSecond = in.nextLine();
+		System.out.println("Enter third integer");
+		String intThird = in.nextLine();
+		
+		if(isInt(intFirst) && isInt(intSecond) && isInt(intThird)) {
+			int first = Integer.parseInt(intFirst);
+			int second = Integer.parseInt(intSecond);
+			int third = Integer.parseInt(intThird);
 			
-		}else if(input.equals("Object3")) {			
+			Object3 obj3 = new Object3(first, second, third);
+			//objArrList.add(obj3);
+			objectMap.put(count, obj3);
+			count++;
+			
+		}
+		
+	}
+
+	public void makeObject4() {
+		ArrayList<Object> obj4List = new ArrayList<Object>();
+		Object1 obj1;
+		Object3 obj3;
+		Object4 obj4;
+		
+		System.out.println("Object4 entered");
+		
+		System.out.println("Object1 entered");
+		
+		System.out.println("Enter an int:");
+		String firstInt = in.nextLine();
+		
+		System.out.println("Enter a char:");
+		String secondChar = in.nextLine();
+		
+		System.out.println("Enter a double:");
+		String thirdDouble = in.nextLine();
+		
+		if(isInt(firstInt) && isChar(secondChar) && isDouble(thirdDouble)) {
+			integer = Integer.parseInt(firstInt);
+			character = secondChar.charAt(0);
+			doubles = Double.parseDouble(thirdDouble);
+			
 			System.out.println("Object3 entered");
 			System.out.println("Enter first integer");
 			String intFirst = in.nextLine();
@@ -118,137 +185,73 @@ public class ObjectCreator {
 				int second = Integer.parseInt(intSecond);
 				int third = Integer.parseInt(intThird);
 				
-				Object3 obj3 = new Object3(first, second, third);
-				//objArrList.add(obj3);
+				obj1 = new Object1(integer, character, doubles);
+				obj3 = new Object3(first, second, third);
+				obj4 = new Object4(obj1, obj3);
+				objectMap.put(count, obj1);
 				objectMap.put(count, obj3);
+				objectMap.put(count, obj4);
+
 				count++;
 				
 			}
 			
-		}else if(input.equals("Object4")) {
-			ArrayList<Object> obj4List = new ArrayList<Object>();
-			Object1 obj1;
-			Object3 obj3;
-			Object4 obj4;
-			
-			System.out.println("Object4 entered");
-			
-			System.out.println("Object1 entered");
-			
-			System.out.println("Enter an int:");
-			String firstInt = in.nextLine();
-			
-			System.out.println("Enter a char:");
-			String secondChar = in.nextLine();
-			
-			System.out.println("Enter a double:");
-			String thirdDouble = in.nextLine();
-			
-			if(isInt(firstInt) && isChar(secondChar) && isDouble(thirdDouble)) {
-				integer = Integer.parseInt(firstInt);
-				character = secondChar.charAt(0);
-				doubles = Double.parseDouble(thirdDouble);
-				
-				System.out.println("Object3 entered");
-				System.out.println("Enter first integer");
-				String intFirst = in.nextLine();
-				System.out.println("Enter second integer");
-				String intSecond = in.nextLine();
-				System.out.println("Enter third integer");
-				String intThird = in.nextLine();
-				
-				if(isInt(intFirst) && isInt(intSecond) && isInt(intThird)) {
-					int first = Integer.parseInt(intFirst);
-					int second = Integer.parseInt(intSecond);
-					int third = Integer.parseInt(intThird);
-					
-					obj1 = new Object1(integer, character, doubles);
-					obj3 = new Object3(first, second, third);
-					obj4 = new Object4(obj1, obj3);
-					
-					//obj4List.add(obj1);
-					//obj4List.add(obj3);
-					//obj4List.add(obj4);
-					//objArrList.add(obj4List);
-					
-					//objectMap.put(count, obj4);
-					objectMap.put(count, obj1);
-					objectMap.put(count, obj3);
-					objectMap.put(count, obj4);
-
-					count++;
-					
-				}
-				
-			}else {
-				System.out.println("Invalid input try again.");
-			}
-			
-		}else if(input.equals("Object5")) {
-			System.out.println("Object5 entered");
-			ArrayList<Object> obj5List = new ArrayList<Object>();
-			
-			Object1 obj1;
-			Object3 obj3;
-			Object5 obj5;
-						
-			System.out.println("Object1 entered");
-			
-			System.out.println("Enter an int:");
-			String firstInt = in.nextLine();
-			
-			System.out.println("Enter a char:");
-			String secondChar = in.nextLine();
-			
-			System.out.println("Enter a double:");
-			String thirdDouble = in.nextLine();
-			
-			if(isInt(firstInt) && isChar(secondChar) && isDouble(thirdDouble)) {
-				integer = Integer.parseInt(firstInt);
-				character = secondChar.charAt(0);
-				doubles = Double.parseDouble(thirdDouble);
-				
-				System.out.println("Object3 entered");
-				System.out.println("Enter first integer");
-				String intFirst = in.nextLine();
-				System.out.println("Enter second integer");
-				String intSecond = in.nextLine();
-				System.out.println("Enter third integer");
-				String intThird = in.nextLine();
-				
-				if(isInt(intFirst) && isInt(intSecond) && isInt(intThird)) {
-					int first = Integer.parseInt(intFirst);
-					int second = Integer.parseInt(intSecond);
-					int third = Integer.parseInt(intThird);
-					
-					obj1 = new Object1(integer, character, doubles);
-					obj3 = new Object3(first, second, third);
-					obj5 = new Object5(obj1, obj3);
-					
-					//obj5List.add(obj1);
-					//obj5List.add(obj3);
-					//obj5List.add(obj5);
-					
-					//objArrList.add(obj5List);
-					
-					//objectMap.put(count, obj5);
-					objectMap.put(count, obj1);
-					objectMap.put(count, obj3);
-					objectMap.put(count, obj5);
-
-					
-					count++;
-					
-				
-			
-				}else {
-					System.out.println("Error: Input entered in the wrong format.");
-				}
-			}
+		}else {
+			System.out.println("Invalid input try again.");
 		}
+		
 	}
 	
-
+	public void makeObject5() {
+		System.out.println("Object5 entered");
+		ArrayList<Object> obj5List = new ArrayList<Object>();
+		
+		Object1 obj1;
+		Object3 obj3;
+		Object5 obj5;
+					
+		System.out.println("Object1 entered");
+		
+		System.out.println("Enter an int:");
+		String firstInt = in.nextLine();
+		
+		System.out.println("Enter a char:");
+		String secondChar = in.nextLine();
+		
+		System.out.println("Enter a double:");
+		String thirdDouble = in.nextLine();
+		
+		if(isInt(firstInt) && isChar(secondChar) && isDouble(thirdDouble)) {
+			integer = Integer.parseInt(firstInt);
+			character = secondChar.charAt(0);
+			doubles = Double.parseDouble(thirdDouble);
+			
+			System.out.println("Object3 entered");
+			System.out.println("Enter first integer");
+			String intFirst = in.nextLine();
+			System.out.println("Enter second integer");
+			String intSecond = in.nextLine();
+			System.out.println("Enter third integer");
+			String intThird = in.nextLine();
+			
+			if(isInt(intFirst) && isInt(intSecond) && isInt(intThird)) {
+				int first = Integer.parseInt(intFirst);
+				int second = Integer.parseInt(intSecond);
+				int third = Integer.parseInt(intThird);
+				
+				obj1 = new Object1(integer, character, doubles);
+				obj3 = new Object3(first, second, third);
+				obj5 = new Object5(obj1, obj3);
+				objectMap.put(count, obj1);
+				objectMap.put(count, obj3);
+				objectMap.put(count, obj5);
+				count++;
+			}else {
+				System.out.println("Error: Input entered in the wrong format.");
+			}
+		}
+	
+	}
 	
 	public boolean isInt(String s)
 	{

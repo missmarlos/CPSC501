@@ -96,14 +96,6 @@ public class Serializer {
                 		e.printStackTrace();
                 	}
                 	
-                	//Element field = new Element("field");
-                 	//field.setAttribute(new Attribute("name", f[i].getName()));
-                 	//declaring class?
-                 	//field.setAttribute(new Attribute("declaringclass", obj.getClass().getName()));
-                 	//Element val = new Element("value").setText(value.toString());
-                 	//field.addContent(val);
-                 	//el.addContent(field);
-                	
                 	Class componentType = f[i].getType().getComponentType();
                 	if(componentType.isPrimitive()) {
                 		try {
@@ -138,9 +130,7 @@ public class Serializer {
                 	}
                 	
                 }
-
                 
-                //Current values of each field
                 try{
                     f[i].setAccessible(true);
 

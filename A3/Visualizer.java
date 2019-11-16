@@ -9,21 +9,6 @@ public class Visualizer {
 		for(int i = 0; i < list.size(); i++) {
 			visualize(list.get(i));
 		}
-		/*
-		Field[] f = currentObj.getClass().getDeclaredFields();
-		for(int i = 0; i < f.length; i++) {
-			try {
-				System.out.println("Name "+f[i].getName());
-				
-				f[i].setAccessible(true);
-				Object value = f[i].get(currentObj);
-	            System.out.println("Value: "+value);
-			}catch(Exception e) {
-				e.printStackTrace();
-			}
-			
-		}
-		*/
 	}
 	
 	public void visualize(Object obj) {
@@ -55,7 +40,6 @@ public class Visualizer {
 					}else {
 						System.out.println("Declaring class: "+f[i].getDeclaringClass());
 						visualize(f[i].get(obj));
-						//visualize(f[i]);
 					}
 				}
 			}

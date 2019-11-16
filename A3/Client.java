@@ -28,29 +28,18 @@ public class Client {
 			Socket socket = new Socket(serverAddress, serverPort);
 			System.out.println("Socket connected");
 			
-			
 			InputStream is = socket.getInputStream();
 			FileOutputStream fos = new FileOutputStream("xmlFileReceived.xml");
-			//byte[] b = new byte[4096];
 			int count = 0;
-			while ((count = is.read(b)) != -1) { // returns numOfBytesRead or -1 at EOF
-			  // parse, or write to output stream as
-			  fos.write(b, 0, count); // (byte[], offset, numOfBytesToWrite)
+			while ((count = is.read(b)) != -1) { 
+			  fos.write(b, 0, count);
 			}
-			
-			
-			//is.read(b, 0, b.length);
-			//fos.write(b, 0, b.length);
 			
 			System.out.println("File transferred");
 			is.close();			
 			fos.flush();
 			fos.close();
-			//pw.flush();
-			//pw.close();
 			socket.close();
-			
-			
 			
 			Deserializer d = new Deserializer();
 		    d.deserialize();

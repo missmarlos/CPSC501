@@ -20,12 +20,9 @@ public class Server {
 
 			byte[] b = new byte[4096];
 			int count = 0;
-			while ((count = fis.read(b)) != -1) { // returns numOfBytesRead or -1 at EOF
-			  // parse, or write to output stream as
-			  os.write(b, 0, count); // (byte[], offset, numOfBytesToWrite)
+			while ((count = fis.read(b)) != -1) { 
+			  os.write(b, 0, count); 
 			}
-			//fis.read(b, 0, b.length);
-		//	os.write(b, 0, b.length);
 
 			fis.close();
 			os.flush();

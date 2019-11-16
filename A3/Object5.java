@@ -1,6 +1,5 @@
 import java.util.*;
 public class Object5 {
-	//Stack<Object> stack = new Stack<Object>();
 	ArrayList<Object> arrList = new ArrayList<Object>();
 	
 	public Object5() {

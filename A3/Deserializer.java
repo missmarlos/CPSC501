@@ -181,46 +181,15 @@ public class Deserializer {
                     	}
                     	
                     }
-                    /*
-                    else {
-                    	List fields = child.getChildren();
-                        for(Object field_: fields) {
-                        	Element field = (Element) field_;
-                        	System.out.println("Field is "+field);
-                        	System.out.println(field.getAttribute("name"));
-                        	System.out.println(field.getAttribute("declaringclass"));
-                        	List values = field.getChildren();
-                        	for(Object value_ : values) {
-                        		Element value = (Element) value_;
-                        		System.out.println("Value is "+value);
-                        		System.out.println(value.getText());
-                        	}
-                        }
-                    }
-                    */
                     
-                   
-                    
-            	
-                
                 
             }
-            
-
-
-
-
         } catch (Exception ex) {
             ex.printStackTrace();
         }
         
         Visualizer v = new Visualizer();
         v.begin(objectList);
-
-        //Company company = new Company(new ArrayList(employeeList));
-        //System.out.println(company.toString());
-
-
 
 
     }
