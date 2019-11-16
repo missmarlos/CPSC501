@@ -8,9 +8,11 @@ public class Visualizer {
 		System.out.println("Size of list "+list.size());
 		for(int i = 0; i < list.size(); i++) {
 			System.out.println(" ");
+			System.out.println(list.get(i).getClass().getName());
 			visualize(list.get(i));
 		}
 	}
+	
 	
 	public void visualize(Object obj) {
 		try {
